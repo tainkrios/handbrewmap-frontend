@@ -1,0 +1,56 @@
+{
+  "coffeePlaces": [
+    {
+      "lat": 52.5299353,
+      "lon": 13.4106932,
+      "uid": 4974073,
+      "src": "barn_schonhauserallee",
+      "addr_city": "Berlin",
+      "addr_country": "DE",
+      "addr_housenumber": 8,
+      "addr_postcode": 10119,
+      "addr_street": "Schönhauser Allee",
+      "addr_suburb": "Prenzlauer Berg",
+      "branch": "Roastery",
+      "diet_vegetarian": true,
+      "drink_espresso": "served",
+      "drink_filter_coffee": "served",
+      "drinking_water": true,
+      "internet_access": false,
+      "name": "The Barn",
+      "opening_hours": "Mo-Fr 08:30-18:00; Sa-Su 10:00-18:00",
+      "outdoor_seating": true,
+      "payment_cards": true,
+      "takeaway": true,
+      "website": "https://thebarn.de/pages/cafe-roastery"
+    },
+    {
+      "lat": 52.5441717,
+      "lon": 13.4220194,
+      "uid": 1497225,
+      "src": "barn_schonhauserallee",
+      "addr_city": "Berlin",
+      "addr_country": "DE",
+      "addr_housenumber": 73,
+      "addr_postcode": 10437,
+      "addr_street": "Dunckerstraße",
+      "addr_suburb": "Prenzlauer Berg",
+      "amenity": "cafe",
+      "name": "Kajumi",
+      "opening_hours": "Tu-Fr 08:00-18:00; Sa 09:30-18:00; Su 10:30-18:00"
+    },
+    {
+      "lat": 52.5349522,
+      "lon": 13.4221493,
+      "uid": 15478115,
+      "src": "barn_schonhauserallee",
+      "addr_housenumber": 37,
+      "addr_street": "Prenzlauer Allee",
+      "amenity": "cafe",
+      "description": "Café mit Kaffeverkauf",
+      "name": "Cebe Coffee Roasters",
+      "phone": "+493037474970",
+      "website": "https://www.cebecoffeeroasters.com/"
+    }
+  ]
+}
