@@ -1,25 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import ReactMapGL, {
+  NavigationControl,
+  GeolocateControl,
+  Marker,
+} from 'react-map-gl'
+import 'mapbox-gl/dist/mapbox-gl.css'
+import places from './coffee.json'
+import coffeeIcon from './assets/coffeeIcon.svg'
+import { Nav } from './components/Nav'
+import './App.css'
 
-function App() {
+export const App = () => {
+  const [viewport, setViewport] = useState({
+    latitude: 52.543,
+    longitude: 13.437,
+    zoom: 14,
+    passive: true,
+  })
+
+  const mapStyles = {
+    width: '100vw',
+    height: '100vh',
+    position: 'absolute',
+    top: 0,
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav />
+      <ReactMapGL
+        style={mapStyles}
+        {...viewport}
+        onMove={(evt) => setViewport(evt.viewport)}
+        mapboxAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
+        mapStyle='mapbox://styles/mapbox/streets-v11'
+        onViewportChange={(viewport) => {
+          setViewport(viewport)
+        }}
+      >
+        {places.coffeePlaces.map((place) => (
+          <Marker
+            key={place.uid}
+            latitude={place.lat}
+            longitude={place.lon}
+          >
+            <button>
+              <img
+                src={coffeeIcon}
+                alt='coffeeIcon'
+              />
+            </button>
+          </Marker>
+        ))}
+        <GeolocateControl position='bottom-right' />
+        <NavigationControl position='bottom-right' />
+      </ReactMapGL>
     </div>
-  );
+  )
 }
-
-export default App;
