@@ -33,7 +33,7 @@ export const Map = (props) => {
       style={mapStyles}
       {...viewport}
       onMove={(evt) => setViewport(evt.viewport)}
-      mapboxAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
+      mapboxAccessToken='pk.eyJ1IjoidGFpbmtyaW9zIiwiYSI6ImNsOTF5dzh4ODBmeW8zemxjazZsOXQwNmcifQ.JLO9VoBZ8G4yv4iKdqmsrg'
       mapStyle='mapbox://styles/mapbox/streets-v11'
       onViewportChange={(viewport) => {
         setViewport(viewport)
