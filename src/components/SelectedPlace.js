@@ -1,25 +1,18 @@
-import { useState } from 'react'
 import './SelectedPlace.css'
 
-export const SelectedPlace = (props) => {
-  // const [place, setPlace] = useState(null)
-
-  // const plaseHandler = (props.place) => {
-  //   setPlace(props.place)
-  // }
-
+export const SelectedPlace = ({ data }) => {
   return (
     <div className='selectedPlaces'>
-      <div>
+      <div className='img-container'>
         <img
-          src={`./../assets/img/${props.src}.jpg'`}
+          src={require(`./../assets/img/${data.img_src}.jpg`)}
           alt='PlaceView'
         />
       </div>
       <div>
-        <div>{props.name}</div>
-        <div>{props.description}</div>
-        <div>{`${props.street} ${props.number}`}</div>
+        <h2>{data?.name}</h2>
+        <p>{data?.description}</p>
+        <p>{`${data.addr_street} ${data.addr_housenumber}`}</p>
       </div>
     </div>
   )
