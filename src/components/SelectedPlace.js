@@ -10,8 +10,8 @@ export const SelectedPlace = ({ data }) => {
         />
       </div>
       <div>
-        <h2>{data?.name}</h2>
-        <p>{data?.description}</p>
+        <h2>{data.name}</h2>
+        <p>{data.description}</p>
         <p>{`${data.addr_street} ${data.addr_housenumber}`}</p>
       </div>
     </div>

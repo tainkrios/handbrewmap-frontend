@@ -2,22 +2,17 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 import { Nav } from './components/Nav'
 import { Map } from './components/Map'
 import { SelectedPlace } from './components/SelectedPlace'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 
 export const App = () => {
   const [newPlace, setNewPlace] = useState(null)
-
-  useEffect(() => {
-    if (newPlace) {
-      setNewPlace(newPlace)
-    }
-  }, [newPlace])
+  console.log('App:' + newPlace) 
 
   return (
     <>
       <Nav />
-      <Map saveNewPlaceChange={(newPlase) => setNewPlace(newPlase)} />
+      <Map saveNewPlaceChange={setNewPlace} />
       {newPlace && <SelectedPlace data={newPlace} />}
     </>
   )

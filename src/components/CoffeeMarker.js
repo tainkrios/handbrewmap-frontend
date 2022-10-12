@@ -1,15 +1,15 @@
 import coffeeIcon from './../assets/coffeeIcon.svg'
 import { Marker } from 'react-map-gl'
 
-export const CoffeeMarker = (props) => {
+export const CoffeeMarker = ({ placeData, changePlace }) => {
   return (
     <Marker
-      latitude={props.placeData.lat}
-      longitude={props.placeData.lon}
+      latitude={placeData.lat}
+      longitude={placeData.lon}
     >
       <button
         onClick={() => {
-          props.changePlace(props.placeData)
+          changePlace(placeData)
         }}
       >
         <img

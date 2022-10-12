@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import ReactMapGL from 'react-map-gl'
 import { CoffeeMarker } from './CoffeeMarker'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import places from './../assets/coffee.json'
-// import { SelectedPlace } from './SelectedPlace'
 
 export const Map = (props) => {
   const [viewport, setViewport] = useState({
@@ -14,12 +13,7 @@ export const Map = (props) => {
   })
 
   const [newPlace, setNewPlace] = useState(null)
-
-  useEffect(() => {
-    if (newPlace) {
-      setNewPlace(newPlace)
-    }
-  }, [newPlace])
+  console.log('Map:' + newPlace)
 
   const mapStyles = {
     width: '100vw',
@@ -44,7 +38,7 @@ export const Map = (props) => {
         <CoffeeMarker
           key={place.uid}
           placeData={place}
-          changePlace={(newPlace) => setNewPlace(newPlace)}
+          changePlace={setNewPlace}
         />
       ))}
     </ReactMapGL>
