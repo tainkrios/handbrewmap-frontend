@@ -10,6 +10,7 @@ export const Map = ({ saveNewPlaceChange }) => {
     longitude: 13.3888,
     zoom: 13,
     passive: true,
+    customAttribution: 'designed by Me',
   })
 
   const mapStyles = {
@@ -20,23 +21,25 @@ export const Map = ({ saveNewPlaceChange }) => {
   }
 
   return (
-    <ReactMapGL
-      style={mapStyles}
-      {...viewport}
-      onMove={(evt) => setViewport(evt.viewport)}
-      mapboxAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
-      mapStyle='mapbox://styles/mapbox/streets-v11'
-      onViewportChange={(viewport) => {
-        setViewport(viewport)
-      }}
-    >
-      {places.coffeePlaces.map((place) => (
-        <CoffeeMarker
-          key={place.uid}
-          placeData={place}
-          changePlace={saveNewPlaceChange}
-        />
-      ))}
-    </ReactMapGL>
+    <>
+      <ReactMapGL
+        style={mapStyles}
+        {...viewport}
+        onMove={(evt) => setViewport(evt.viewport)}
+        mapboxAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
+        mapStyle='mapbox://styles/mapbox/streets-v11'
+        onViewportChange={(viewport) => {
+          setViewport(viewport)
+        }}
+      >
+        {places.coffeePlaces.map((place) => (
+          <CoffeeMarker
+            key={place.uid}
+            placeData={place}
+            changePlace={saveNewPlaceChange}
+          />
+        ))}
+      </ReactMapGL>
+    </>
   )
 }
