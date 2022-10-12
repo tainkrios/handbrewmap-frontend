@@ -7,7 +7,6 @@ import './App.css'
 
 export const App = () => {
   const [newPlace, setNewPlace] = useState(null)
-  console.log('App:' + newPlace) 
 
   return (
     <>
