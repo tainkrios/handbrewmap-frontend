@@ -13,7 +13,8 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "The Barn",
       "website": "https://thebarn.de/pages/cafe-roastery",
-      "opening_hours": "Mo-Fr 08:30-18:00; Sa-Su 10:00-18:00"
+      "opening_hours": "Mo-Fr 08:30-18:00; Sa-Su 10:00-18:00",
+      "favorites": false
     },
     {
       "lat": 52.5441717,
@@ -28,7 +29,8 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "Kajumi",
       "website": "http://www.farbenkaffee.de/",
-      "opening_hours": "Tu-Fr 08:00-18:00; Sa 09:30-18:00; Su 10:30-18:00"
+      "opening_hours": "Tu-Fr 08:00-18:00; Sa 09:30-18:00; Su 10:30-18:00",
+      "favorites": false
     },
     {
       "lat": 52.5349522,
@@ -43,7 +45,8 @@
       "description": "Café mit Kaffeverkauf",
       "website": "https://www.cebecoffeeroasters.com/",
       "name": "Cebe Coffee Roasters",
-      "opening_hours": "Tu-Fr 08:00-18:00; Sa 08:00-18:00; Su 08:00-18:00"
+      "opening_hours": "Tu-Fr 08:00-18:00; Sa 08:00-18:00; Su 08:00-18:00",
+      "favorites": false
     },
     {
       "lat": 52.5274504,
@@ -58,7 +61,8 @@
       "addr_suburb": "Mitte",
       "contact_website": "https://thebarn.de/",
       "name": "The Barn",
-      "opening_hours": "Mo-Fr 08:00-18:00, Sa 09:00-18:00, Su 10:00-18:00"
+      "opening_hours": "Mo-Fr 08:00-18:00, Sa 09:00-18:00, Su 10:00-18:00",
+      "favorites": false
     },
     {
       "lat": 52.5300461,
@@ -73,7 +77,8 @@
       "addr_suburb": "Mitte",
       "contact_website": "https://thebarn.de/",
       "name": "The Barn",
-      "opening_hours": "Mo-Fr 08:00-18:00, Sa 10:00-18:00, Su 10:00-18:00"
+      "opening_hours": "Mo-Fr 08:00-18:00, Sa 10:00-18:00, Su 10:00-18:00",
+      "favorites": false
     },
     {
       "lat": 52.4923996,
@@ -88,7 +93,8 @@
       "addr_suburb": "Neukölln",
       "contact_website": "https://thebarn.de/",
       "name": "The Barn",
-      "opening_hours": "Mo-Fr 08:00-18:00, Sa-Su 11:00-18:00"
+      "opening_hours": "Mo-Fr 08:00-18:00, Sa-Su 11:00-18:00",
+      "favorites": false
     },
     {
       "lat": 52.5305927,
@@ -103,7 +109,8 @@
       "addr_suburb": "Mitte",
       "contact_website": "https://thebarn.de/",
       "name": "The Barn",
-      "opening_hours": "Mo-Fr 09:00-17:00, Sa-Su 10:00-17:00"
+      "opening_hours": "Mo-Fr 09:00-17:00, Sa-Su 10:00-17:00",
+      "favorites": false
     },
     {
       "lat": 52.5245299,
@@ -118,7 +125,8 @@
       "addr_suburb": "Mitte",
       "contact_website": "https://thebarn.de/",
       "name": "The Barn",
-      "opening_hours": "Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00"
+      "opening_hours": "Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00",
+      "favorites": false
     },
     {
       "lat": 52.5101122,
@@ -133,7 +141,8 @@
       "addr_suburb": "Tiergarten",
       "contact_website": "https://thebarn.de/",
       "name": "The Barn",
-      "opening_hours": "Mo-Fr 09:00-17:00; Sa-Su 12:00-17:00"
+      "opening_hours": "Mo-Fr 09:00-17:00; Sa-Su 12:00-17:00",
+      "favorites": false
     },
     {
       "lat": 52.5084430,
@@ -148,7 +157,8 @@
       "addr_suburb": "Tiergarten",
       "contact_website": "https://thebarn.de/",
       "name": "The Barn",
-      "opening_hours": "Mo-Fr 08:30-19:00; Sa-Su 09:00-19:00"
+      "opening_hours": "Mo-Fr 08:30-19:00; Sa-Su 09:00-19:00",
+      "favorites": false
     },
     {
       "lat": 52.5039053,
@@ -163,7 +173,8 @@
       "addr_suburb": "Tiergarten",
       "contact_website": "https://thebarn.de/",
       "name": "The Barn",
-      "opening_hours": "Mo-Fr 08:30-19:00; Sa-Su 09:00-19:00"
+      "opening_hours": "Mo-Fr 08:30-19:00; Sa-Su 09:00-19:00",
+      "favorites": false
     },
     {
       "lat": 52.5417016,
@@ -178,7 +189,8 @@
       "addr_suburb": "Tiergarten",
       "name": "The Barn",
       "contact_website": "https://thebarn.de/",
-      "opening_hours": "Mo-Fr 09:00-16:00"
+      "opening_hours": "Mo-Fr 09:00-16:00",
+      "favorites": false
     },
     {
       "lat": 52.5267285,
@@ -193,7 +205,8 @@
       "addr_suburb": "Mitte",
       "name": "Five Elephant",
       "contact_website": "https://fiveelephant.com//",
-      "opening_hours": "Mo-Fr 09:00-16:00"
+      "opening_hours": "Mo-Fr 09:00-16:00",
+      "favorites": false
     },
     {
       "lat": 52.5389439,
@@ -208,7 +221,8 @@
       "addr_suburb": "Mitte",
       "name": "Five Elephant",
       "contact_website": "https://fiveelephant.com//",
-      "opening_hours": "Mo-Fr 09:00-16:00"
+      "opening_hours": "Mo-Fr 09:00-16:00",
+      "favorites": false
     },
     {
       "lat": 52.4933818,
@@ -223,7 +237,8 @@
       "addr_suburb": "Kreuzberg",
       "name": "Five Elephant",
       "contact_website": "https://fiveelephant.com//",
-      "opening_hours": "Mo-Fr 8:30-19:00; Sa-Su 10:00-19:00"
+      "opening_hours": "Mo-Fr 8:30-19:00; Sa-Su 10:00-19:00",
+      "favorites": false
     },
     {
       "lat": 52.5019,
@@ -238,7 +253,8 @@
       "addr_suburb": "Kreuzberg",
       "name": "Five Elephant",
       "contact_website": "https://fiveelephant.com//",
-      "opening_hours": "Mo-Fr 8:30-19:00; Sa-Su 10:00-19:00"
+      "opening_hours": "Mo-Fr 8:30-19:00; Sa-Su 10:00-19:00",
+      "favorites": false
     },
     {
       "lat": 52.5041830,
@@ -253,7 +269,8 @@
       "addr_suburb": "Kreuzberg",
       "name": "Bonanza Coffee Roasters",
       "contact_website": "https://bonanzacoffee.de/",
-      "opening_hours": "Mo-Fr 09:00-18:00; Sa,Su 10:00-18:00"
+      "opening_hours": "Mo-Fr 09:00-18:00; Sa,Su 10:00-18:00",
+      "favorites": false
     },
     {
       "lat": 52.5399974,
@@ -268,7 +285,8 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "Bonanza Coffee Heroes",
       "contact_website": "https://bonanzacoffee.de/",
-      "opening_hours": "Mo-Fr 08:30-18:30; Sa-Su 10:00-19:00"
+      "opening_hours": "Mo-Fr 08:30-18:30; Sa-Su 10:00-19:00",
+      "favorites": false
     },
     {
       "lat": 52.5140705,
@@ -283,7 +301,8 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "Bonanza Coffee Roasters Gendarmenmarkt",
       "contact_website": "https://bonanzacoffee.de/",
-      "opening_hours": "Mo-Fr 08:00-19:00; Sa 10:00-19:00; Su 10:00-18:00"
+      "opening_hours": "Mo-Fr 08:00-19:00; Sa 10:00-19:00; Su 10:00-18:00",
+      "favorites": false
     },
     {
       "lat": 52.5266291,
@@ -298,7 +317,8 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "Bonanza Coffee Mitte",
       "contact_website": "https://bonanzacoffee.de/",
-      "opening_hours": "Mo-Fr 08:00-19:00; Sa 10:00-19:00; Su 10:00-18:00"
+      "opening_hours": "Mo-Fr 08:00-19:00; Sa 10:00-19:00; Su 10:00-18:00",
+      "favorites": false
     },
     {
       "lat": 52.5100341,
@@ -313,7 +333,8 @@
       "addr_suburb": "Friedrichshain",
       "name": "Silo Coffee",
       "contact_website": "https://www.silo-coffee.com/",
-      "opening_hours": "Mo-Fr 09:30-17:00, Sa 09:30-19:00, Su 10:00-19:00"
+      "opening_hours": "Mo-Fr 09:30-17:00, Sa 09:30-19:00, Su 10:00-19:00",
+      "favorites": false
     },
     {
       "lat": 52.4961026,
@@ -328,7 +349,8 @@
       "addr_suburb": "Kreuzberg",
       "name": "Concierge Coffee",
       "contact_website": "https://www.conciergecoffee.de/",
-      "opening_hours": "Mo-Fr 08:30-18:00; PH,Sa,Su 12:00-17:00"
+      "opening_hours": "Mo-Fr 08:30-18:00; PH,Sa,Su 12:00-17:00",
+      "favorites": false
     },
     {
       "lat": 52.5028072,
@@ -343,7 +365,8 @@
       "addr_suburb": "Schoneberg",
       "name": "Concierge Coffee",
       "contact_website": "https://www.conciergecoffee.de/",
-      "opening_hours": "Mo-Fr 08:30-18:00; PH,Sa,Su 12:00-17:00"
+      "opening_hours": "Mo-Fr 08:30-18:00; PH,Sa,Su 12:00-17:00",
+      "favorites": false
     },
     {
       "lat": 52.5227551,
@@ -358,7 +381,8 @@
       "addr_suburb": "Mitte",
       "name": "19grams",
       "contact_website": "https://19grams.coffee/",
-      "opening_hours": "Mo-Su 11:00-18:00"
+      "opening_hours": "Mo-Su 11:00-18:00",
+      "favorites": false
     },
     {
       "lat": 52.5331293,
@@ -373,7 +397,8 @@
       "addr_suburb": "Mitte",
       "name": "19grams",
       "contact_website": "https://19grams.coffee/",
-      "opening_hours": "Mo-Fr 08:00-19:00; Sa-Su 09:00-19:00"
+      "opening_hours": "Mo-Fr 08:00-19:00; Sa-Su 09:00-19:00",
+      "favorites": false
     },
     {
       "lat": 52.4999160,
@@ -388,7 +413,8 @@
       "addr_suburb": "Kreuzberg",
       "name": "19grams",
       "contact_website": "https://19grams.coffee/",
-      "opening_hours": "Mo-Fr 08:00-18:00; Sa-Su 10:00-18:00"
+      "opening_hours": "Mo-Fr 08:00-18:00; Sa-Su 10:00-18:00",
+      "favorites": false
     },
     {
       "lat": 52.5071039,
@@ -403,7 +429,72 @@
       "addr_suburb": "Friedrichshain",
       "name": "TRES CABEZAS",
       "contact_website": "https://19grams.coffee/",
-      "opening_hours": "Mo-Fr 09:00-16:00; Sa,Su 09:00-18:00"
+      "opening_hours": "Mo-Fr 09:00-16:00; Sa,Su 09:00-18:00",
+      "favorites": false
+    },
+    {
+      "lat": 52.489785,
+      "lon": 13.395787,
+      "uid": "52.48978513.395787",
+      "img_src": "chapter_one",
+      "addr_city": "Berlin",
+      "addr_country": "DE",
+      "addr_housenumber": "30",
+      "addr_postcode": "10961",
+      "addr_street": "Mittenwalder Str.",
+      "addr_suburb": "Kreuzberg",
+      "name": "Chapter One",
+      "contact_website": "http://www.chapter-one-coffee.com/",
+      "opening_hours": "Mo-Sa 09:00-18:00; Su 11:00-18:00",
+      "favorites": false
+    },
+    {
+      "lat": 52.524444,
+      "lon": 13.406597,
+      "uid": "52.52444413.406597",
+      "img_src": "father_carpenter",
+      "addr_city": "Berlin",
+      "addr_country": "DE",
+      "addr_housenumber": "21",
+      "addr_postcode": "10178",
+      "addr_street": "Münzstraße",
+      "addr_suburb": "Mitte",
+      "name": "Father Carpenter",
+      "contact_website": "https://www.fathercarpenter.com/",
+      "opening_hours": "Mo-Sa 09:00-18:00; Su 11:00-18:00",
+      "favorites": false
+    },
+    {
+      "lat": 52.531609,
+      "lon": 13.394173,
+      "uid": "52.53160913.394173",
+      "img_src": "district",
+      "addr_city": "Berlin",
+      "addr_country": "DE",
+      "addr_housenumber": "68",
+      "addr_postcode": "10115",
+      "addr_street": "Bergstraße",
+      "addr_suburb": "Mitte",
+      "name": "District",
+      "contact_website": "http://distriktcoffee.de/",
+      "opening_hours": "Mo-Sa 09:00-16:00; Su 09:30-17:00",
+      "favorites": false
+    },
+    {
+      "lat": 52.4985073,
+      "lon": 13.4349370,
+      "uid": "52.498507313.4349370",
+      "img_src": "annelies",
+      "addr_city": "Berlin",
+      "addr_country": "DE",
+      "addr_housenumber": "68",
+      "addr_postcode": "10997",
+      "addr_street": "Görlitzer Str.",
+      "addr_suburb": "Kreuzberg",
+      "name": "Annelies",
+      "contact_website": "http://anneliesberlin.com/",
+      "opening_hours": "We-Mo 10:00-16:00",
+      "favorites": false
     }
   ]
 }

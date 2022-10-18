@@ -1,12 +1,12 @@
 .selectedPlaces {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   display: flex;
   gap: 1rem;
   width: 100vw;
   height: 10rem;
   z-index: 100;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   background-color: #ECEFF4;
 }
 
@@ -15,3 +15,9 @@
   height: 10rem;
   object-fit: cover;
 }
+
+.favorite {
+  margin-left: auto;
+  /* fill: #3eba7e; */
+}
+
