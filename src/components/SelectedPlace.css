@@ -4,20 +4,40 @@
   left: 0;
   display: flex;
   gap: 1rem;
-  width: 100vw;
-  height: 10rem;
+  min-width: 93%;
+  height: 8rem;
   z-index: 100;
   background-color: #ECEFF4;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.selectedPlaces a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
 }
 
 .img-container img {
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   object-fit: cover;
+  border-radius: 1rem 0 0 1rem;
 }
 
 .favorite {
   margin-left: auto;
-  /* fill: #3eba7e; */
+  margin-right: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+
 }
 
+.favorite_fill {
+  margin-left: auto;
+  fill: #3eba7e;
+  margin-right: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}

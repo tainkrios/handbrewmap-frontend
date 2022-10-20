@@ -10,10 +10,27 @@ export const SelectedPlace = ({ data }) => {
     localStorage.setItem('favorites', JSON.stringify(favorites))
   }, [favorites])
 
+  useEffect(() => {
+    const favorites = JSON.parse(localStorage.getItem('favorites'))
+    if (favorites) {
+      setFavorites(favorites)
+    }
+  }, [])
+
   const addFavorites = () => {
-   setFavorites([...favorites, data.uid])
+    if (!favorites.includes(data.uid)) {
+      setFavorites([...favorites, data.uid])
+    } else {
+      const unFavorites = favorites.filter((value) => value !== data.uid)
+      setFavorites(unFavorites)
+    }
   }
-  
+
+  const isFavorite = favorites.find((value) => {
+    return value === data.uid
+  })
+  // console.log(isFavorite)
+
   return (
     <div className='selectedPlaces'>
       <div className='img-container'>
@@ -23,13 +40,19 @@ export const SelectedPlace = ({ data }) => {
         />
       </div>
       <div>
-        <h2>{data.name}</h2>
+        <a
+          href={data.contact_website}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <h2>{data.name}</h2>
+        </a>
         <p>{data.description}</p>
         <p>{`📍${data.addr_street} ${data.addr_housenumber}`}</p>
       </div>
       <div
         onClick={addFavorites}
-        className='favorite'
+        className={isFavorite ? 'favorite_fill' : 'favorite'}
       >
         <FavoriteIcon />
       </div>
