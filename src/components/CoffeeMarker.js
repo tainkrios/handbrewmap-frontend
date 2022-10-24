@@ -1,24 +1,18 @@
 import { Marker } from 'react-map-gl'
 import './CoffeeMarker.css'
 
-export const CoffeeMarker = ({ placeData, changePlace }) => {
+export const CoffeeMarker = ({ longitude, latitude, cluster, changePlace }) => {
   return (
     <Marker
-      latitude={placeData.lat}
-      longitude={placeData.lon}
+      latitude={latitude}
+      longitude={longitude}
     >
       <button
-      className='markerColor'
+        className='markerColor'
         onClick={() => {
-          changePlace(placeData)
+          changePlace(cluster)
         }}
-      >
-        {/* <p>☕</p> */}
-        {/* <img
-          src={coffeeIcon}
-          alt='coffeeIcon'
-        /> */}
-      </button>
+      ></button>
     </Marker>
   )
 }
