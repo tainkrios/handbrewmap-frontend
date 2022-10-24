@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState } from 'react'
 import ReactMapGL, { GeolocateControl, Marker } from 'react-map-gl'
 import { CoffeeMarker } from './CoffeeMarker'
 import useSupercluster from 'use-supercluster'
@@ -10,14 +10,10 @@ export const Map = ({ saveNewPlaceChange }) => {
   const [viewport, setViewport] = useState({
     latitude: 52.517,
     longitude: 13.3879,
-    zoom: 14,
+    zoom: 12,
     passive: true,
     // customAttribution: 'designed by Me',
   })
-
-  useEffect(() => {
-    setViewport(viewport)
-  }, [viewport])
 
   const mapStyles = {
     width: '100vw',
@@ -34,6 +30,14 @@ export const Map = ({ saveNewPlaceChange }) => {
       cluster: false,
       placeId: place.uid,
       category: 'coffee-place',
+      img_src: 'barn_schonhauserallee',
+      addr_city: 'Berlin',
+      addr_country: 'DE',
+      addr_housenumber: 8,
+      addr_postcode: 10119,
+      addr_street: 'Schönhauser Allee',
+      name: 'The Barn',
+      website: 'https://thebarn.de/pages/cafe-roastery',
     },
     geometry: {
       type: 'Point',
@@ -51,24 +55,23 @@ export const Map = ({ saveNewPlaceChange }) => {
     bounds,
     options: { radius: 75, maxZoom: 20 },
   })
-  console.log(clusters.properties)
 
   return (
     <ReactMapGL
-      style={mapStyles}
-      initialViewState={viewport}
+      {...viewport}
       maxZoom={20}
-      onMove={(evt) => setViewport(evt.viewport)}
       mapboxAccessToken='pk.eyJ1IjoidGFpbmtyaW9zIiwiYSI6ImNsOTF5dzh4ODBmeW8zemxjazZsOXQwNmcifQ.JLO9VoBZ8G4yv4iKdqmsrg'
+      onMove={(evt) => setViewport(evt.viewState)}
       onViewportChange={(viewport) => setViewport(viewport)}
       mapStyle='mapbox://styles/mapbox/dark-v10'
+      style={mapStyles}
       ref={mapRef}
     >
       {clusters.map((cluster) => {
         const [longitude, latitude] = cluster.geometry.coordinates
-        const { place: isPlace, point_count: pointCount } = cluster.properties
-
-        if (isPlace) {
+        const { cluster: isCluster, point_count: pointCount } =
+          cluster.properties
+        if (isCluster) {
           return (
             <Marker
               key={cluster.id}
@@ -92,7 +95,7 @@ export const Map = ({ saveNewPlaceChange }) => {
             key={cluster.placeId}
             longitude={longitude}
             latitude={latitude}
-            changePlace={cluster}
+            changePlace={saveNewPlaceChange}
           />
         )
       })}

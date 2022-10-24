@@ -11,6 +11,7 @@ export const CoffeeMarker = ({ longitude, latitude, cluster, changePlace }) => {
         className='markerColor'
         onClick={() => {
           changePlace(cluster)
+          console.log(changePlace)
         }}
       ></button>
     </Marker>
