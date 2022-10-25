@@ -7,12 +7,11 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 import './Map.css'
 
 export const Map = ({ saveNewPlaceChange }) => {
-  const [viewport, setViewport] = useState({
+  const [viewState, setViewState] = useState({
     latitude: 52.517,
     longitude: 13.3879,
-    zoom: 12,
+    zoom: 13,
     passive: true,
-    // customAttribution: 'designed by Me',
   })
 
   const mapStyles = {
@@ -22,6 +21,8 @@ export const Map = ({ saveNewPlaceChange }) => {
     top: 0,
   }
 
+  // const {current: map} = useMap()
+
   const mapRef = useRef()
 
   const points = places.coffeePlaces.map((place) => ({
@@ -30,14 +31,11 @@ export const Map = ({ saveNewPlaceChange }) => {
       cluster: false,
       placeId: place.uid,
       category: 'coffee-place',
-      img_src: 'barn_schonhauserallee',
-      addr_city: 'Berlin',
-      addr_country: 'DE',
-      addr_housenumber: 8,
-      addr_postcode: 10119,
-      addr_street: 'Schönhauser Allee',
-      name: 'The Barn',
-      website: 'https://thebarn.de/pages/cafe-roastery',
+      img_src: place.img_src,
+      addr_housenumber: place.addr_housenumber,
+      addr_street: place.addr_street,
+      name: place.name,
+      contact_website: place.contact_website,
     },
     geometry: {
       type: 'Point',
@@ -49,21 +47,25 @@ export const Map = ({ saveNewPlaceChange }) => {
     ? mapRef.current.getMap().getBounds().toArray().flat()
     : null
 
-  const { clusters } = useSupercluster({
+    // console.log(bounds)
+
+  const { clusters, supercluster } = useSupercluster({
     points,
-    zoom: viewport.zoom,
+    zoom: viewState.zoom,
     bounds,
     options: { radius: 75, maxZoom: 20 },
   })
+  console.log(points)
+  console.log(clusters)
 
   return (
     <ReactMapGL
-      {...viewport}
+      {...viewState}
       maxZoom={20}
       mapboxAccessToken='pk.eyJ1IjoidGFpbmtyaW9zIiwiYSI6ImNsOTF5dzh4ODBmeW8zemxjazZsOXQwNmcifQ.JLO9VoBZ8G4yv4iKdqmsrg'
-      onMove={(evt) => setViewport(evt.viewState)}
-      onViewportChange={(viewport) => setViewport(viewport)}
-      mapStyle='mapbox://styles/mapbox/dark-v10'
+      onMove={(evt) => setViewState(evt.viewState)}
+      onViewportChange={(viewState) => setViewState(viewState)}
+      mapStyle='mapbox://styles/mapbox/light-v10'
       style={mapStyles}
       ref={mapRef}
     >
@@ -74,9 +76,18 @@ export const Map = ({ saveNewPlaceChange }) => {
         if (isCluster) {
           return (
             <Marker
-              key={cluster.id}
+              key={`cluster-${cluster.id}`}
               latitude={latitude}
               longitude={longitude}
+              onClick={mapRef.current.flyTo({
+                center: [longitude, latitude],
+                zoom: Math.min(
+                  supercluster.getClusterExpansionZoom(cluster.id),
+                  20
+                ),
+                duration: 'auto',
+                speed: 2,
+              })}
             >
               <div
                 className='cluster-marker'
@@ -95,7 +106,14 @@ export const Map = ({ saveNewPlaceChange }) => {
             key={cluster.placeId}
             longitude={longitude}
             latitude={latitude}
+            placeData={cluster}
             changePlace={saveNewPlaceChange}
+            onClick={mapRef.current.flyTo({
+              center: [longitude, latitude],
+              zoom: Math.min(supercluster.getClusterExpansionZoom(cluster.placeId), 20),
+              duration: 'auto',
+              speed: 2,
+            })}
           />
         )
       })}

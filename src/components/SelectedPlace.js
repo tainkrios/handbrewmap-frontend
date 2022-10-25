@@ -18,18 +18,17 @@ export const SelectedPlace = ({ data }) => {
   }, [])
 
   const addFavorites = () => {
-    if (!favorites.includes(data.uid)) {
-      setFavorites([...favorites, data.uid])
+    if (!favorites.includes(data.placeId)) {
+      setFavorites([...favorites, data.placeId])
     } else {
-      const unFavorites = favorites.filter((value) => value !== data.uid)
+      const unFavorites = favorites.filter((value) => value !== data.placeId)
       setFavorites(unFavorites)
     }
   }
 
   const isFavorite = favorites.find((value) => {
-    return value === data.uid
+    return value === data.placeId
   })
-  // console.log(isFavorite)
 
   return (
     <div className='selectedPlaces'>
@@ -47,7 +46,6 @@ export const SelectedPlace = ({ data }) => {
         >
           <h2>{data.name}</h2>
         </a>
-        <p>{data.description}</p>
         <p>{`📍${data.addr_street} ${data.addr_housenumber}`}</p>
       </div>
       <div
