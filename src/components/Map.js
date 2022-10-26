@@ -1,16 +1,17 @@
-import React, { useState } from 'react'
-import ReactMapGL from 'react-map-gl'
+import React, { useEffect, useRef, useState } from 'react'
+import ReactMapGL, { GeolocateControl, Marker } from 'react-map-gl'
 import { CoffeeMarker } from './CoffeeMarker'
-import 'mapbox-gl/dist/mapbox-gl.css'
+import useSupercluster from 'use-supercluster'
 import places from './../assets/coffee.json'
+import 'mapbox-gl/dist/mapbox-gl.css'
+import './Map.css'
 
 export const Map = ({ saveNewPlaceChange }) => {
   const [viewport, setViewport] = useState({
     latitude: 52.517,
-    longitude: 13.3888,
+    longitude: 13.3879,
     zoom: 13,
     passive: true,
-    customAttribution: 'designed by Me',
   })
 
   const mapStyles = {
@@ -20,26 +21,106 @@ export const Map = ({ saveNewPlaceChange }) => {
     top: 0,
   }
 
+  const mapRef = useRef()
+
+  const points = places.coffeePlaces.map((place) => ({
+    type: 'Feature',
+    properties: {
+      cluster: false,
+      placeId: place.uid,
+      category: 'coffee-place',
+      img_src: place.img_src,
+      addr_housenumber: place.addr_housenumber,
+      addr_street: place.addr_street,
+      name: place.name,
+      contact_website: place.contact_website,
+    },
+    geometry: {
+      type: 'Point',
+      coordinates: [parseFloat(place.lon), parseFloat(place.lat)],
+    },
+  }))
+
+  const [bounds, setBounds] = useState([
+    13.344915992259445, 52.498172201467355, 13.430884007742378,
+    52.53581973404465,
+  ])
+
+  useEffect(() => {
+    if (mapRef.current) {
+      setBounds(mapRef.current.getMap().getBounds().toArray().flat())
+    }
+  }, [])
+  
+  console.log(bounds)
+
+  const { clusters, supercluster } = useSupercluster({
+    points,
+    bounds,
+    zoom: viewport.zoom,
+    options: { radius: 75, maxZoom: 20 },
+  })
+
   return (
-    <>
-      <ReactMapGL
-        style={mapStyles}
-        {...viewport}
-        onMove={(evt) => setViewport(evt.viewport)}
-        mapboxAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
-        mapStyle='mapbox://styles/mapbox/streets-v11'
-        onViewportChange={(viewport) => {
-          setViewport(viewport)
-        }}
-      >
-        {places.coffeePlaces.map((place) => (
+    <ReactMapGL
+      ref={mapRef}
+      initialViewState={viewport}
+      maxZoom={20}
+      mapboxAccessToken='pk.eyJ1IjoidGFpbmtyaW9zIiwiYSI6ImNsOTF5dzh4ODBmeW8zemxjazZsOXQwNmcifQ.JLO9VoBZ8G4yv4iKdqmsrg'
+      onMove={(evt) => setViewport(evt.viewState)}
+      mapStyle='mapbox://styles/mapbox/light-v10'
+      style={mapStyles}
+    >
+      {clusters.map((cluster) => {
+        const [longitude, latitude] = cluster.geometry.coordinates
+        const { cluster: isCluster, point_count: pointCount } =
+          cluster.properties
+
+        if (isCluster) {
+          return (
+            <Marker
+              key={`cluster-${cluster.id}`}
+              latitude={latitude}
+              longitude={longitude}
+            >
+              <div
+                className='cluster-marker'
+                style={{
+                  width: `${10 + (pointCount / points.length) * 20}px`,
+                  height: `${10 + (pointCount / points.length) * 20}px`,
+                }}
+                onClick={() => {
+                  mapRef.current.flyTo({
+                    center: [longitude, latitude],
+                    zoom: Math.min(
+                      supercluster.getClusterExpansionZoom(cluster.id),
+                      20
+                    ),
+                    duration: 1000,
+                  })
+                }}
+              >
+                {pointCount}
+              </div>
+            </Marker>
+          )
+        }
+        return (
           <CoffeeMarker
-            key={place.uid}
-            placeData={place}
+            key={cluster.properties.placeId}
+            longitude={longitude}
+            latitude={latitude}
+            placeData={cluster}
             changePlace={saveNewPlaceChange}
+            onClick={() => {
+              mapRef.current.flyTo({
+                center: [longitude, latitude],
+              })
+            }}
           />
-        ))}
-      </ReactMapGL>
-    </>
+        )
+      })}
+      <GeolocateControl />
+    </ReactMapGL>
   )
 }

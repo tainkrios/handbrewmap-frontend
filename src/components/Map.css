@@ -1,0 +1,14 @@
+.mapboxgl-ctrl-top-right {
+  padding-top: 48px;
+}
+
+.cluster-marker {
+  color: #fff;
+  background: #3eba7e;
+  box-shadow: 0 0 0 3px #66e4a7;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

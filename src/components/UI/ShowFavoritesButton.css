@@ -1,0 +1,11 @@
+.showFavButton {
+  width: 29px;
+  height: 29px;
+  position: fixed;
+  top: 98px;
+  right: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  /* background-position: 50%; */
+  box-shadow: 0 0 0 2px rgb(0 0 0/10%);
+}

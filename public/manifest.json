@@ -1,8 +1,8 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Coffee Map",
+  "name": "Berlin Coffee Map",
   "start_url": ".",
-  "display": "standalone",
+  "display": "fullscreen",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
