@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import ReactMapGL, { GeolocateControl, Marker } from 'react-map-gl'
 import { CoffeeMarker } from './CoffeeMarker'
 import useSupercluster from 'use-supercluster'
@@ -7,7 +7,7 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 import './Map.css'
 
 export const Map = ({ saveNewPlaceChange }) => {
-  const [viewState, setViewState] = useState({
+  const [viewport, setViewport] = useState({
     latitude: 52.517,
     longitude: 13.3879,
     zoom: 13,
@@ -41,24 +41,33 @@ export const Map = ({ saveNewPlaceChange }) => {
     },
   }))
 
-  const bounds = mapRef.current
-    ? mapRef.current.getMap().getBounds().toArray().flat()
-    : null
+  const [bounds, setBounds] = useState([
+    13.344915992259445, 52.498172201467355, 13.430884007742378,
+    52.53581973404465,
+  ])
+
+  useEffect(() => {
+    if (mapRef.current) {
+      setBounds(mapRef.current.getMap().getBounds().toArray().flat())
+    }
+  }, [])
+  
+  console.log(bounds)
 
   const { clusters, supercluster } = useSupercluster({
     points,
     bounds,
-    zoom: viewState.zoom,
+    zoom: viewport.zoom,
     options: { radius: 75, maxZoom: 20 },
   })
 
   return (
     <ReactMapGL
       ref={mapRef}
-      {...viewState}
+      initialViewState={viewport}
       maxZoom={20}
       mapboxAccessToken='pk.eyJ1IjoidGFpbmtyaW9zIiwiYSI6ImNsOTF5dzh4ODBmeW8zemxjazZsOXQwNmcifQ.JLO9VoBZ8G4yv4iKdqmsrg'
-      onMove={(evt) => setViewState(evt.viewState)}
+      onMove={(evt) => setViewport(evt.viewState)}
       mapStyle='mapbox://styles/mapbox/light-v10'
       style={mapStyles}
     >
@@ -103,7 +112,11 @@ export const Map = ({ saveNewPlaceChange }) => {
             latitude={latitude}
             placeData={cluster}
             changePlace={saveNewPlaceChange}
-            // onClick={setViewState({ longitude, latitude })}
+            onClick={() => {
+              mapRef.current.flyTo({
+                center: [longitude, latitude],
+              })
+            }}
           />
         )
       })}
