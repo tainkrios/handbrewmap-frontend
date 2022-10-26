@@ -28,8 +28,8 @@
 
 .favorite {
   margin-left: auto;
-  margin-right: 5px;
-  margin-top: 10px;
+  margin-right: 15px;
+  margin-top: -3px;
   cursor: pointer;
 
 }
@@ -37,7 +37,7 @@
 .favorite_fill {
   margin-left: auto;
   fill: #3eba7e;
-  margin-right: 5px;
-  margin-top: 10px;
+  margin-right: 15px;
+  margin-top: -3px;
   cursor: pointer;
 }

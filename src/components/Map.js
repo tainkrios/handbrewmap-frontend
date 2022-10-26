@@ -21,8 +21,6 @@ export const Map = ({ saveNewPlaceChange }) => {
     top: 0,
   }
 
-  // const {current: map} = useMap()
-
   const mapRef = useRef()
 
   const points = places.coffeePlaces.map((place) => ({
@@ -39,7 +37,7 @@ export const Map = ({ saveNewPlaceChange }) => {
     },
     geometry: {
       type: 'Point',
-      coordinates: [place.lon, place.lat],
+      coordinates: [parseFloat(place.lon), parseFloat(place.lat)],
     },
   }))
 
@@ -47,53 +45,50 @@ export const Map = ({ saveNewPlaceChange }) => {
     ? mapRef.current.getMap().getBounds().toArray().flat()
     : null
 
-    // console.log(bounds)
-
   const { clusters, supercluster } = useSupercluster({
     points,
-    zoom: viewState.zoom,
     bounds,
+    zoom: viewState.zoom,
     options: { radius: 75, maxZoom: 20 },
   })
-  console.log(points)
-  console.log(clusters)
 
   return (
     <ReactMapGL
+      ref={mapRef}
       {...viewState}
       maxZoom={20}
       mapboxAccessToken='pk.eyJ1IjoidGFpbmtyaW9zIiwiYSI6ImNsOTF5dzh4ODBmeW8zemxjazZsOXQwNmcifQ.JLO9VoBZ8G4yv4iKdqmsrg'
       onMove={(evt) => setViewState(evt.viewState)}
-      onViewportChange={(viewState) => setViewState(viewState)}
       mapStyle='mapbox://styles/mapbox/light-v10'
       style={mapStyles}
-      ref={mapRef}
     >
       {clusters.map((cluster) => {
         const [longitude, latitude] = cluster.geometry.coordinates
         const { cluster: isCluster, point_count: pointCount } =
           cluster.properties
+
         if (isCluster) {
           return (
             <Marker
               key={`cluster-${cluster.id}`}
               latitude={latitude}
               longitude={longitude}
-              onClick={mapRef.current.flyTo({
-                center: [longitude, latitude],
-                zoom: Math.min(
-                  supercluster.getClusterExpansionZoom(cluster.id),
-                  20
-                ),
-                duration: 'auto',
-                speed: 2,
-              })}
             >
               <div
                 className='cluster-marker'
                 style={{
                   width: `${10 + (pointCount / points.length) * 20}px`,
                   height: `${10 + (pointCount / points.length) * 20}px`,
+                }}
+                onClick={() => {
+                  mapRef.current.flyTo({
+                    center: [longitude, latitude],
+                    zoom: Math.min(
+                      supercluster.getClusterExpansionZoom(cluster.id),
+                      20
+                    ),
+                    duration: 1000,
+                  })
                 }}
               >
                 {pointCount}
@@ -103,17 +98,12 @@ export const Map = ({ saveNewPlaceChange }) => {
         }
         return (
           <CoffeeMarker
-            key={cluster.placeId}
+            key={cluster.properties.placeId}
             longitude={longitude}
             latitude={latitude}
             placeData={cluster}
             changePlace={saveNewPlaceChange}
-            onClick={mapRef.current.flyTo({
-              center: [longitude, latitude],
-              zoom: Math.min(supercluster.getClusterExpansionZoom(cluster.placeId), 20),
-              duration: 'auto',
-              speed: 2,
-            })}
+            // onClick={setViewState({ longitude, latitude })}
           />
         )
       })}
