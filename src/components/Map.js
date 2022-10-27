@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import ReactMapGL, { GeolocateControl, Marker } from 'react-map-gl'
 import { CoffeeMarker } from './CoffeeMarker'
 import useSupercluster from 'use-supercluster'
@@ -42,16 +42,14 @@ export const Map = ({ saveNewPlaceChange }) => {
   }))
 
   const [bounds, setBounds] = useState([
-    13.344915992259445, 52.498172201467355, 13.430884007742378,
-    52.53581973404465,
+    13.344915992258336, 52.498172201467696, 13.430884007741298,
+    52.53581973404496,
   ])
 
-  useEffect(() => {
-    if (mapRef.current) {
-      setBounds(mapRef.current.getMap().getBounds().toArray().flat())
-    }
-  }, [])
-  
+  // useEffect(() => {
+  //   setBounds()
+  // }, [bounds])
+
   console.log(bounds)
 
   const { clusters, supercluster } = useSupercluster({
@@ -64,10 +62,13 @@ export const Map = ({ saveNewPlaceChange }) => {
   return (
     <ReactMapGL
       ref={mapRef}
-      initialViewState={viewport}
+      {...viewport}
       maxZoom={20}
       mapboxAccessToken='pk.eyJ1IjoidGFpbmtyaW9zIiwiYSI6ImNsOTF5dzh4ODBmeW8zemxjazZsOXQwNmcifQ.JLO9VoBZ8G4yv4iKdqmsrg'
-      onMove={(evt) => setViewport(evt.viewState)}
+      onMove={(evt) => {
+        setViewport(evt.viewState)
+        setBounds(mapRef.current.getMap().getBounds().toArray().flat())
+      }}
       mapStyle='mapbox://styles/mapbox/light-v10'
       style={mapStyles}
     >
@@ -112,6 +113,7 @@ export const Map = ({ saveNewPlaceChange }) => {
             latitude={latitude}
             placeData={cluster}
             changePlace={saveNewPlaceChange}
+            map={mapRef.current}
             onClick={() => {
               mapRef.current.flyTo({
                 center: [longitude, latitude],

@@ -4,7 +4,7 @@ import { FavoriteIcon } from './../assets/FavoriteIcon'
 import { useState, useEffect } from 'react'
 
 export const SelectedPlace = ({ data }) => {
-  const [favorites, setFavorites] = useState([])
+  const [favorites, setFavorites] = useState(JSON.parse(localStorage.getItem('favorites')))
 
   useEffect(() => {
     localStorage.setItem('favorites', JSON.stringify(favorites))
