@@ -46,12 +46,6 @@ export const Map = ({ saveNewPlaceChange }) => {
     52.53581973404496,
   ])
 
-  // useEffect(() => {
-  //   setBounds()
-  // }, [bounds])
-
-  console.log(bounds)
-
   const { clusters, supercluster } = useSupercluster({
     points,
     bounds,
