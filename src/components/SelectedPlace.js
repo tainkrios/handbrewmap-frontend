@@ -6,7 +6,9 @@ export const SelectedPlace = ({ data, setIsFav }) => {
   const [favorites, setFavorites] = useState(
     JSON.parse(localStorage.getItem('favorites'))
   )
+  
   console.log(favorites)
+
   useEffect(() => {
     localStorage.setItem('favorites', JSON.stringify(favorites))
   }, [favorites])
@@ -33,7 +35,7 @@ export const SelectedPlace = ({ data, setIsFav }) => {
   //   return value === data.placeId
   // })
   // console.log(isFavorite)
-  const isFavorite = favorites.includes(data.placeId)
+  const isFavorite = favorites ? favorites.includes(data.placeId) : null
 
   return (
     <div className='selectedPlaces'>
