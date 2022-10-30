@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 
 export const SelectedPlace = ({ data, setIsFav }) => {
   const [favorites, setFavorites] = useState(
-    JSON.parse(localStorage.getItem('favorites'))
+    JSON.parse(localStorage.getItem('favorites')) || []
   )
 
   console.log(favorites)
@@ -22,6 +22,7 @@ export const SelectedPlace = ({ data, setIsFav }) => {
 
   const addFavorites = () => {
     if (!favorites?.includes(data.placeId)) {
+      console.log(favorites)
       setFavorites([...favorites, data.placeId])
       setIsFav(!isFavorite)
     } else {
