@@ -6,7 +6,7 @@ import places from './../assets/coffee.json'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './Map.css'
 
-export const Map = ({ saveNewPlaceChange }) => {
+export const Map = ({ saveNewPlaceChange, isFav }) => {
   const [viewport, setViewport] = useState({
     latitude: 52.517,
     longitude: 13.3879,
@@ -108,6 +108,7 @@ export const Map = ({ saveNewPlaceChange }) => {
             placeData={cluster}
             changePlace={saveNewPlaceChange}
             map={mapRef.current}
+            isFav={isFav}
             onClick={() => {
               mapRef.current.flyTo({
                 center: [longitude, latitude],

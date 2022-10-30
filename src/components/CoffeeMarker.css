@@ -6,3 +6,11 @@ button.markerColor {
   border-radius: 50%;
 
 }
+
+button.markerColor-fav {
+  width: 20px;
+  height: 20px;
+  background-color: #e090b0;
+  cursor: pointer;
+  border-radius: 50%;
+}
