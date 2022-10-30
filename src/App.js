@@ -7,12 +7,22 @@ import './App.css'
 
 export const App = () => {
   const [newPlace, setNewPlace] = useState(null)
+  const [isFav, setIsFav] = useState(null)
 
+  console.log(isFav)
   return (
     <>
       <Nav />
-      <Map saveNewPlaceChange={setNewPlace} />
-      {newPlace && <SelectedPlace data={newPlace} />}
+      <Map
+        saveNewPlaceChange={setNewPlace}
+        isFav={isFav}
+      />
+      {newPlace && (
+        <SelectedPlace
+          data={newPlace}
+          setIsFav={setIsFav}
+        />
+      )}
     </>
   )
 }

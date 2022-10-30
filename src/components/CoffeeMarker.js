@@ -7,6 +7,7 @@ export const CoffeeMarker = ({
   placeData,
   changePlace,
   map,
+  isFav
 }) => {
   return (
     <Marker
@@ -14,13 +15,14 @@ export const CoffeeMarker = ({
       longitude={longitude}
     >
       <button
-        className='markerColor'
+        className={isFav ? 'markerColor-fav' : 'markerColor'}
         onClick={() => {
           changePlace(placeData.properties)
           if (map) {
             map.flyTo({
               center: [longitude, latitude],
             })
+            console.log(map)
           }
         }}
       ></button>
