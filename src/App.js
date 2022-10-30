@@ -9,7 +9,6 @@ export const App = () => {
   const [newPlace, setNewPlace] = useState(null)
   const [isFav, setIsFav] = useState(null)
 
-  console.log(isFav)
   return (
     <>
       <Nav />

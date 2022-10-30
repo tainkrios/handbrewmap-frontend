@@ -7,7 +7,6 @@ export const SelectedPlace = ({ data, setIsFav }) => {
     JSON.parse(localStorage.getItem('favorites')) || []
   )
 
-  console.log(favorites)
 
   useEffect(() => {
     localStorage.setItem('favorites', JSON.stringify(favorites))
@@ -22,7 +21,6 @@ export const SelectedPlace = ({ data, setIsFav }) => {
 
   const addFavorites = () => {
     if (!favorites?.includes(data.placeId)) {
-      console.log(favorites)
       setFavorites([...favorites, data.placeId])
       setIsFav(!isFavorite)
     } else {
@@ -32,10 +30,6 @@ export const SelectedPlace = ({ data, setIsFav }) => {
     }
   }
 
-  // const isFavorite = favorites.find((value) => {
-  //   return value === data.placeId
-  // })
-  // console.log(isFavorite)
   const isFavorite = favorites?.includes(data.placeId)
 
   return (

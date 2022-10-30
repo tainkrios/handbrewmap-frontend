@@ -22,7 +22,6 @@ export const CoffeeMarker = ({
             map.flyTo({
               center: [longitude, latitude],
             })
-            console.log(map)
           }
         }}
       ></button>
