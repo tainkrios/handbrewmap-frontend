@@ -21,7 +21,7 @@ export const SelectedPlace = ({ data, setIsFav }) => {
   }, [])
 
   const addFavorites = () => {
-    if (!favorites.includes(data.placeId)) {
+    if (!favorites?.includes(data.placeId)) {
       setFavorites([...favorites, data.placeId])
       setIsFav(!isFavorite)
     } else {
