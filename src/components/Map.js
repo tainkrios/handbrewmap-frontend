@@ -102,7 +102,6 @@ export const Map = ({ saveNewPlaceChange }) => {
         }
         return (
           <CoffeeMarker
-            className={isFav ? 'markerColor-fav' : 'markerColor'}
             key={cluster.properties.placeId}
             longitude={longitude}
             latitude={latitude}
@@ -114,7 +113,8 @@ export const Map = ({ saveNewPlaceChange }) => {
                 center: [longitude, latitude],
               })
             }}
-          />
+          >
+          </CoffeeMarker>
         )
       })}
       <GeolocateControl />

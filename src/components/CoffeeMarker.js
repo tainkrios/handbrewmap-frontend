@@ -1,5 +1,5 @@
 import { Marker } from 'react-map-gl'
-// import './CoffeeMarker.css'
+import './CoffeeMarker.css'
 
 export const CoffeeMarker = ({
   longitude,
@@ -7,7 +7,7 @@ export const CoffeeMarker = ({
   placeData,
   changePlace,
   map,
-  className,
+  // className,
 }) => {
   return (
     <Marker
@@ -15,8 +15,8 @@ export const CoffeeMarker = ({
       longitude={longitude}
     >
       <button
+        className='markerColor'
         onClick={() => {
-          className = { className }
           changePlace(placeData.properties)
           if (map) {
             map.flyTo({
