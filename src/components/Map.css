@@ -12,3 +12,20 @@
   justify-content: center;
   align-items: center;
 }
+
+.markerColor {
+  width: 20px;
+  height: 20px;
+  background-color: #3eba7e;
+  cursor: pointer;
+  border-radius: 50%;
+
+}
+
+.markerColor-fav {
+  width: 20px;
+  height: 20px;
+  background-color: #e090b0;
+  cursor: pointer;
+  border-radius: 50%;
+}
