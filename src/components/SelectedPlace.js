@@ -22,11 +22,11 @@ export const SelectedPlace = ({ data, setIsFav }) => {
   const addFavorites = () => {
     if (!favorites?.includes(data.placeId)) {
       setFavorites([...favorites, data.placeId])
-      setIsFav(!isFavorite)
+      // setIsFav(!isFavorite)
     } else {
       const unFavorites = favorites.filter((value) => value !== data.placeId)
       setFavorites(unFavorites)
-      setIsFav(!isFavorite)
+      // setIsFav(!isFavorite)
     }
   }
 
