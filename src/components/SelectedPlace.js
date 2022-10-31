@@ -1,10 +1,12 @@
 import './SelectedPlace.css'
-// import favorite from './../assets/favorite_icon.svg'
 import { FavoriteIcon } from './../assets/FavoriteIcon'
 import { useState, useEffect } from 'react'
 
-export const SelectedPlace = ({ data }) => {
-  const [favorites, setFavorites] = useState(JSON.parse(localStorage.getItem('favorites')))
+export const SelectedPlace = ({ data, setIsFav }) => {
+  const [favorites, setFavorites] = useState(
+    JSON.parse(localStorage.getItem('favorites')) || []
+  )
+
 
   useEffect(() => {
     localStorage.setItem('favorites', JSON.stringify(favorites))
@@ -18,17 +20,17 @@ export const SelectedPlace = ({ data }) => {
   }, [])
 
   const addFavorites = () => {
-    if (!favorites.includes(data.placeId)) {
+    if (!favorites?.includes(data.placeId)) {
       setFavorites([...favorites, data.placeId])
+      setIsFav(!isFavorite)
     } else {
       const unFavorites = favorites.filter((value) => value !== data.placeId)
       setFavorites(unFavorites)
+      setIsFav(!isFavorite)
     }
   }
 
-  const isFavorite = favorites.find((value) => {
-    return value === data.placeId
-  })
+  const isFavorite = favorites?.includes(data.placeId)
 
   return (
     <div className='selectedPlaces'>

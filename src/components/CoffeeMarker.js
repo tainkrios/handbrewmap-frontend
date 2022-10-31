@@ -15,7 +15,7 @@ export const CoffeeMarker = ({
       longitude={longitude}
     >
       <button
-        className='markerColor'
+        className={isFav ? 'markerColor-fav' : 'markerColor'}
         onClick={() => {
           changePlace(placeData.properties)
           if (map) {
