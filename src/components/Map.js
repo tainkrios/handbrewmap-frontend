@@ -6,7 +6,7 @@ import places from './../assets/coffee.json'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './Map.css'
 
-export const Map = ({ saveNewPlaceChange, isFav }) => {
+export const Map = ({ saveNewPlaceChange, favorites }) => {
   const [viewport, setViewport] = useState({
     latitude: 52.517,
     longitude: 13.3879,
@@ -108,14 +108,8 @@ export const Map = ({ saveNewPlaceChange, isFav }) => {
             placeData={cluster}
             changePlace={saveNewPlaceChange}
             map={mapRef.current}
-            isFav={isFav}
-            onClick={() => {
-              mapRef.current.flyTo({
-                center: [longitude, latitude],
-              })
-            }}
-          >
-          </CoffeeMarker>
+            favorites={favorites}
+          />
         )
       })}
       <GeolocateControl />

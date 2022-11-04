@@ -7,10 +7,6 @@ button.markerColor {
 
 }
 
-.markerColor-fav {
-  width: 20px;
-  height: 20px;
+button.markerColor.fav {
   background-color: #e090b0;
-  cursor: pointer;
-  border-radius: 50%;
 }

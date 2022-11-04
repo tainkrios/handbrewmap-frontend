@@ -7,19 +7,22 @@ import './App.css'
 
 export const App = () => {
   const [newPlace, setNewPlace] = useState(null)
-  // const [isFav, setIsFav] = useState(null)
+  const [favorites, setFavorites] = useState(
+    JSON.parse(localStorage.getItem('favorites')) || []
+  )
 
   return (
     <>
       <Nav />
       <Map
+        favorites={favorites}
         saveNewPlaceChange={setNewPlace}
-        // isFav={isFav}
       />
       {newPlace && (
         <SelectedPlace
           data={newPlace}
-          // setIsFav={setIsFav}
+          setFavorites={setFavorites}
+          favorites={favorites}
         />
       )}
     </>
