@@ -5,6 +5,7 @@ import useSupercluster from 'use-supercluster'
 import places from './../assets/coffee.json'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './Map.css'
+// import { ShowFavoritesButton } from './UI/ShowFavoritesButton'
 
 export const Map = ({ saveNewPlaceChange, favorites }) => {
   const [viewport, setViewport] = useState({
@@ -65,6 +66,7 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
       }}
       mapStyle='mapbox://styles/mapbox/light-v10'
       style={mapStyles}
+      
     >
       {clusters.map((cluster) => {
         const [longitude, latitude] = cluster.geometry.coordinates
@@ -113,6 +115,7 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
         )
       })}
       <GeolocateControl />
+      {/* <ShowFavoritesButton /> */}
     </ReactMapGL>
   )
 }

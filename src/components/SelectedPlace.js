@@ -1,5 +1,6 @@
 import './SelectedPlace.css'
 import { FavoriteIcon } from './../assets/FavoriteIcon'
+import { Direction } from './UI/Direction'
 import { useEffect } from 'react'
 
 export const SelectedPlace = ({ data, favorites, setFavorites }) => {
@@ -33,7 +34,7 @@ export const SelectedPlace = ({ data, favorites, setFavorites }) => {
           alt='PlaceView'
         />
       </div>
-      <div>
+      <div className='description'>
         <a
           href={data.contact_website}
           target='_blank'
@@ -43,11 +44,17 @@ export const SelectedPlace = ({ data, favorites, setFavorites }) => {
         </a>
         <p>{`📍${data.addr_street} ${data.addr_housenumber}`}</p>
       </div>
-      <div
-        onClick={addFavorites}
-        className={isFavorite ? 'favorite_fill' : 'favorite'}
-      >
-        <FavoriteIcon />
+      <div>
+        <div
+          onClick={addFavorites}
+          className={isFavorite ? 'favorite_fill' : 'favorite'}
+        >
+          <FavoriteIcon />
+        </div>
+        <Direction
+          lon={data.lon}
+          lng={data.lng}
+        />
       </div>
     </div>
   )
