@@ -16,33 +16,35 @@ export const SelectedPlace = ({ data, favorites, setFavorites }) => {
   }, [setFavorites])
 
   const addFavorites = () => {
-    if (!favorites?.includes(data.placeId)) {
-      setFavorites([...favorites, data.placeId])
+    if (!favorites?.includes(data.properties.placeId)) {
+      setFavorites([...favorites, data.properties.placeId])
     } else {
-      const unFavorites = favorites.filter((value) => value !== data.placeId)
+      const unFavorites = favorites.filter(
+        (value) => value !== data.properties.placeId
+      )
       setFavorites(unFavorites)
     }
   }
 
-  const isFavorite = favorites?.includes(data.placeId)
+  const isFavorite = favorites?.includes(data.properties.placeId)
 
   return (
     <div className='selectedPlaces'>
       <div className='img-container'>
         <img
-          src={require(`./../assets/img/${data.img_src}.jpg`)}
+          src={require(`./../assets/img/${data.properties.img_src}.jpg`)}
           alt='PlaceView'
         />
       </div>
       <div className='description'>
         <a
-          href={data.contact_website}
+          href={data.properties.contact_website}
           target='_blank'
           rel='noopener noreferrer'
         >
-          <h2>{data.name}</h2>
+          <h2>{data.properties.name}</h2>
         </a>
-        <p>{`📍${data.addr_street} ${data.addr_housenumber}`}</p>
+        <p>{`📍${data.properties.addr_street} ${data.properties.addr_housenumber}`}</p>
       </div>
       <div>
         <div
@@ -52,8 +54,8 @@ export const SelectedPlace = ({ data, favorites, setFavorites }) => {
           <FavoriteIcon />
         </div>
         <Direction
-          lon={data.lon}
-          lng={data.lng}
+          lat={data.latitude}
+          lng={data.longitude}
         />
       </div>
     </div>

@@ -22,7 +22,11 @@ export const CoffeeMarker = ({
               : 'markerColor'
           }
           onClick={() => {
-            changePlace(placeData.properties)
+            changePlace({
+              properties: placeData.properties,
+              latitude,
+              longitude
+            })
             if (map) {
               map.flyTo({
                 center: [longitude, latitude],
