@@ -3,6 +3,7 @@
   bottom: 0;
   left: 0;
   display: flex;
+  justify-content: space-between;
   gap: 1rem;
   min-width: 93%;
   height: 8rem;
@@ -19,12 +20,20 @@
   color: #000;
 }
 
+.selectedPlaces h2 {
+  margin: 0;
+}
+
 .img-container img {
   width: 8rem;
   height: 8rem;
   object-fit: cover;
   border-radius: 1rem 0 0 1rem;
 }
+
+/* .description {
+  max-width: ;
+} */
 
 .favorite {
   margin-left: auto;
