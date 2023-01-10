@@ -1,17 +1,26 @@
+.wrapper {
+  position: relative;
+  margin: 80vh 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
 .selectedPlaces {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  min-width: 93%;
   height: 8rem;
   z-index: 100;
   background-color: #ECEFF4;
-  margin: 1rem;
   border-radius: 1rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.closeButton {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 15px;
 }
 
 .selectedPlaces a {
@@ -24,6 +33,10 @@
   margin: 0;
 }
 
+.description-container {
+  display: flex;
+}
+
 .img-container img {
   width: 8rem;
   height: 8rem;
@@ -31,9 +44,9 @@
   border-radius: 1rem 0 0 1rem;
 }
 
-/* .description {
-  max-width: ;
-} */
+.description {
+  margin-left: .5rem;
+}
 
 .favorite {
   margin-left: auto;

@@ -2,8 +2,9 @@ import './SelectedPlace.css'
 import { FavoriteIcon } from './../assets/FavoriteIcon'
 import { Direction } from './UI/Direction'
 import { useEffect } from 'react'
+import { CloseButton } from './UI/CloseButton'
 
-export const SelectedPlace = ({ data, favorites, setFavorites }) => {
+export const SelectedPlace = ({ data, favorites, setFavorites, onSetNewPlace }) => {
   useEffect(() => {
     localStorage.setItem('favorites', JSON.stringify(favorites))
   }, [favorites])
@@ -13,7 +14,7 @@ export const SelectedPlace = ({ data, favorites, setFavorites }) => {
     if (favorites) {
       setFavorites(favorites)
     }
-  }, [setFavorites])
+  }, [setFavorites])  
 
   const addFavorites = () => {
     if (!favorites?.includes(data.properties.placeId)) {
@@ -29,34 +30,41 @@ export const SelectedPlace = ({ data, favorites, setFavorites }) => {
   const isFavorite = favorites?.includes(data.properties.placeId)
 
   return (
-    <div className='selectedPlaces'>
-      <div className='img-container'>
-        <img
-          src={require(`./../assets/img/${data.properties.img_src}.jpg`)}
-          alt='PlaceView'
-        />
+    <div className='wrapper'>
+      <div className='closeButton'>
+        <CloseButton onClick={() => {onSetNewPlace(null)}} />
       </div>
-      <div className='description'>
-        <a
-          href={data.properties.contact_website}
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <h2>{data.properties.name}</h2>
-        </a>
-        <p>{`📍${data.properties.addr_street} ${data.properties.addr_housenumber}`}</p>
-      </div>
-      <div>
-        <div
-          onClick={addFavorites}
-          className={isFavorite ? 'favorite_fill' : 'favorite'}
-        >
-          <FavoriteIcon />
+      <div className='selectedPlaces'>
+        <div className='description-container'>
+          <div className='img-container'>
+            <img
+              src={require(`./../assets/img/${data.properties.img_src}.jpg`)}
+              alt='PlaceView'
+            />
+          </div>
+          <div className='description'>
+            <a
+              href={data.properties.contact_website}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <h2>{data.properties.name}</h2>
+            </a>
+            <p>{`📍${data.properties.addr_street} ${data.properties.addr_housenumber}`}</p>
+          </div>
         </div>
-        <Direction
-          lat={data.latitude}
-          lng={data.longitude}
-        />
+        <div>
+          <div
+            onClick={addFavorites}
+            className={isFavorite ? 'favorite_fill' : 'favorite'}
+          >
+            <FavoriteIcon />
+          </div>
+          <Direction
+            lat={data.latitude}
+            lng={data.longitude}
+          />
+        </div>
       </div>
     </div>
   )
