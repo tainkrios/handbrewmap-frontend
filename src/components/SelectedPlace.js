@@ -3,6 +3,7 @@ import { FavoriteIcon } from './../assets/FavoriteIcon'
 import { Direction } from './UI/Direction'
 import { useEffect } from 'react'
 import { CloseButton } from './UI/CloseButton'
+import { Instagram } from '../assets/Instagram'
 
 export const SelectedPlace = ({ data, favorites, setFavorites, onSetNewPlace }) => {
   useEffect(() => {
@@ -32,7 +33,11 @@ export const SelectedPlace = ({ data, favorites, setFavorites, onSetNewPlace }) 
   return (
     <div className='wrapper'>
       <div className='closeButton'>
-        <CloseButton onClick={() => {onSetNewPlace(null)}} />
+        <CloseButton
+          onClick={() => {
+            onSetNewPlace(null)
+          }}
+        />
       </div>
       <div className='selectedPlaces'>
         <div className='description-container'>
@@ -48,7 +53,10 @@ export const SelectedPlace = ({ data, favorites, setFavorites, onSetNewPlace }) 
               target='_blank'
               rel='noopener noreferrer'
             >
-              <h2>{data.properties.name}</h2>
+              <h3>
+                <Instagram />
+                {data.properties.name}
+              </h3>
             </a>
             <p>{`📍${data.properties.addr_street} ${data.properties.addr_housenumber}`}</p>
           </div>

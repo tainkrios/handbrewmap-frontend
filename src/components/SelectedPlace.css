@@ -1,6 +1,8 @@
 .wrapper {
-  position: relative;
-  margin: 80vh 1rem 0 1rem;
+  position: absolute;
+  bottom: 1rem;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
   display: flex;
   flex-direction: column;
 
@@ -20,7 +22,7 @@
 .closeButton {
   cursor: pointer;
   margin-left: auto;
-  margin-right: 15px;
+  margin-right: 1rem;
 }
 
 .selectedPlaces a {
@@ -46,11 +48,30 @@
 
 .description {
   margin-left: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description p {
+  margin: 0 0 .25rem 0
+}
+
+.description h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* font-size: 4.6vw; */
+}
+
+.description a svg {
+  width: 24px;
+  height: 24px;
 }
 
 .favorite {
   margin-left: auto;
-  margin-right: 15px;
+  margin-right: 1rem;
   margin-top: -3px;
   cursor: pointer;
 
@@ -59,7 +80,7 @@
 .favorite_fill {
   margin-left: auto;
   fill: #3eba7e;
-  margin-right: 15px;
+  margin-right: 1rem;
   margin-top: -3px;
   cursor: pointer;
 }
