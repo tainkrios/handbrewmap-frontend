@@ -43,7 +43,7 @@
       "addr_postcode": "10405",
       "addr_street": "Prenzlauer Allee",
       "description": "Café mit Kaffeverkauf",
-      "website": "https://www.cebecoffeeroasters.com/",
+      "website": "https://www.instagram.com/cebecoffeeroasters/",
       "name": "Cebe Coffee Roasters",
       "opening_hours": "Tu-Fr 08:00-18:00; Sa 08:00-18:00; Su 08:00-18:00",
       "favorites": false
@@ -220,7 +220,7 @@
       "addr_street": "Kollwitzstraße",
       "addr_suburb": "Mitte",
       "name": "Five Elephant",
-      "contact_website": "https://fiveelephant.com//",
+      "contact_website": "https://www.instagram.com/fiveelephant/",
       "opening_hours": "Mo-Fr 09:00-16:00",
       "favorites": false
     },
@@ -236,7 +236,7 @@
       "addr_street": "Reichenberger Straße",
       "addr_suburb": "Kreuzberg",
       "name": "Five Elephant",
-      "contact_website": "https://fiveelephant.com//",
+      "contact_website": "https://www.instagram.com/fiveelephant/",
       "opening_hours": "Mo-Fr 8:30-19:00; Sa-Su 10:00-19:00",
       "favorites": false
     },
@@ -252,7 +252,7 @@
       "addr_street": "Tauentzienstraße",
       "addr_suburb": "Kreuzberg",
       "name": "Five Elephant",
-      "contact_website": "https://fiveelephant.com//",
+      "contact_website": "https://www.instagram.com/fiveelephant/",
       "opening_hours": "Mo-Fr 8:30-19:00; Sa-Su 10:00-19:00",
       "favorites": false
     },
@@ -268,7 +268,7 @@
       "addr_street": "Adalbertstraße",
       "addr_suburb": "Kreuzberg",
       "name": "Bonanza Coffee Roasters",
-      "contact_website": "https://bonanzacoffee.de/",
+      "contact_website": "https://www.instagram.com/bonanzacoffee/",
       "opening_hours": "Mo-Fr 09:00-18:00; Sa,Su 10:00-18:00",
       "favorites": false
     },
@@ -284,7 +284,7 @@
       "addr_street": "Oderberger Straße",
       "addr_suburb": "Prenzlauer Berg",
       "name": "Bonanza Coffee Heroes",
-      "contact_website": "https://bonanzacoffee.de/",
+      "contact_website": "https://www.instagram.com/bonanzacoffee/",
       "opening_hours": "Mo-Fr 08:30-18:30; Sa-Su 10:00-19:00",
       "favorites": false
     },
@@ -300,7 +300,7 @@
       "addr_street": "Jägerstraße",
       "addr_suburb": "Prenzlauer Berg",
       "name": "Bonanza Coffee",
-      "contact_website": "https://bonanzacoffee.de/",
+      "contact_website": "https://www.instagram.com/bonanzacoffee/",
       "opening_hours": "Mo-Fr 08:00-19:00; Sa 10:00-19:00; Su 10:00-18:00",
       "favorites": false
     },
@@ -316,7 +316,7 @@
       "addr_street": "Alte Schönhauser Str.",
       "addr_suburb": "Prenzlauer Berg",
       "name": "Bonanza Coffee Mitte",
-      "contact_website": "https://bonanzacoffee.de/",
+      "contact_website": "https://www.instagram.com/bonanzacoffee/",
       "opening_hours": "Mo-Fr 08:00-19:00; Sa 10:00-19:00; Su 10:00-18:00",
       "favorites": false
     },
@@ -332,7 +332,7 @@
       "addr_street": "Gabriel-Max-Straße",
       "addr_suburb": "Friedrichshain",
       "name": "Silo Coffee",
-      "contact_website": "https://www.silo-coffee.com/",
+      "contact_website": "https://www.instagram.com/silocoffee/",
       "opening_hours": "Mo-Fr 09:30-17:00, Sa 09:30-19:00, Su 10:00-19:00",
       "favorites": false
     },
@@ -348,7 +348,7 @@
       "addr_street": "Paul-Lincke-Ufer",
       "addr_suburb": "Kreuzberg",
       "name": "Concierge Coffee",
-      "contact_website": "https://www.conciergecoffee.de/",
+      "contact_website": "https://www.instagram.com/conciergecoffee/",
       "opening_hours": "Mo-Fr 08:30-18:00; PH,Sa,Su 12:00-17:00",
       "favorites": false
     },
@@ -364,7 +364,7 @@
       "addr_street": "Lützowstraße",
       "addr_suburb": "Schoneberg",
       "name": "Concierge Coffee",
-      "contact_website": "https://www.conciergecoffee.de/",
+      "contact_website": "https://www.instagram.com/conciergecoffee/",
       "opening_hours": "Mo-Fr 08:30-18:00; PH,Sa,Su 12:00-17:00",
       "favorites": false
     },
@@ -380,7 +380,7 @@
       "addr_street": "Rochstraße",
       "addr_suburb": "Mitte",
       "name": "19grams",
-      "contact_website": "https://19grams.coffee/",
+      "contact_website": "https://www.instagram.com/19grams.coffee/",
       "opening_hours": "Mo-Su 11:00-18:00",
       "favorites": false
     },
@@ -396,7 +396,7 @@
       "addr_street": "Chausseestraße",
       "addr_suburb": "Mitte",
       "name": "19grams",
-      "contact_website": "https://19grams.coffee/",
+      "contact_website": "https://www.instagram.com/19grams.coffee/",
       "opening_hours": "Mo-Fr 08:00-19:00; Sa-Su 09:00-19:00",
       "favorites": false
     },
@@ -412,7 +412,7 @@
       "addr_street": "Schlesische Str.",
       "addr_suburb": "Kreuzberg",
       "name": "19grams",
-      "contact_website": "https://19grams.coffee/",
+      "contact_website": "https://www.instagram.com/19grams.coffee/",
       "opening_hours": "Mo-Fr 08:00-18:00; Sa-Su 10:00-18:00",
       "favorites": false
     },
@@ -428,7 +428,7 @@
       "addr_street": "Boxhagener Straße",
       "addr_suburb": "Friedrichshain",
       "name": "TRES CABEZAS",
-      "contact_website": "https://19grams.coffee/",
+      "contact_website": "https://www.instagram.com/19grams.coffee/",
       "opening_hours": "Mo-Fr 09:00-16:00; Sa,Su 09:00-18:00",
       "favorites": false
     },
@@ -444,7 +444,7 @@
       "addr_street": "Mittenwalder Str.",
       "addr_suburb": "Kreuzberg",
       "name": "Chapter One",
-      "contact_website": "http://www.chapter-one-coffee.com/",
+      "contact_website": "https://www.instagram.com/chapteronecoffeeberlin/",
       "opening_hours": "Mo-Sa 09:00-18:00; Su 11:00-18:00",
       "favorites": false
     },
@@ -460,7 +460,7 @@
       "addr_street": "Münzstraße",
       "addr_suburb": "Mitte",
       "name": "Father Carpenter",
-      "contact_website": "https://www.fathercarpenter.com/",
+      "contact_website": "https://www.instagram.com/father.carpenter/",
       "opening_hours": "Mo-Sa 09:00-18:00; Su 11:00-18:00",
       "favorites": false
     },
@@ -476,7 +476,7 @@
       "addr_street": "Bergstraße",
       "addr_suburb": "Mitte",
       "name": "District",
-      "contact_website": "http://distriktcoffee.de/",
+      "contact_website": "https://www.instagram.com/distriktcoffee/",
       "opening_hours": "Mo-Sa 09:00-16:00; Su 09:30-17:00",
       "favorites": false
     },
@@ -492,7 +492,7 @@
       "addr_street": "Görlitzer Str.",
       "addr_suburb": "Kreuzberg",
       "name": "Annelies",
-      "contact_website": "http://anneliesberlin.com/",
+      "contact_website": "https://www.instagram.com/anneliesberlin/",
       "opening_hours": "We-Mo 10:00-16:00",
       "favorites": false
     },
@@ -508,7 +508,7 @@
       "addr_street": "Waldstraße",
       "addr_suburb": "Moabit",
       "name": "Garcia",
-      "contact_website": "https://www.garcia.berlin/",
+      "contact_website": "https://www.instagram.com/garcia_kaffeebar/",
       "opening_hours": "Mo-Fr 08:00-17:00; Sa 10:00-17:00; Su 10:00-17:00",
       "favorites": false
     },
@@ -540,7 +540,7 @@
       "addr_street": "Schivelbeiner Straße",
       "addr_suburb": "Prenzlauer Berg",
       "name": "Kiez Kaffee Kraft",
-      "contact_website": "http://www.cafe-kraft.com",
+      "contact_website": "https://www.instagram.com/kiezkaffeekraft/",
       "opening_hours": "Mo-Fr 08:30-18:00; Sa 10:00-18:00; Su 10:00-18:00",
       "favorites": false
     },
@@ -556,7 +556,7 @@
       "addr_street": "Breite Straße",
       "addr_suburb": "Pankow",
       "name": "Kiez Kaffee Kraft",
-      "contact_website": "http://www.cafe-kraft.com",
+      "contact_website": "https://www.instagram.com/kiezkaffeekraft/",
       "opening_hours": "Mo-Fr 08:30-18:00; Sa-Su 08:30-19:00;",
       "favorites": false
     },
@@ -572,7 +572,7 @@
       "addr_street": "Drontheimer  Straße",
       "addr_suburb": "Gesundbrunnen",
       "name": "Kawa Kaffeemanufaktur",
-      "contact_website": "https://kawam.eu",
+      "contact_website": "https://www.instagram.com/kawa_kaffeemanufaktur/",
       "opening_hours": "Mo-Fr 08:00-18:00; Sa-Su 10:00-17:00",
       "favorites": false
     },
@@ -588,7 +588,7 @@
       "addr_street": "Hochstraße",
       "addr_suburb": "Gesundbrunnen",
       "name": "Flying Roasters",
-      "contact_website": "https://www.flyingroasters.de/",
+      "contact_website": "https://www.instagram.com/flying_roasters/",
       "opening_hours": "Mo-Fr 12:00-18:00; Sa-Su 12:00-16:00",
       "favorites": false
     },
@@ -604,7 +604,7 @@
       "addr_street": "Lindower Straße",
       "addr_suburb": "Wedding",
       "name": "Coffee Circle Café",
-      "contact_website": "https://www.coffeecircle.com/de/e/coffee-circle-cafe",
+      "contact_website": "https://www.instagram.com/coffeecircle/",
       "opening_hours": "Mo-Fr 09:00-17:30; Sa, Su 09:30-18:00",
       "favorites": false
     },
@@ -620,7 +620,7 @@
       "addr_street": "Sophienstraße",
       "addr_suburb": "Mitte",
       "name": "Ben Rahim",
-      "contact_website": "http://benrahim.de",
+      "contact_website": "https://www.instagram.com/benrahimcoffee/",
       "opening_hours": "Mo-Fr 08:00-18:00; Sa-Su 10:00-18:00",
       "favorites": false
     },
@@ -636,7 +636,7 @@
       "addr_street": "Invalidenstraße",
       "addr_suburb": "Mitte",
       "name": "Codos",
-      "contact_website": "https://www.codos.com/",
+      "contact_website": "https://www.instagram.com/codoscoffee/",
       "opening_hours": "Mo-Fr 08:00–18:00 Sa-Su 09:00-18:00",
       "favorites": false
     },
@@ -652,7 +652,7 @@
       "addr_street": "Rosenthaler Straße",
       "addr_suburb": "Mitte",
       "name": "Codos",
-      "contact_website": "https://www.codos.com/",
+      "contact_website": "https://www.instagram.com/codoscoffee/",
       "opening_hours": "Mo-Fr 08:00–18:00 Sa-Su 09:00-18:00",
       "favorites": false
     },
@@ -668,7 +668,7 @@
       "addr_street": "Buddestraße",
       "addr_suburb": "Tegel",
       "name": "Budde Kaffee",
-      "contact_website": "https://www.codos.com/",
+      "contact_website": "https://www.instagram.com/codoscoffee/",
       "opening_hours": "We-Fr 09:00–16:00 Sa 10:00-17:00 Su 11:00-16:00",
       "favorites": false
     },
@@ -684,24 +684,8 @@
       "addr_street": "Zossener Str.",
       "addr_suburb": "Kreuzberg",
       "name": "Cabana Coffee Roasters",
-      "contact_website": "https://cabanaroasters.de/",
+      "contact_website": "https://www.instagram.com/cabanacoffeeroasters/",
       "opening_hours": "Tu-Fr 10:00-18:00 Sa-Su 10:00-16:00",
-      "favorites": false
-    },
-    {
-      "lat": 52.4865589,
-      "lon": 13.4295126,
-      "uid": "52.486558913.4295126",
-      "img_src": "cabana_coffee",
-      "addr_city": "Berlin",
-      "addr_country": "DE",
-      "addr_housenumber": "27",
-      "addr_postcode": "12047",
-      "addr_street": "Sonnenallee",
-      "addr_suburb": "Neukölln",
-      "name": "Camon Coffee",
-      "contact_website": "http://www.camoncoffee.de/",
-      "opening_hours": "Mo, We-Fr 09:00-17:00; Sa, Su 10:00-17:00",
       "favorites": false
     },
     {
@@ -716,7 +700,7 @@
       "addr_street": "Eisenbahnstraße",
       "addr_suburb": "Kreuzberg",
       "name": "Kaffee 9",
-      "contact_website": "https://markthalleneun.de/anbieter/kaffee-9/",
+      "contact_website": "https://www.instagram.com/kaffee9/",
       "opening_hours": "Mo-Sa 07:30-18:00, Su 10:00-16:00",
       "favorites": false
     },
@@ -731,8 +715,8 @@
       "addr_postcode": "10961",
       "addr_street": "Bergmannstraße",
       "addr_suburb": "Kreuzberg",
-      "name": "Coffee Circle Bergmannstraße",
-      "contact_website": "https://www.coffeecircle.com/de/e/coffee-circle-cafe",
+      "name": "Coffee Circle",
+      "contact_website": "https://www.instagram.com/coffeecircle/",
       "opening_hours": "Mo–Fr 08:00–19:00 Sa 10:00–19:00",
       "favorites": false
     },
@@ -748,7 +732,7 @@
       "addr_street": "Rosa-Luxemburg-Straße",
       "addr_suburb": "Mitte",
       "name": "Coffee Circle Mitte",
-      "contact_website": "https://www.coffeecircle.com/de/e/coffee-circle-cafe",
+      "contact_website": "https://www.instagram.com/coffeecircle/",
       "opening_hours": "Mo-Fr 08:30-18:00; Sa, Su 09:30-18:00",
       "favorites": false
     },
@@ -764,7 +748,7 @@
       "addr_street": "Zimmerstraße",
       "addr_suburb": "Mitte",
       "name": "die espressonisten",
-      "contact_website": "https://espressonisten.de/",
+      "contact_website": "https://www.instagram.com/espressonisten/",
       "opening_hours": "Mo-Sa 10:00-18:00",
       "favorites": false
     },
@@ -780,7 +764,7 @@
       "addr_street": "Gabriele-Tergit-Promenade",
       "addr_suburb": "Tiergarten",
       "name": "Elemenza Coffee Roasters",
-      "contact_website": "https://www.elemenza.com/en/locations/berlin-pp",
+      "contact_website": "https://www.instagram.com/elemenzacoffee/",
       "opening_hours": "Mo-Fr 08:00-18:00, Sa-Su 10:00-18:00",
       "favorites": false
     },
@@ -796,7 +780,7 @@
       "addr_street": "Kurfürstendamm",
       "addr_suburb": "Charlottenburg",
       "name": "Elemenza Coffee Roasters",
-      "contact_website": "https://www.elemenza.com/berlin-kudamm",
+      "contact_website": "https://www.instagram.com/elemenzacoffee/",
       "opening_hours": "Mo-Sa 10:00-20:00",
       "favorites": false
     },
@@ -812,24 +796,8 @@
       "addr_street": "Immanuelkirchstraße",
       "addr_suburb": "Prenzlauer Berg",
       "name": "Godshot",
-      "contact_website": "https://www.godshot.de/",
+      "contact_website": "https://www.instagram.com/godshot_coffee_klub/",
       "opening_hours": "Mo-Sa 10:00-20:00",
-      "favorites": false
-    },
-    {
-      "lat": 52.5419608,
-      "lon": 13.3574263,
-      "uid": "52.541960813.3574263",
-      "img_src": "göttlich",
-      "addr_city": "Berlin",
-      "addr_country": "DE",
-      "addr_housenumber": "23",
-      "addr_postcode": "13353",
-      "addr_street": "Tegeler Straße",
-      "addr_suburb": "Wedding",
-      "name": "Göttlich essen & trinken",
-      "contact_website": "https://weddingweiser.de/gottlich-essen-und-trinken-in-der-tegeler-strase/",
-      "opening_hours": "Mo-Fr 9:00–18:00, Sa-Su 10:00–19:00",
       "favorites": false
     },
     {
@@ -844,7 +812,7 @@
       "addr_street": "Sonnenallee",
       "addr_suburb": "Neukölln",
       "name": "Holy Coffee",
-      "contact_website": "https://mitvergnuegen.com/2018/pancakes-guter-kaffee-und-belegte-brote-im-holy-coffee-in-neukoelln/",
+      "contact_website": "https://www.instagram.com/holy.coffee.berlin/",
       "opening_hours": "Mo-Fr 07:00-19:00; Sa-Su 09:00-19:00",
       "favorites": false
     },
@@ -905,7 +873,7 @@
       "addr_street": "Geisbergstraße",
       "addr_suburb": "Schoneberg",
       "name": "Jules Geisberg",
-      "contact_website": "https://www.jules-cafe.de/our-locations",
+      "contact_website": "https://www.instagram.com/jules_cafe_berlin/",
       "opening_hours": "Mo-Fr 10:00-18:00; Sa, Su 10:00-18:00",
       "favorites": false
     },
@@ -920,7 +888,7 @@
       "addr_street": "Geisbergstraße",
       "addr_suburb": "Schoneberg",
       "name": "Jules B-Part am Gleisdreieck",
-      "contact_website": "https://www.jules-cafe.de/our-locations",
+      "contact_website": "https://www.instagram.com/jules_cafe_berlin/",
       "opening_hours": "Mo-Su 10:00-18:00",
       "favorites": false
     },
@@ -935,7 +903,7 @@
       "addr_street": "Böckhstraße",
       "addr_suburb": "Kreuzberg",
       "name": "Kaffeekirsche",
-      "contact_website": "http://kaffeekirsche.berlin/",
+      "contact_website": "https://www.instagram.com/kaffeekirscheberlin/",
       "opening_hours": "Mo-Fr 8:00-19:00 Sa-Su 9:00-18:00",
       "favorites": false
     },
@@ -950,7 +918,7 @@
       "addr_street": "Adalbertstraße",
       "addr_suburb": "Kreuzberg",
       "name": "Kaffeekirsche",
-      "contact_website": "http://kaffeekirsche.berlin/",
+      "contact_website": "https://www.instagram.com/kaffeekirscheberlin/",
       "opening_hours": "Mo-Fr 08:00-18:00; Sa-Su 10:00-18:00",
       "favorites": false
     },
@@ -965,7 +933,7 @@
       "addr_street": "Tempelhofer Damm",
       "addr_suburb": "Tempelhof",
       "name": "Kaffeekirsche",
-      "contact_website": "http://kaffeekirsche.berlin/",
+      "contact_website": "https://www.instagram.com/kaffeekirscheberlin/",
       "opening_hours": "Mo-Fr 08:30-18:00; Sa 10:00-17:00 Su 11:00-17:00",
       "favorites": false
     },
@@ -980,7 +948,7 @@
       "addr_street": "Kuno-Fischer-Straße",
       "addr_suburb": "Charlottenburg",
       "name": "Kuno 15",
-      "contact_website": "",
+      "contact_website": "https://www.instagram.com/kunofuenfzehn/",
       "opening_hours": "Mo-Fr 09:00-17:00; Sa-Su 10:00-17:00",
       "favorites": false
     },
@@ -1010,7 +978,7 @@
       "addr_street": "Siegfriedstraße",
       "addr_suburb": "Neukölln",
       "name": "leuchtstoff - Kaffeebar und Bakery",
-      "contact_website": "https://leuchtstoff.berlin",
+      "contact_website": "https://www.instagram.com/leuchtstoffkaffeebar/",
       "opening_hours": "Mo-Fr 07:30-18:00; Sa-Su 09:00-18:00",
       "favorites": false
     },
@@ -1025,7 +993,7 @@
       "addr_street": "Dresdener Str.",
       "addr_suburb": "Kreuzberg",
       "name": "Nano Kaffee",
-      "contact_website": "https://nano-kaffee.de/en",
+      "contact_website": "https://www.instagram.com/nanokaffeeberlin/",
       "opening_hours": "Mo-Fr 08:30-17:00; Sa-Su 10:00-17:00",
       "favorites": false
     },
@@ -1040,7 +1008,7 @@
       "addr_street": "Eichendorffstraße",
       "addr_suburb": "Mitte",
       "name": "Oslo Kaffebar",
-      "contact_website": "http://www.oslokaffebar.co",
+      "contact_website": "https://www.instagram.com/oslokaffebar/",
       "opening_hours": "Mo-Fr 08:00-17:00; Sa,Su 10:00-17:00",
       "favorites": false
     },
@@ -1055,7 +1023,7 @@
       "addr_street": "Maybachufer",
       "addr_suburb": "Neukölln",
       "name": "Populus Coffee",
-      "contact_website": "https://www.populus.coffee/",
+      "contact_website": "https://www.instagram.com/populus.coffee/",
       "opening_hours": "Mo-Fr 09:00-18:00; Sa,Su 10:00-18:00",
       "favorites": false
     },
@@ -1085,7 +1053,7 @@
       "addr_street": "Ackerstraße",
       "addr_suburb": "Mitte",
       "name": "Röststätte",
-      "contact_website": "https://www.roeststaette.com/",
+      "contact_website": "https://www.instagram.com/roeststaetteberlin/",
       "opening_hours": "Mo-Fr 08:00-18:00; Sa 09:30-18:00;",
       "favorites": false
     },
@@ -1100,7 +1068,7 @@
       "addr_street": "Rosenthaler Straße",
       "addr_suburb": "Mitte",
       "name": "Röststätte",
-      "contact_website": "https://www.roeststaette.com/",
+      "contact_website": "https://www.instagram.com/roeststaetteberlin/",
       "opening_hours": "Mo-Fr 09:00-18:00; Sa 10:00-18:30;",
       "favorites": false
     },
@@ -1115,7 +1083,7 @@
       "addr_street": "Pannierstraße",
       "addr_suburb": "Neukölln",
       "name": "Sorrel",
-      "contact_website": "https://www.sorrel.berlin/",
+      "contact_website": "https://www.instagram.com/sorrel.berlin/",
       "opening_hours": "Sa-Mo 10:00-17:00; We-Fr 10:00-23:00;",
       "favorites": false
     },
@@ -1135,21 +1103,6 @@
       "favorites": false
     },
     {
-      "lat": 52.5694253,
-      "lon": 13.4000835,
-      "uid": "52.569425313.4000835",
-      "img_src": "stück_vom_glück",
-      "addr_country": "DE",
-      "addr_housenumber": "2",
-      "addr_postcode": "13187",
-      "addr_street": "Wilhelm-Kuhr-Straße",
-      "addr_suburb": "Pankow",
-      "name": "Stück vom Glück",
-      "contact_website": "https://cafe-stueck-vom-glueck.de/",
-      "opening_hours": "Mo-Fr 09:00-18:00; Sa-Su 10:00-18:00;",
-      "favorites": false
-    },
-    {
       "lat": 52.5006694,
       "lon": 13.4194860,
       "uid": "52.500669413.4194860",
@@ -1160,7 +1113,7 @@
       "addr_street": "Adalbertstraße",
       "addr_suburb": "Kreuzberg",
       "name": "The Visit Coffee Roastery",
-      "contact_website": "https://visit-coffee.com/",
+      "contact_website": "https://www.instagram.com/thevisitcoffeeroastery/",
       "opening_hours": "Mo-Fr 08:30-18:00; Sa-Su 10:00-19:00;",
       "favorites": false
     },
@@ -1175,7 +1128,7 @@
       "addr_street": "Yorckstraße",
       "addr_suburb": "Kreuzberg",
       "name": "The Visit Coffee & Eatery",
-      "contact_website": "https://visit-coffee.com/",
+      "contact_website": "https://www.instagram.com/thevisitcoffeeroastery/",
       "opening_hours": "Mo-Fr 08:30-18:00; Sa-Su 09:00-18:00;",
       "favorites": false
     },
@@ -1190,7 +1143,7 @@
       "addr_street": "Goltzstraße",
       "addr_suburb": "Schoneberg",
       "name": "The Visit Coffee & Eatery",
-      "contact_website": "https://visit-coffee.com/",
+      "contact_website": "https://www.instagram.com/thevisitcoffeeroastery/",
       "opening_hours": "Mo-Su 09:00-19:00; ",
       "favorites": false
     },
@@ -1205,7 +1158,7 @@
       "addr_street": "Nurnbergerstraße",
       "addr_suburb": "Charlottenburg",
       "name": "The Visit Coffee & Eatery",
-      "contact_website": "https://visit-coffee.com/",
+      "contact_website": "https://www.instagram.com/thevisitcoffeeroastery/",
       "opening_hours": "Mo-Fr 07:30-18:00; Sa 07:30-19:00; Su 08:00-16:00",
       "favorites": false
     },
@@ -1220,7 +1173,7 @@
       "addr_street": "Wiener Straße",
       "addr_suburb": "Kreuzberg",
       "name": "The Visit Coffee & Eatery",
-      "contact_website": "https://visit-coffee.com/",
+      "contact_website": "https://www.instagram.com/thevisitcoffeeroastery/",
       "opening_hours": "Mo-Fr 09:00-18:00; Sa-Su 09:00-18:00;",
       "favorites": false
     },
@@ -1297,6 +1250,258 @@
       "name": "AKKURAT Cafe",
       "contact_website": "https://www.instagram.com/akkurat.cafe/",
       "opening_hours": "Mo-Fr 08:30-17:00; Sa-Su 09:00-16:00",
+      "favorites": false
+    },
+    {
+      "lat": 52.5150520,
+      "lon": 13.4675406,
+      "uid": "52.515052013.4675406",
+      "img_src": "bricks_mortar",
+      "addr_country": "DE",
+      "addr_housenumber": "42",
+      "addr_postcode": "10247",
+      "addr_street": "Voigtstraße",
+      "addr_suburb": "Friedrichshain",
+      "name": "Bricks & Mortar",
+      "contact_website": "https://www.instagram.com/bricksandmortar_berlin/",
+      "opening_hours": "Mo-Tu 09:00-19:00; We-Fr 09:00-22:00; Sa 10:00-22:00 Su 10:00-19:00",
+      "favorites": false
+    },
+    {
+      "lat": 52.5284199,
+      "lon": 13.4099389,
+      "uid": "52.528419913.4099389",
+      "img_src": "kaschk",
+      "addr_country": "DE",
+      "addr_housenumber": "40",
+      "addr_postcode": "10119",
+      "addr_street": "Linienstraße",
+      "addr_suburb": "Mitte",
+      "name": "KASCHK by BRLO",
+      "contact_website": "https://www.instagram.com/kaschk/",
+      "opening_hours": "Mo-Sa 10:00-02:00;",
+      "favorites": false
+    },
+    {
+      "lat": 52.5402263,
+      "lon": 13.4125482,
+      "uid": "52.540226313.4125482",
+      "img_src": "nothaft",
+      "addr_country": "DE",
+      "addr_housenumber": "43a",
+      "addr_postcode": "10435",
+      "addr_street": "Schönhauser Allee",
+      "addr_suburb": "Prenzlauer Berg",
+      "name": "Nothaft Cafe",
+      "contact_website": "https://www.instagram.com/nothaftcafe/",
+      "opening_hours": "Mo-Fr 09:00-18:00; Sa-Su 10:00-18:00;",
+      "favorites": false
+    },
+    {
+      "lat": 52.5341512,
+      "lon": 13.4159459,
+      "uid": "52.534151213.4159459",
+      "img_src": "zacharias",
+      "addr_country": "DE",
+      "addr_housenumber": "44",
+      "addr_postcode": "10405",
+      "addr_street": "Kollwitzstraße",
+      "addr_suburb": "Prenzlauer Berg",
+      "name": "Zacharias",
+      "contact_website": "https://www.instagram.com/zacharias.kaffeebar/",
+      "opening_hours": "Tu-Fr 08:00-16:00; Sa-Su 09:00-17:00;",
+      "favorites": false
+    }
+    ,
+    {
+      "lat": 52.5366338,
+      "lon": 13.4203939,
+      "uid": "52.536633813.4203939",
+      "img_src": "no_fire_no_glory",
+      "addr_country": "DE",
+      "addr_housenumber": "45",
+      "addr_postcode": "10405",
+      "addr_street": "Rykestraße",
+      "addr_suburb": "Prenzlauer Berg",
+      "name": "No Fire No Glory",
+      "contact_website": "https://www.instagram.com/nofirenoglory/",
+      "opening_hours": "Tu-Fr 09:00-16:00; Sa-Su 09:00-17:00;",
+      "favorites": false
+    }
+    ,
+    {
+      "lat": 52.4833964,
+      "lon": 13.4411620,
+      "uid": "52.483396413.4411620",
+      "img_src": "companion_tea",
+      "addr_country": "DE",
+      "addr_housenumber": "166",
+      "addr_postcode": "12045",
+      "addr_street": "Weserstraße",
+      "addr_suburb": "Neukölln",
+      "name": "Companion Tea & Coffee",
+      "contact_website": "https://www.instagram.com/companioncoffeeberlin/",
+      "opening_hours": "Tu-Fr 08:30-18:00; Sa-Su 10:00-18:00;",
+      "favorites": false
+    }
+    ,
+    {
+      "lat": 52.5485547,
+      "lon": 13.4079399,
+      "uid": "52.548554713.4079399",
+      "img_src": "wim_kaffee",
+      "addr_country": "DE",
+      "addr_housenumber": "68",
+      "addr_postcode": "10437",
+      "addr_street": "Sonnenburger Str.",
+      "addr_suburb": "Prenzlauer Berg",
+      "name": "WIM Kaffee",
+      "contact_website": "https://www.instagram.com/wim_kaffee/",
+      "opening_hours": "Tu-Fr 08:00-17:00; Sa-Su 09:00-17:00;",
+      "favorites": false
+    }
+    ,
+    {
+      "lat": 52.4874342,
+      "lon": 13.4516916,
+      "uid": "52.487434213.4516916",
+      "img_src": "passenger_coffee",
+      "addr_country": "DE",
+      "addr_housenumber": "38",
+      "addr_postcode": "12435",
+      "addr_street": "Elsenstraße",
+      "addr_suburb": "Kreuzberg",
+      "name": "passenger coffee",
+      "contact_website": "https://www.instagram.com/passenger.berlin/",
+      "opening_hours": "Tu-Fr 07:30-17:30;",
+      "favorites": false
+    }
+    ,
+    {
+      "lat": 52.4999253,
+      "lon": 13.4412276,
+      "uid": "52.499925313.4412276",
+      "img_src": "passenger_espresso",
+      "addr_country": "DE",
+      "addr_housenumber": "44",
+      "addr_postcode": "10997",
+      "addr_street": "Oppelner Straße",
+      "addr_suburb": "Kreuzberg",
+      "name": "passenger espresso",
+      "contact_website": "https://www.instagram.com/passenger.berlin/",
+      "opening_hours": "Mo-Fr 08:00-18:30; Sa-Su 09:30-18:30;",
+      "favorites": false
+    }
+    ,
+    {
+      "lat": 52.4585374,
+      "lon": 13.3216027,
+      "uid": "52.458537413.3216027",
+      "img_src": "fendricks",
+      "addr_country": "DE",
+      "addr_housenumber": "1",
+      "addr_postcode": "12163",
+      "addr_street": "Muthesiusstraße",
+      "addr_suburb": "Steglitz",
+      "name": "passenger espresso",
+      "contact_website": "https://www.instagram.com/fendricks_coffee/",
+      "opening_hours": "Mo-Fr 08:00-17:00; Sa 09:00-18:00; Su 09:00-17:00;",
+      "favorites": false
+    }
+    ,
+    {
+      "lat": 52.5061361,
+      "lon": 13.4955614,
+      "uid": "52.506136113.4955614",
+      "img_src": "green_wall_coffee",
+      "addr_country": "DE",
+      "addr_housenumber": "27",
+      "addr_postcode": "10317",
+      "addr_street": "Sophienstraße",
+      "addr_suburb": "Rummelsburg",
+      "name": "Green Wall Coffee",
+      "contact_website": "https://www.instagram.com/greenwallcoffeeberlin/",
+      "opening_hours": "Mo-Fr 08:00-17:00; Sa-Su 10:00-17:00;",
+      "favorites": false
+    }
+    ,
+    {
+      "lat": 52.5163893,
+      "lon": 13.4604660,
+      "uid": "52.516389313.4604660",
+      "img_src": "bonpland_coffee",
+      "addr_country": "DE",
+      "addr_housenumber": "34",
+      "addr_postcode": "10247",
+      "addr_street": "Proskauer Straße",
+      "addr_suburb": "Friedrichshain",
+      "name": "Bonpland Coffee",
+      "contact_website": "https://www.instagram.com/bonpland.coffee/",
+      "opening_hours": "Mo-Fr 08:30-15:00; Sa-Su 10:00-15:00;",
+      "favorites": false
+    }
+    ,
+    {
+      "lat": 52.5438537,
+      "lon": 13.4162712,
+      "uid": "52.543853713.4162712",
+      "img_src": "firstcrack",
+      "addr_country": "DE",
+      "addr_housenumber": "40",
+      "addr_postcode": "10437",
+      "addr_street": "Raumerstraße",
+      "addr_suburb": "Prenzlauer Berg",
+      "name": "Firstcrack",
+      "contact_website": "https://www.instagram.com/firstcrack_coffee_roastery/",
+      "opening_hours": "Mo-Fr 11:00-18:00; Sa-Su 11:00-18:00;",
+      "favorites": false
+    }
+    ,
+    {
+      "lat": 52.4879922,
+      "lon": 13.3540483,
+      "uid": "52.487992213.3540483",
+      "img_src": "double_eye",
+      "addr_country": "DE",
+      "addr_housenumber": "22",
+      "addr_postcode": "10823",
+      "addr_street": "Akazienstraße",
+      "addr_suburb": "Schoneberg",
+      "name": "DoubleEye",
+      "contact_website": "https://www.instagram.com/doubleeye_coffeeroasters/",
+      "opening_hours": "Mo-Fr 08:18-18:29; Sa 09:05-18:29;",
+      "favorites": false
+    }
+    ,
+    {
+      "lat": 52.5025548,
+      "lon": 13.4528483,
+      "uid": "52.502554813.4528483",
+      "img_src": "bean_fifteen",
+      "addr_country": "DE",
+      "addr_housenumber": "15",
+      "addr_postcode": "10245",
+      "addr_street": "Lehmbruckstraße",
+      "addr_suburb": "Friedrichshain",
+      "name": "Bean Fifteen",
+      "contact_website": "https://www.instagram.com/bean.fifteen.berlin/",
+      "opening_hours": "Mo-Fr 10:00-17:00;",
+      "favorites": false
+    }
+    ,
+    {
+      "lat": 52.49274,
+      "lon": 13.39499,
+      "uid": "52.4927413.39499",
+      "img_src": "main_lane",
+      "addr_country": "DE",
+      "addr_housenumber": "44",
+      "addr_postcode": "10961",
+      "addr_street": "Zossener Str.",
+      "addr_suburb": "Kreuzberg",
+      "name": "Main Lane Coffee Roasters",
+      "contact_website": "https://www.instagram.com/mainlanecoffeeroasters/",
+      "opening_hours": "Unknown",
       "favorites": false
     }
   ]

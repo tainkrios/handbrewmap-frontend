@@ -21,6 +21,7 @@ export const App = () => {
       {newPlace && (
         <SelectedPlace
           data={newPlace}
+          onSetNewPlace={setNewPlace}
           setFavorites={setFavorites}
           favorites={favorites}
         />

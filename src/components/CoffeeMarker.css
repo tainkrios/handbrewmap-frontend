@@ -10,3 +10,13 @@ button.markerColor {
 button.markerColor.fav {
   background-color: #e090b0;
 }
+
+.marker {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.marker span {
+  font-weight: bold;
+  cursor: pointer;
+}

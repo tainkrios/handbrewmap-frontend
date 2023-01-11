@@ -1,0 +1,8 @@
+.showFavButton {
+  width: 29px;
+  height: 29px;
+  padding: 0 1px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}

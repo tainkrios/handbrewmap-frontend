@@ -1,22 +1,42 @@
-.selectedPlaces {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.wrapper {
+  position: absolute;
+  bottom: 1rem;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
   display: flex;
+  flex-direction: column;
+
+}
+
+.selectedPlaces {
+  display: flex;
+  justify-content: space-between;
   gap: 1rem;
-  min-width: 93%;
   height: 8rem;
   z-index: 100;
   background-color: #ECEFF4;
-  margin: 1rem;
   border-radius: 1rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.closeButton {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 1rem;
 }
 
 .selectedPlaces a {
   text-decoration: none;
   cursor: pointer;
   color: #000;
+}
+
+.selectedPlaces h2 {
+  margin: 0;
+}
+
+.description-container {
+  display: flex;
 }
 
 .img-container img {
@@ -26,9 +46,32 @@
   border-radius: 1rem 0 0 1rem;
 }
 
+.description {
+  margin-left: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description p {
+  margin: 0 0 .25rem 0
+}
+
+.description h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* font-size: 4.6vw; */
+}
+
+.description a svg {
+  width: 24px;
+  height: 24px;
+}
+
 .favorite {
   margin-left: auto;
-  margin-right: 15px;
+  margin-right: 1rem;
   margin-top: -3px;
   cursor: pointer;
 
@@ -37,7 +80,7 @@
 .favorite_fill {
   margin-left: auto;
   fill: #3eba7e;
-  margin-right: 15px;
+  margin-right: 1rem;
   margin-top: -3px;
   cursor: pointer;
 }
