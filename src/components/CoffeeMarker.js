@@ -13,29 +13,27 @@ export const CoffeeMarker = ({
     <Marker
       latitude={latitude}
       longitude={longitude}
+      onClick={() => {
+        changePlace({
+          properties: placeData.properties,
+          latitude,
+          longitude,
+        })
+        if (map) {
+          map.flyTo({
+            center: [longitude, latitude],
+          })
+        }
+      }}
     >
-      <div className={'marker'} >
+      <div className={'marker'}>
         <button
           className={
             favorites?.includes(placeData.properties.placeId)
               ? 'markerColor fav'
               : 'markerColor'
           }
-          onClick={() => {
-            changePlace({
-              properties: placeData.properties,
-              latitude,
-              longitude
-            })
-            if (map) {
-              map.flyTo({
-                center: [longitude, latitude],
-              })
-            }
-          }}
-        >
-          {/* {placeData.properties.name} */}
-        </button>
+        ></button>
         <span>{placeData.properties.name}</span>
       </div>
     </Marker>
