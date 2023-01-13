@@ -66,7 +66,6 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
       }}
       mapStyle='mapbox://styles/mapbox/light-v10'
       style={mapStyles}
-      
     >
       {clusters.map((cluster) => {
         const [longitude, latitude] = cluster.geometry.coordinates

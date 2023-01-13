@@ -61,7 +61,6 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  /* font-size: 4.6vw; */
 }
 
 .description a svg {
