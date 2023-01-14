@@ -1311,8 +1311,7 @@
       "contact_website": "https://www.instagram.com/zacharias.kaffeebar/",
       "opening_hours": "Tu-Fr 08:00-16:00; Sa-Su 09:00-17:00;",
       "favorites": false
-    }
-    ,
+    },
     {
       "lat": 52.5366338,
       "lon": 13.4203939,
@@ -1327,8 +1326,7 @@
       "contact_website": "https://www.instagram.com/nofirenoglory/",
       "opening_hours": "Tu-Fr 09:00-16:00; Sa-Su 09:00-17:00;",
       "favorites": false
-    }
-    ,
+    },
     {
       "lat": 52.4833964,
       "lon": 13.4411620,
@@ -1343,8 +1341,7 @@
       "contact_website": "https://www.instagram.com/companioncoffeeberlin/",
       "opening_hours": "Tu-Fr 08:30-18:00; Sa-Su 10:00-18:00;",
       "favorites": false
-    }
-    ,
+    },
     {
       "lat": 52.5485547,
       "lon": 13.4079399,
@@ -1359,8 +1356,7 @@
       "contact_website": "https://www.instagram.com/wim_kaffee/",
       "opening_hours": "Tu-Fr 08:00-17:00; Sa-Su 09:00-17:00;",
       "favorites": false
-    }
-    ,
+    },
     {
       "lat": 52.4874342,
       "lon": 13.4516916,
@@ -1375,8 +1371,7 @@
       "contact_website": "https://www.instagram.com/passenger.berlin/",
       "opening_hours": "Tu-Fr 07:30-17:30;",
       "favorites": false
-    }
-    ,
+    },
     {
       "lat": 52.4999253,
       "lon": 13.4412276,
@@ -1391,8 +1386,7 @@
       "contact_website": "https://www.instagram.com/passenger.berlin/",
       "opening_hours": "Mo-Fr 08:00-18:30; Sa-Su 09:30-18:30;",
       "favorites": false
-    }
-    ,
+    },
     {
       "lat": 52.4585374,
       "lon": 13.3216027,
@@ -1407,8 +1401,7 @@
       "contact_website": "https://www.instagram.com/fendricks_coffee/",
       "opening_hours": "Mo-Fr 08:00-17:00; Sa 09:00-18:00; Su 09:00-17:00;",
       "favorites": false
-    }
-    ,
+    },
     {
       "lat": 52.5061361,
       "lon": 13.4955614,
@@ -1423,8 +1416,7 @@
       "contact_website": "https://www.instagram.com/greenwallcoffeeberlin/",
       "opening_hours": "Mo-Fr 08:00-17:00; Sa-Su 10:00-17:00;",
       "favorites": false
-    }
-    ,
+    },
     {
       "lat": 52.5163893,
       "lon": 13.4604660,
@@ -1439,8 +1431,7 @@
       "contact_website": "https://www.instagram.com/bonpland.coffee/",
       "opening_hours": "Mo-Fr 08:30-15:00; Sa-Su 10:00-15:00;",
       "favorites": false
-    }
-    ,
+    },
     {
       "lat": 52.5438537,
       "lon": 13.4162712,
@@ -1455,8 +1446,7 @@
       "contact_website": "https://www.instagram.com/firstcrack_coffee_roastery/",
       "opening_hours": "Mo-Fr 11:00-18:00; Sa-Su 11:00-18:00;",
       "favorites": false
-    }
-    ,
+    },
     {
       "lat": 52.4879922,
       "lon": 13.3540483,
@@ -1471,8 +1461,7 @@
       "contact_website": "https://www.instagram.com/doubleeye_coffeeroasters/",
       "opening_hours": "Mo-Fr 08:18-18:29; Sa 09:05-18:29;",
       "favorites": false
-    }
-    ,
+    },
     {
       "lat": 52.5025548,
       "lon": 13.4528483,
@@ -1486,22 +1475,6 @@
       "name": "Bean Fifteen",
       "contact_website": "https://www.instagram.com/bean.fifteen.berlin/",
       "opening_hours": "Mo-Fr 10:00-17:00;",
-      "favorites": false
-    }
-    ,
-    {
-      "lat": 52.49274,
-      "lon": 13.39499,
-      "uid": "52.4927413.39499",
-      "img_src": "main_lane",
-      "addr_country": "DE",
-      "addr_housenumber": "44",
-      "addr_postcode": "10961",
-      "addr_street": "Zossener Str.",
-      "addr_suburb": "Kreuzberg",
-      "name": "Main Lane Coffee Roasters",
-      "contact_website": "https://www.instagram.com/mainlanecoffeeroasters/",
-      "opening_hours": "Unknown",
       "favorites": false
     }
   ]
