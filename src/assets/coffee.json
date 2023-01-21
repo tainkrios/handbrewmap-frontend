@@ -13,7 +13,36 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "The Barn",
       "website": "https://www.instagram.com/thebarnberlin/",
-      "opening_hours": "Mo-Fr 08:30-18:00; Sa-Su 10:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -29,7 +58,36 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "Kajumi",
       "website": "https://www.instagram.com/kajumiberlin/",
-      "opening_hours": "Tu-Fr 08:00-18:00; Sa 09:30-18:00; Su 10:30-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 30],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -45,7 +103,124 @@
       "description": "Café mit Kaffeverkauf",
       "website": "https://www.instagram.com/cebecoffeeroasters/",
       "name": "Cebe Coffee Roasters",
-      "opening_hours": "Tu-Fr 08:00-18:00; Sa 08:00-18:00; Su 08:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [8, 0],
+          [18, 0]
+        ]
+      },
+      "favorites": false
+    },
+    {
+      "lat": 52.5083579,
+      "lon": 13.4669704,
+      "uid": "52.508357913.4669704",
+      "img_src": "cebe_boxi",
+      "addr_city": "Berlin",
+      "addr_country": "DE",
+      "addr_housenumber": "82",
+      "addr_postcode": "10245",
+      "addr_street": "Boxhagener Straße",
+      "website": "https://www.instagram.com/cebecoffeeroasters/",
+      "name": "Cebe Coffee Roasters",
+      "opening_hours": {
+        "Sunday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [8, 0],
+          [18, 0]
+        ]
+      },
+      "favorites": false
+    },
+    {
+      "lat": 52.5165077,
+      "lon": 13.4682847,
+      "uid": "52.516507713.4682847",
+      "img_src": "cebe_voigtstraße",
+      "addr_city": "Berlin",
+      "addr_country": "DE",
+      "addr_housenumber": "35",
+      "addr_postcode": "10247",
+      "addr_street": "Voigtstraße",
+      "website": "https://www.instagram.com/cebecoffeeroasters/",
+      "name": "Cebe Coffee Roasters",
+      "opening_hours": {
+        "Sunday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [8, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -61,7 +236,36 @@
       "addr_suburb": "Mitte",
       "contact_website": "https://www.instagram.com/thebarnberlin/",
       "name": "The Barn",
-      "opening_hours": "Mo-Fr 08:00-18:00, Sa 09:00-18:00, Su 10:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -77,7 +281,36 @@
       "addr_suburb": "Mitte",
       "contact_website": "https://www.instagram.com/thebarnberlin/",
       "name": "The Barn",
-      "opening_hours": "Mo-Fr 08:00-18:00, Sa 10:00-18:00, Su 10:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -93,7 +326,36 @@
       "addr_suburb": "Neukölln",
       "contact_website": "https://www.instagram.com/thebarnberlin/",
       "name": "The Barn",
-      "opening_hours": "Mo-Fr 08:00-18:00, Sa-Su 11:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [11, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [11, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -109,7 +371,36 @@
       "addr_suburb": "Mitte",
       "contact_website": "https://www.instagram.com/thebarnberlin/",
       "name": "The Barn",
-      "opening_hours": "Mo-Fr 09:00-17:00, Sa-Su 10:00-17:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -125,7 +416,36 @@
       "addr_suburb": "Mitte",
       "contact_website": "https://www.instagram.com/thebarnberlin/",
       "name": "The Barn",
-      "opening_hours": "Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [20, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [20, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [20, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [20, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [20, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [20, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [20, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -141,11 +461,40 @@
       "addr_suburb": "Tiergarten",
       "contact_website": "https://www.instagram.com/thebarnberlin/",
       "name": "The Barn",
-      "opening_hours": "Mo-Fr 09:00-17:00; Sa-Su 12:00-17:00",
+      "opening_hours": {
+        "Sunday": [
+          [12, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Saturday": [
+          [12, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
-      "lat": 52.5084430,
+      "lat": 52.508443,
       "lon": 13.3748068,
       "uid": "52.508443013.3748068",
       "img_src": "barn_potsdamerplatz",
@@ -157,7 +506,36 @@
       "addr_suburb": "Tiergarten",
       "contact_website": "https://www.instagram.com/thebarnberlin/",
       "name": "The Barn",
-      "opening_hours": "Mo-Fr 08:30-19:00; Sa-Su 09:00-19:00",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [19, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [19, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -173,7 +551,36 @@
       "addr_suburb": "Tiergarten",
       "contact_website": "https://www.instagram.com/thebarnberlin/",
       "name": "The Barn",
-      "opening_hours": "Mo-Fr 08:30-19:00; Sa-Su 09:00-19:00",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [19, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [19, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -189,7 +596,36 @@
       "addr_suburb": "Tiergarten",
       "name": "The Barn",
       "contact_website": "https://www.instagram.com/thebarnberlin/",
-      "opening_hours": "Mo-Fr 09:00-16:00",
+      "opening_hours": {
+        "Sunday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Saturday": [
+          [0, 0],
+          [0, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -205,7 +641,36 @@
       "addr_suburb": "Mitte",
       "name": "Five Elephant",
       "contact_website": "https://fiveelephant.com//",
-      "opening_hours": "Mo-Fr 09:00-16:00",
+      "opening_hours": {
+        "Sunday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Saturday": [
+          [0, 0],
+          [0, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -221,7 +686,36 @@
       "addr_suburb": "Mitte",
       "name": "Five Elephant",
       "contact_website": "https://www.instagram.com/fiveelephant/",
-      "opening_hours": "Mo-Fr 09:00-16:00",
+      "opening_hours": {
+        "Sunday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Saturday": [
+          [0, 0],
+          [0, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -237,7 +731,36 @@
       "addr_suburb": "Kreuzberg",
       "name": "Five Elephant",
       "contact_website": "https://www.instagram.com/fiveelephant/",
-      "opening_hours": "Mo-Fr 8:30-19:00; Sa-Su 10:00-19:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [19, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [19, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -253,12 +776,41 @@
       "addr_suburb": "Kreuzberg",
       "name": "Five Elephant",
       "contact_website": "https://www.instagram.com/fiveelephant/",
-      "opening_hours": "Mo-Fr 8:30-19:00; Sa-Su 10:00-19:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [19, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [19, 0]
+        ]
+      },
       "favorites": false
     },
     {
-      "lat": 52.5041830,
-      "lon": 13.4202580,
+      "lat": 52.504183,
+      "lon": 13.420258,
       "uid": "52.504183013.4202580",
       "img_src": "bonanza_kreuzberg",
       "addr_city": "Berlin",
@@ -269,7 +821,36 @@
       "addr_suburb": "Kreuzberg",
       "name": "Bonanza Coffee Roasters",
       "contact_website": "https://www.instagram.com/bonanzacoffee/",
-      "opening_hours": "Mo-Fr 09:00-18:00; Sa,Su 10:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -285,7 +866,36 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "Bonanza Coffee Heroes",
       "contact_website": "https://www.instagram.com/bonanzacoffee/",
-      "opening_hours": "Mo-Fr 08:30-18:30; Sa-Su 10:00-19:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [19, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [18, 30]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [18, 30]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [18, 30]
+        ],
+        "Thursday": [
+          [8, 30],
+          [18, 30]
+        ],
+        "Friday": [
+          [8, 30],
+          [18, 30]
+        ],
+        "Saturday": [
+          [10, 0],
+          [19, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -301,7 +911,36 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "Bonanza Coffee",
       "contact_website": "https://www.instagram.com/bonanzacoffee/",
-      "opening_hours": "Mo-Fr 08:00-19:00; Sa 10:00-19:00; Su 10:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [19, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -317,7 +956,36 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "Bonanza Coffee Mitte",
       "contact_website": "https://www.instagram.com/bonanzacoffee/",
-      "opening_hours": "Mo-Fr 08:00-19:00; Sa 10:00-19:00; Su 10:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [19, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -333,7 +1001,36 @@
       "addr_suburb": "Friedrichshain",
       "name": "Silo Coffee",
       "contact_website": "https://www.instagram.com/silocoffee/",
-      "opening_hours": "Mo-Fr 09:30-17:00, Sa 09:30-19:00, Su 10:00-19:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [19, 0]
+        ],
+        "Monday": [
+          [9, 30],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [9, 30],
+          [17, 0]
+        ],
+        "Wednesday": [
+          [9, 30],
+          [17, 0]
+        ],
+        "Thursday": [
+          [9, 30],
+          [17, 0]
+        ],
+        "Friday": [
+          [9, 30],
+          [17, 0]
+        ],
+        "Saturday": [
+          [9, 30],
+          [19, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -349,7 +1046,36 @@
       "addr_suburb": "Kreuzberg",
       "name": "Concierge Coffee",
       "contact_website": "https://www.instagram.com/conciergecoffee/",
-      "opening_hours": "Mo-Fr 08:30-18:00; PH,Sa,Su 12:00-17:00",
+      "opening_hours": {
+        "Sunday": [
+          [12, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Saturday": [
+          [12, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -365,7 +1091,36 @@
       "addr_suburb": "Schoneberg",
       "name": "Concierge Coffee",
       "contact_website": "https://www.instagram.com/conciergecoffee/",
-      "opening_hours": "Mo-Fr 08:30-18:00; PH,Sa,Su 12:00-17:00",
+      "opening_hours": {
+        "Sunday": [
+          [12, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Saturday": [
+          [12, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -381,7 +1136,36 @@
       "addr_suburb": "Mitte",
       "name": "19grams",
       "contact_website": "https://www.instagram.com/19grams.coffee/",
-      "opening_hours": "Mo-Su 11:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [11, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [11, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [11, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [11, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [11, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [11, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [11, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -397,11 +1181,40 @@
       "addr_suburb": "Mitte",
       "name": "19grams",
       "contact_website": "https://www.instagram.com/19grams.coffee/",
-      "opening_hours": "Mo-Fr 08:00-19:00; Sa-Su 09:00-19:00",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [19, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [19, 0]
+        ]
+      },
       "favorites": false
     },
     {
-      "lat": 52.4999160,
+      "lat": 52.499916,
       "lon": 13.4446097,
       "uid": "52.499916013.4446097",
       "img_src": "19grams_schlesi",
@@ -413,7 +1226,36 @@
       "addr_suburb": "Kreuzberg",
       "name": "19grams",
       "contact_website": "https://www.instagram.com/19grams.coffee/",
-      "opening_hours": "Mo-Fr 08:00-18:00; Sa-Su 10:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -429,7 +1271,36 @@
       "addr_suburb": "Friedrichshain",
       "name": "TRES CABEZAS",
       "contact_website": "https://www.instagram.com/19grams.coffee/",
-      "opening_hours": "Mo-Fr 09:00-16:00; Sa,Su 09:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Saturday": [
+          [19, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -445,7 +1316,36 @@
       "addr_suburb": "Kreuzberg",
       "name": "Chapter One",
       "contact_website": "https://www.instagram.com/chapteronecoffeeberlin/",
-      "opening_hours": "Mo-Sa 09:00-18:00; Su 11:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [11, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [11, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -461,7 +1361,36 @@
       "addr_suburb": "Mitte",
       "name": "Father Carpenter",
       "contact_website": "https://www.instagram.com/father.carpenter/",
-      "opening_hours": "Mo-Sa 09:00-18:00; Su 11:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [11, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -477,12 +1406,41 @@
       "addr_suburb": "Mitte",
       "name": "District",
       "contact_website": "https://www.instagram.com/distriktcoffee/",
-      "opening_hours": "Mo-Sa 09:00-16:00; Su 09:30-17:00",
+      "opening_hours": {
+        "Sunday": [
+          [9, 30],
+          [17, 0]
+        ],
+        "Monday": [
+          [9, 30],
+          [16, 0]
+        ],
+        "Tuesday": [
+          [9, 30],
+          [16, 0]
+        ],
+        "Wednesday": [
+          [9, 30],
+          [16, 0]
+        ],
+        "Thursday": [
+          [9, 30],
+          [16, 0]
+        ],
+        "Friday": [
+          [9, 30],
+          [16, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [16, 0]
+        ]
+      },
       "favorites": false
     },
     {
       "lat": 52.4985073,
-      "lon": 13.4349370,
+      "lon": 13.434937,
       "uid": "52.498507313.4349370",
       "img_src": "annelies",
       "addr_city": "Berlin",
@@ -493,7 +1451,36 @@
       "addr_suburb": "Kreuzberg",
       "name": "Annelies",
       "contact_website": "https://www.instagram.com/anneliesberlin/",
-      "opening_hours": "We-Mo 10:00-16:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [16, 0]
+        ],
+        "Monday": [
+          [10, 0],
+          [16, 0]
+        ],
+        "Tuesday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Wednesday": [
+          [10, 0],
+          [16, 0]
+        ],
+        "Thursday": [
+          [10, 0],
+          [16, 0]
+        ],
+        "Friday": [
+          [10, 0],
+          [16, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [16, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -509,7 +1496,36 @@
       "addr_suburb": "Moabit",
       "name": "Garcia",
       "contact_website": "https://www.instagram.com/garcia_kaffeebar/",
-      "opening_hours": "Mo-Fr 08:00-17:00; Sa 10:00-17:00; Su 10:00-17:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -525,7 +1541,36 @@
       "addr_suburb": "Steglitz",
       "name": "Die Kaffeenauten",
       "contact_website": "https://www.facebook.com/Die-kaffeenauten-623610157785537/",
-      "opening_hours": "Mo-Fr 09:00-16:00; Sa 10:00-17:00",
+      "opening_hours": {
+        "Sunday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -541,7 +1586,36 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "Kiez Kaffee Kraft",
       "contact_website": "https://www.instagram.com/kiezkaffeekraft/",
-      "opening_hours": "Mo-Fr 08:30-18:00; Sa 10:00-18:00; Su 10:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -557,7 +1631,36 @@
       "addr_suburb": "Pankow",
       "name": "Kiez Kaffee Kraft",
       "contact_website": "https://www.instagram.com/kiezkaffeekraft/",
-      "opening_hours": "Mo-Fr 08:30-18:00; Sa-Su 08:30-19:00;",
+      "opening_hours": {
+        "Sunday": [
+          [8, 30],
+          [19, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Saturday": [
+          [8, 30],
+          [19, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -573,11 +1676,40 @@
       "addr_suburb": "Gesundbrunnen",
       "name": "Kawa Kaffeemanufaktur",
       "contact_website": "https://www.instagram.com/kawa_kaffeemanufaktur/",
-      "opening_hours": "Mo-Fr 08:00-18:00; Sa-Su 10:00-17:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
-      "lat": 52.5438180,
+      "lat": 52.543818,
       "lon": 13.3770773,
       "uid": "52.543818013.3770773",
       "img_src": "flying_roasters_kaffeeladen",
@@ -589,7 +1721,36 @@
       "addr_suburb": "Gesundbrunnen",
       "name": "Flying Roasters",
       "contact_website": "https://www.instagram.com/flying_roasters/",
-      "opening_hours": "Mo-Fr 12:00-18:00; Sa-Su 12:00-16:00",
+      "opening_hours": {
+        "Sunday": [
+          [12, 0],
+          [16, 0]
+        ],
+        "Monday": [
+          [12, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [12, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [12, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [12, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [12, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [12, 0],
+          [16, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -605,7 +1766,36 @@
       "addr_suburb": "Wedding",
       "name": "Coffee Circle Café",
       "contact_website": "https://www.instagram.com/coffeecircle/",
-      "opening_hours": "Mo-Fr 09:00-17:30; Sa, Su 09:30-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [9, 30],
+          [18, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [17, 30]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [17, 30]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [17, 30]
+        ],
+        "Thursday": [
+          [9, 0],
+          [17, 30]
+        ],
+        "Friday": [
+          [9, 0],
+          [17, 30]
+        ],
+        "Saturday": [
+          [9, 30],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -621,7 +1811,36 @@
       "addr_suburb": "Mitte",
       "name": "Ben Rahim",
       "contact_website": "https://www.instagram.com/benrahimcoffee/",
-      "opening_hours": "Mo-Fr 08:00-18:00; Sa-Su 10:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -637,12 +1856,41 @@
       "addr_suburb": "Mitte",
       "name": "Codos",
       "contact_website": "https://www.instagram.com/codoscoffee/",
-      "opening_hours": "Mo-Fr 08:00–18:00 Sa-Su 09:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
-      "lat": 52.5294320,
-      "lon": 13.4011940,
+      "lat": 52.529432,
+      "lon": 13.401194,
       "uid": "52.529432013.4011940",
       "img_src": "codos_rosenthaler",
       "addr_city": "Berlin",
@@ -653,7 +1901,36 @@
       "addr_suburb": "Mitte",
       "name": "Codos",
       "contact_website": "https://www.instagram.com/codoscoffee/",
-      "opening_hours": "Mo-Fr 08:00–18:00 Sa-Su 09:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -668,8 +1945,37 @@
       "addr_street": "Buddestraße",
       "addr_suburb": "Tegel",
       "name": "Budde Kaffee",
-      "contact_website": "https://www.instagram.com/codoscoffee/",
-      "opening_hours": "We-Fr 09:00–16:00 Sa 10:00-17:00 Su 11:00-16:00",
+      "contact_website": "https://www.instagram.com/buddekaffee/",
+      "opening_hours": {
+        "Sunday": [
+          [11, 0],
+          [16, 0]
+        ],
+        "Monday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Tuesday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -685,12 +1991,41 @@
       "addr_suburb": "Kreuzberg",
       "name": "Cabana Coffee Roasters",
       "contact_website": "https://www.instagram.com/cabanacoffeeroasters/",
-      "opening_hours": "Tu-Fr 10:00-18:00 Sa-Su 10:00-16:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [15, 0]
+        ],
+        "Monday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Tuesday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Wednesday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Thursday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Friday": [
+          [12, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [12, 0],
+          [15, 0]
+        ]
+      },
       "favorites": false
     },
     {
       "lat": 52.5018861,
-      "lon": 13.4318900,
+      "lon": 13.43189,
       "uid": "52.501886113.4318900",
       "img_src": "kaffee_9",
       "addr_city": "Berlin",
@@ -701,12 +2036,41 @@
       "addr_suburb": "Kreuzberg",
       "name": "Kaffee 9",
       "contact_website": "https://www.instagram.com/kaffee9/",
-      "opening_hours": "Mo-Sa 07:30-18:00, Su 10:00-16:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [16, 0]
+        ],
+        "Monday": [
+          [7, 30],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [7, 30],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [7, 30],
+          [18, 0]
+        ],
+        "Thursday": [
+          [7, 30],
+          [18, 0]
+        ],
+        "Friday": [
+          [7, 30],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [16, 0]
+        ]
+      },
       "favorites": false
     },
     {
       "lat": 52.4895509,
-      "lon": 13.3897630,
+      "lon": 13.389763,
       "uid": "52.489550913.3897630",
       "img_src": "coffee_circle_bergmannkiez",
       "addr_city": "Berlin",
@@ -717,7 +2081,36 @@
       "addr_suburb": "Kreuzberg",
       "name": "Coffee Circle",
       "contact_website": "https://www.instagram.com/coffeecircle/",
-      "opening_hours": "Mo–Fr 08:00–19:00 Sa 10:00–19:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [19, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [19, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -733,7 +2126,36 @@
       "addr_suburb": "Mitte",
       "name": "Coffee Circle Mitte",
       "contact_website": "https://www.instagram.com/coffeecircle/",
-      "opening_hours": "Mo-Fr 08:30-18:00; Sa, Su 09:30-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [9, 30],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Saturday": [
+          [9, 30],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -749,7 +2171,36 @@
       "addr_suburb": "Mitte",
       "name": "die espressonisten",
       "contact_website": "https://www.instagram.com/espressonisten/",
-      "opening_hours": "Mo-Sa 10:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Monday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -765,7 +2216,36 @@
       "addr_suburb": "Tiergarten",
       "name": "Elemenza Coffee Roasters",
       "contact_website": "https://www.instagram.com/elemenzacoffee/",
-      "opening_hours": "Mo-Fr 08:00-18:00, Sa-Su 10:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -781,12 +2261,41 @@
       "addr_suburb": "Charlottenburg",
       "name": "Elemenza Coffee Roasters",
       "contact_website": "https://www.instagram.com/elemenzacoffee/",
-      "opening_hours": "Mo-Sa 10:00-20:00",
+      "opening_hours": {
+        "Sunday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Monday": [
+          [10, 0],
+          [20, 0]
+        ],
+        "Tuesday": [
+          [10, 0],
+          [20, 0]
+        ],
+        "Wednesday": [
+          [10, 0],
+          [20, 0]
+        ],
+        "Thursday": [
+          [10, 0],
+          [20, 0]
+        ],
+        "Friday": [
+          [10, 0],
+          [20, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [20, 0]
+        ]
+      },
       "favorites": false
     },
     {
       "lat": 52.5330508,
-      "lon": 13.4229940,
+      "lon": 13.422994,
       "uid": "52.533050813.4229940",
       "img_src": "godshot",
       "addr_city": "Berlin",
@@ -797,7 +2306,36 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "Godshot",
       "contact_website": "https://www.instagram.com/godshot_coffee_klub/",
-      "opening_hours": "Mo-Sa 10:00-20:00",
+      "opening_hours": {
+        "Sunday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Monday": [
+          [10, 0],
+          [20, 0]
+        ],
+        "Tuesday": [
+          [10, 0],
+          [20, 0]
+        ],
+        "Wednesday": [
+          [10, 0],
+          [20, 0]
+        ],
+        "Thursday": [
+          [10, 0],
+          [20, 0]
+        ],
+        "Friday": [
+          [10, 0],
+          [20, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [20, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -813,7 +2351,36 @@
       "addr_suburb": "Neukölln",
       "name": "Holy Coffee",
       "contact_website": "https://www.instagram.com/holy.coffee.berlin/",
-      "opening_hours": "Mo-Fr 07:00-19:00; Sa-Su 09:00-19:00",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [19, 0]
+        ],
+        "Monday": [
+          [7, 0],
+          [19, 0]
+        ],
+        "Tuesday": [
+          [7, 0],
+          [19, 0]
+        ],
+        "Wednesday": [
+          [7, 0],
+          [19, 0]
+        ],
+        "Thursday": [
+          [7, 0],
+          [19, 0]
+        ],
+        "Friday": [
+          [7, 0],
+          [19, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [19, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -829,7 +2396,36 @@
       "addr_suburb": "Neukölln",
       "name": "Home: Brewing & Kitchen",
       "contact_website": "https://www.instagram.com/home.berlin/",
-      "opening_hours": "Mo+Fr 09:00-17:00; Sa-Su 10:00-17:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Wednesday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Thursday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -844,7 +2440,36 @@
       "addr_suburb": "Neukölln",
       "name": "Isla Coffee",
       "contact_website": "https://www.instagram.com/islacoffeeberlin/",
-      "opening_hours": "Mo-Fr 08:00-17:00; Sa,Su 09:00-17:00",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -859,7 +2484,36 @@
       "addr_suburb": "Neukölln",
       "name": "Jacobi Kaffeebar",
       "contact_website": "https://www.instagram.com/kaffeebarjacobiberlin/",
-      "opening_hours": "Mo-Fr 10:00-18:00; Sa, Su 11:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [11, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [11, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -874,7 +2528,36 @@
       "addr_suburb": "Schoneberg",
       "name": "Jules Geisberg",
       "contact_website": "https://www.instagram.com/jules_cafe_berlin/",
-      "opening_hours": "Mo-Fr 10:00-18:00; Sa, Su 10:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -883,13 +2566,42 @@
       "uid": "52.499084713.3733055",
       "img_src": "jules_b-part",
       "addr_country": "DE",
-      "addr_housenumber": "9",
-      "addr_postcode": "10777",
-      "addr_street": "Geisbergstraße",
+      "addr_housenumber": "6b",
+      "addr_postcode": "10963",
+      "addr_street": "Luckenwalderstrasse",
       "addr_suburb": "Schoneberg",
       "name": "Jules B-Part am Gleisdreieck",
       "contact_website": "https://www.instagram.com/jules_cafe_berlin/",
-      "opening_hours": "Mo-Su 10:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Wednesday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Thursday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Friday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -904,7 +2616,36 @@
       "addr_suburb": "Kreuzberg",
       "name": "Kaffeekirsche",
       "contact_website": "https://www.instagram.com/kaffeekirscheberlin/",
-      "opening_hours": "Mo-Fr 8:00-19:00 Sa-Su 9:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [19, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -919,7 +2660,36 @@
       "addr_suburb": "Kreuzberg",
       "name": "Kaffeekirsche",
       "contact_website": "https://www.instagram.com/kaffeekirscheberlin/",
-      "opening_hours": "Mo-Fr 08:00-18:00; Sa-Su 10:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -934,7 +2704,36 @@
       "addr_suburb": "Tempelhof",
       "name": "Kaffeekirsche",
       "contact_website": "https://www.instagram.com/kaffeekirscheberlin/",
-      "opening_hours": "Mo-Fr 08:30-18:00; Sa 10:00-17:00 Su 11:00-17:00",
+      "opening_hours": {
+        "Sunday": [
+          [11, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -949,12 +2748,41 @@
       "addr_suburb": "Charlottenburg",
       "name": "Kuno 15",
       "contact_website": "https://www.instagram.com/kunofuenfzehn/",
-      "opening_hours": "Mo-Fr 09:00-17:00; Sa-Su 10:00-17:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
       "lat": 52.4933018,
-      "lon": 13.4311000,
+      "lon": 13.4311,
       "uid": "52.493301813.4311000",
       "img_src": "la_maison",
       "addr_country": "DE",
@@ -964,7 +2792,36 @@
       "addr_suburb": "Kreuzberg",
       "name": "La Maison",
       "contact_website": "https://www.instagram.com/lamaisonberlin/",
-      "opening_hours": "Tu-Su 07:00-21:00",
+      "opening_hours": {
+        "Sunday": [
+          [7, 0],
+          [21, 0]
+        ],
+        "Monday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Tuesday": [
+          [7, 0],
+          [20, 0]
+        ],
+        "Wednesday": [
+          [7, 0],
+          [20, 0]
+        ],
+        "Thursday": [
+          [7, 0],
+          [20, 0]
+        ],
+        "Friday": [
+          [7, 0],
+          [21, 0]
+        ],
+        "Saturday": [
+          [7, 0],
+          [21, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -979,7 +2836,36 @@
       "addr_suburb": "Neukölln",
       "name": "leuchtstoff - Kaffeebar und Bakery",
       "contact_website": "https://www.instagram.com/leuchtstoffkaffeebar/",
-      "opening_hours": "Mo-Fr 07:30-18:00; Sa-Su 09:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [7, 30],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [7, 30],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [7, 30],
+          [18, 0]
+        ],
+        "Thursday": [
+          [7, 30],
+          [18, 0]
+        ],
+        "Friday": [
+          [7, 30],
+          [18, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -994,7 +2880,36 @@
       "addr_suburb": "Kreuzberg",
       "name": "Nano Kaffee",
       "contact_website": "https://www.instagram.com/nanokaffeeberlin/",
-      "opening_hours": "Mo-Fr 08:30-17:00; Sa-Su 10:00-17:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [17, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [17, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [17, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [17, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1009,7 +2924,36 @@
       "addr_suburb": "Mitte",
       "name": "Oslo Kaffebar",
       "contact_website": "https://www.instagram.com/oslokaffebar/",
-      "opening_hours": "Mo-Fr 08:00-17:00; Sa,Su 10:00-17:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [17, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [17, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [17, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [17, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1024,7 +2968,36 @@
       "addr_suburb": "Neukölln",
       "name": "Populus Coffee",
       "contact_website": "https://www.instagram.com/populus.coffee/",
-      "opening_hours": "Mo-Fr 09:00-18:00; Sa,Su 10:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1039,7 +3012,36 @@
       "addr_suburb": "Mitte",
       "name": "Refinery",
       "contact_website": "https://www.instagram.com/refinery.coffee/",
-      "opening_hours": "Mo-Fr 07:00-19:00; Sa 09:00-17:00;",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [7, 0],
+          [19, 0]
+        ],
+        "Tuesday": [
+          [7, 0],
+          [19, 0]
+        ],
+        "Wednesday": [
+          [7, 0],
+          [19, 0]
+        ],
+        "Thursday": [
+          [7, 0],
+          [19, 0]
+        ],
+        "Friday": [
+          [7, 0],
+          [19, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1054,7 +3056,36 @@
       "addr_suburb": "Mitte",
       "name": "Röststätte",
       "contact_website": "https://www.instagram.com/roeststaetteberlin/",
-      "opening_hours": "Mo-Fr 08:00-18:00; Sa 09:30-18:00;",
+      "opening_hours": {
+        "Sunday": [
+          [9, 30],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [9, 30],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1069,7 +3100,36 @@
       "addr_suburb": "Mitte",
       "name": "Röststätte",
       "contact_website": "https://www.instagram.com/roeststaetteberlin/",
-      "opening_hours": "Mo-Fr 09:00-18:00; Sa 10:00-18:30;",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [18, 30]
+        ],
+        "Monday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [18, 30]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1084,12 +3144,41 @@
       "addr_suburb": "Neukölln",
       "name": "Sorrel",
       "contact_website": "https://www.instagram.com/sorrel.berlin/",
-      "opening_hours": "Sa-Mo 10:00-17:00; We-Fr 10:00-23:00;",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Wednesday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Thursday": [
+          [10, 0],
+          [23, 0]
+        ],
+        "Friday": [
+          [10, 0],
+          [23, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
       "lat": 52.5251095,
-      "lon": 13.3302730,
+      "lon": 13.330273,
       "uid": "52.525109513.3302730",
       "img_src": "spontan",
       "addr_country": "DE",
@@ -1099,12 +3188,41 @@
       "addr_suburb": "Moabit",
       "name": "Spontan",
       "contact_website": "https://www.instagram.com/spontancoffeeberlin/",
-      "opening_hours": "Mo-Fr 08:00-18:00; Sa-Su 10:00-17:00;",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
       "lat": 52.5006694,
-      "lon": 13.4194860,
+      "lon": 13.419486,
       "uid": "52.500669413.4194860",
       "img_src": "visit_kreuzberg",
       "addr_country": "DE",
@@ -1114,7 +3232,36 @@
       "addr_suburb": "Kreuzberg",
       "name": "The Visit Coffee Roastery",
       "contact_website": "https://www.instagram.com/thevisitcoffeeroastery/",
-      "opening_hours": "Mo-Fr 08:30-18:00; Sa-Su 10:00-19:00;",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [19, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [19, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1129,7 +3276,36 @@
       "addr_suburb": "Kreuzberg",
       "name": "The Visit Coffee & Eatery",
       "contact_website": "https://www.instagram.com/thevisitcoffeeroastery/",
-      "opening_hours": "Mo-Fr 08:30-18:00; Sa-Su 09:00-18:00;",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1144,12 +3320,41 @@
       "addr_suburb": "Schoneberg",
       "name": "The Visit Coffee & Eatery",
       "contact_website": "https://www.instagram.com/thevisitcoffeeroastery/",
-      "opening_hours": "Mo-Su 09:00-19:00; ",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [19, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [19, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [19, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [19, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [19, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [19, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [19, 0]
+        ]
+      },
       "favorites": false
     },
     {
       "lat": 52.5023629,
-      "lon": 13.3383020,
+      "lon": 13.338302,
       "uid": "52.502362913.3383020",
       "img_src": "visit_eatery_charlottenburg",
       "addr_country": "DE",
@@ -1159,7 +3364,36 @@
       "addr_suburb": "Charlottenburg",
       "name": "The Visit Coffee & Eatery",
       "contact_website": "https://www.instagram.com/thevisitcoffeeroastery/",
-      "opening_hours": "Mo-Fr 07:30-18:00; Sa 07:30-19:00; Su 08:00-16:00",
+      "opening_hours": {
+        "Sunday": [
+          [8, 0],
+          [16, 0]
+        ],
+        "Monday": [
+          [7, 30],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [7, 30],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [7, 30],
+          [18, 0]
+        ],
+        "Thursday": [
+          [7, 30],
+          [18, 0]
+        ],
+        "Friday": [
+          [7, 30],
+          [18, 0]
+        ],
+        "Saturday": [
+          [7, 30],
+          [19, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1174,7 +3408,36 @@
       "addr_suburb": "Kreuzberg",
       "name": "The Visit Coffee & Eatery",
       "contact_website": "https://www.instagram.com/thevisitcoffeeroastery/",
-      "opening_hours": "Mo-Fr 09:00-18:00; Sa-Su 09:00-18:00;",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1189,12 +3452,41 @@
       "addr_suburb": "Kreuzberg",
       "name": "Two Trick Pony",
       "contact_website": "https://www.instagram.com/twotrickponyberlin/",
-      "opening_hours": "We-Fr 10:00-16:00, Sa-Su 10:00-16:30",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [16, 0]
+        ],
+        "Monday": [
+          [10, 0],
+          [16, 0]
+        ],
+        "Tuesday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Wednesday": [
+          [10, 0],
+          [16, 0]
+        ],
+        "Thursday": [
+          [10, 0],
+          [16, 0]
+        ],
+        "Friday": [
+          [10, 0],
+          [16, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [16, 0]
+        ]
+      },
       "favorites": false
     },
     {
       "lat": 52.4497919,
-      "lon": 13.2523570,
+      "lon": 13.252357,
       "uid": "52.449791913.2523570",
       "img_src": "toms_kafferosterei",
       "addr_country": "DE",
@@ -1204,7 +3496,36 @@
       "addr_suburb": "Zehlendorf",
       "name": "Toms Kaffeerösterei",
       "contact_website": "https://www.instagram.com/tomskaffeeroesterei/",
-      "opening_hours": "Mo-Fr 09:00-18:00; Sa 09:00-16:00",
+      "opening_hours": {
+        "Sunday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Monday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [16, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1219,7 +3540,36 @@
       "addr_suburb": "Wedding",
       "name": "Wachmacher",
       "contact_website": "https://www.instagram.com/wachmacher_official/",
-      "opening_hours": "Mo-Fr 09:00-18:00; Sa 10:00-18:00",
+      "opening_hours": {
+        "Sunday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1234,7 +3584,36 @@
       "addr_suburb": "Mitte",
       "name": "Zwipf Coffee",
       "contact_website": "https://www.instagram.com/zwipfcoffee/",
-      "opening_hours": "Mo-Fr 08:00-17:00; Sa 10:00-15:00",
+      "opening_hours": {
+        "Sunday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [15, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1249,11 +3628,40 @@
       "addr_suburb": "Kreuzberg",
       "name": "AKKURAT Cafe",
       "contact_website": "https://www.instagram.com/akkurat.cafe/",
-      "opening_hours": "Mo-Fr 08:30-17:00; Sa-Su 09:00-16:00",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [17, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [17, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [17, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [17, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [16, 0]
+        ]
+      },
       "favorites": false
     },
     {
-      "lat": 52.5150520,
+      "lat": 52.515052,
       "lon": 13.4675406,
       "uid": "52.515052013.4675406",
       "img_src": "bricks_mortar",
@@ -1264,7 +3672,36 @@
       "addr_suburb": "Friedrichshain",
       "name": "Bricks & Mortar",
       "contact_website": "https://www.instagram.com/bricksandmortar_berlin/",
-      "opening_hours": "Mo-Tu 09:00-19:00; We-Fr 09:00-22:00; Sa 10:00-22:00 Su 10:00-19:00",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [19, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [19, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [19, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [22, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [22, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [22, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [22, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1279,7 +3716,36 @@
       "addr_suburb": "Mitte",
       "name": "KASCHK by BRLO",
       "contact_website": "https://www.instagram.com/kaschk/",
-      "opening_hours": "Mo-Sa 10:00-02:00;",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [23, 59]
+        ],
+        "Monday": [
+          [10, 0],
+          [23, 59]
+        ],
+        "Tuesday": [
+          [10, 0],
+          [23, 59]
+        ],
+        "Wednesday": [
+          [10, 0],
+          [23, 59]
+        ],
+        "Thursday": [
+          [10, 0],
+          [23, 59]
+        ],
+        "Friday": [
+          [10, 0],
+          [23, 59]
+        ],
+        "Saturday": [
+          [10, 0],
+          [23, 59]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1294,7 +3760,36 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "Nothaft Cafe",
       "contact_website": "https://www.instagram.com/nothaftcafe/",
-      "opening_hours": "Mo-Fr 09:00-18:00; Sa-Su 10:00-18:00;",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1309,7 +3804,36 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "Zacharias",
       "contact_website": "https://www.instagram.com/zacharias.kaffeebar/",
-      "opening_hours": "Tu-Fr 08:00-16:00; Sa-Su 09:00-17:00;",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [16, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [16, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [16, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [16, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [16, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1324,12 +3848,41 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "No Fire No Glory",
       "contact_website": "https://www.instagram.com/nofirenoglory/",
-      "opening_hours": "Tu-Fr 09:00-16:00; Sa-Su 09:00-17:00;",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Tuesday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Wednesday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Thursday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Friday": [
+          [9, 0],
+          [16, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
       "lat": 52.4833964,
-      "lon": 13.4411620,
+      "lon": 13.441162,
       "uid": "52.483396413.4411620",
       "img_src": "companion_tea",
       "addr_country": "DE",
@@ -1339,7 +3892,36 @@
       "addr_suburb": "Neukölln",
       "name": "Companion Tea & Coffee",
       "contact_website": "https://www.instagram.com/companioncoffeeberlin/",
-      "opening_hours": "Tu-Fr 08:30-18:00; Sa-Su 10:00-18:00;",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [18, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1354,7 +3936,36 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "WIM Kaffee",
       "contact_website": "https://www.instagram.com/wim_kaffee/",
-      "opening_hours": "Tu-Fr 08:00-17:00; Sa-Su 09:00-17:00;",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1369,7 +3980,36 @@
       "addr_suburb": "Kreuzberg",
       "name": "passenger coffee",
       "contact_website": "https://www.instagram.com/passenger.berlin/",
-      "opening_hours": "Tu-Fr 07:30-17:30;",
+      "opening_hours": {
+        "Sunday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Monday": [
+          [7, 30],
+          [17, 30]
+        ],
+        "Tuesday": [
+          [7, 30],
+          [17, 30]
+        ],
+        "Wednesday": [
+          [7, 30],
+          [17, 30]
+        ],
+        "Thursday": [
+          [7, 30],
+          [17, 30]
+        ],
+        "Friday": [
+          [7, 30],
+          [17, 30]
+        ],
+        "Saturday": [
+          [0, 0],
+          [0, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1384,7 +4024,36 @@
       "addr_suburb": "Kreuzberg",
       "name": "passenger espresso",
       "contact_website": "https://www.instagram.com/passenger.berlin/",
-      "opening_hours": "Mo-Fr 08:00-18:30; Sa-Su 09:30-18:30;",
+      "opening_hours": {
+        "Sunday": [
+          [9, 30],
+          [18, 30]
+        ],
+        "Monday": [
+          [8, 0],
+          [18, 30]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [18, 30]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [18, 30]
+        ],
+        "Thursday": [
+          [8, 0],
+          [18, 30]
+        ],
+        "Friday": [
+          [8, 0],
+          [18, 30]
+        ],
+        "Saturday": [
+          [9, 30],
+          [18, 30]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1399,7 +4068,36 @@
       "addr_suburb": "Steglitz",
       "name": "passenger espresso",
       "contact_website": "https://www.instagram.com/fendricks_coffee/",
-      "opening_hours": "Mo-Fr 08:00-17:00; Sa 09:00-18:00; Su 09:00-17:00;",
+      "opening_hours": {
+        "Sunday": [
+          [9, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Saturday": [
+          [9, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1414,12 +4112,41 @@
       "addr_suburb": "Rummelsburg",
       "name": "Green Wall Coffee",
       "contact_website": "https://www.instagram.com/greenwallcoffeeberlin/",
-      "opening_hours": "Mo-Fr 08:00-17:00; Sa-Su 10:00-17:00;",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Monday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Wednesday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Thursday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Friday": [
+          [8, 0],
+          [17, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [17, 0]
+        ]
+      },
       "favorites": false
     },
     {
       "lat": 52.5163893,
-      "lon": 13.4604660,
+      "lon": 13.460466,
       "uid": "52.516389313.4604660",
       "img_src": "bonpland_coffee",
       "addr_country": "DE",
@@ -1429,7 +4156,36 @@
       "addr_suburb": "Friedrichshain",
       "name": "Bonpland Coffee",
       "contact_website": "https://www.instagram.com/bonpland.coffee/",
-      "opening_hours": "Mo-Fr 08:30-15:00; Sa-Su 10:00-15:00;",
+      "opening_hours": {
+        "Sunday": [
+          [10, 0],
+          [16, 0]
+        ],
+        "Monday": [
+          [8, 30],
+          [15, 0]
+        ],
+        "Tuesday": [
+          [8, 30],
+          [15, 0]
+        ],
+        "Wednesday": [
+          [8, 30],
+          [15, 0]
+        ],
+        "Thursday": [
+          [8, 30],
+          [15, 0]
+        ],
+        "Friday": [
+          [8, 30],
+          [15, 0]
+        ],
+        "Saturday": [
+          [10, 0],
+          [16, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1444,7 +4200,36 @@
       "addr_suburb": "Prenzlauer Berg",
       "name": "Firstcrack",
       "contact_website": "https://www.instagram.com/firstcrack_coffee_roastery/",
-      "opening_hours": "Mo-Fr 11:00-18:00; Sa-Su 11:00-18:00;",
+      "opening_hours": {
+        "Sunday": [
+          [11, 0],
+          [18, 0]
+        ],
+        "Monday": [
+          [11, 0],
+          [18, 0]
+        ],
+        "Tuesday": [
+          [11, 0],
+          [18, 0]
+        ],
+        "Wednesday": [
+          [11, 0],
+          [18, 0]
+        ],
+        "Thursday": [
+          [11, 0],
+          [18, 0]
+        ],
+        "Friday": [
+          [11, 0],
+          [18, 0]
+        ],
+        "Saturday": [
+          [11, 0],
+          [18, 0]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1459,7 +4244,36 @@
       "addr_suburb": "Schoneberg",
       "name": "DoubleEye",
       "contact_website": "https://www.instagram.com/doubleeye_coffeeroasters/",
-      "opening_hours": "Mo-Fr 08:18-18:29; Sa 09:05-18:29;",
+      "opening_hours": {
+        "Sunday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Monday": [
+          [8, 18],
+          [18, 29]
+        ],
+        "Tuesday": [
+          [8, 18],
+          [18, 29]
+        ],
+        "Wednesday": [
+          [8, 18],
+          [18, 29]
+        ],
+        "Thursday": [
+          [8, 18],
+          [18, 29]
+        ],
+        "Friday": [
+          [8, 18],
+          [18, 29]
+        ],
+        "Saturday": [
+          [9, 5],
+          [18, 29]
+        ]
+      },
       "favorites": false
     },
     {
@@ -1474,7 +4288,36 @@
       "addr_suburb": "Friedrichshain",
       "name": "Bean Fifteen",
       "contact_website": "https://www.instagram.com/bean.fifteen.berlin/",
-      "opening_hours": "Mo-Fr 10:00-17:00;",
+      "opening_hours": {
+        "Sunday": [
+          [0, 0],
+          [0, 0]
+        ],
+        "Monday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Tuesday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Wednesday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Thursday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Friday": [
+          [10, 0],
+          [17, 0]
+        ],
+        "Saturday": [
+          [0, 0],
+          [0, 0]
+        ]
+      },
       "favorites": false
     }
   ]

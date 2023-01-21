@@ -4,6 +4,7 @@ import { Direction } from './UI/Direction'
 import { useEffect } from 'react'
 import { CloseButton } from './UI/CloseButton'
 import { Instagram } from '../assets/Instagram'
+import { IsOpen } from './IsOpen'
 
 export const SelectedPlace = ({ data, favorites, setFavorites, onSetNewPlace }) => {
   useEffect(() => {
@@ -15,7 +16,7 @@ export const SelectedPlace = ({ data, favorites, setFavorites, onSetNewPlace }) 
     if (favorites) {
       setFavorites(favorites)
     }
-  }, [setFavorites])  
+  }, [setFavorites])
 
   const addFavorites = () => {
     if (!favorites?.includes(data.properties.placeId)) {
@@ -58,6 +59,7 @@ export const SelectedPlace = ({ data, favorites, setFavorites, onSetNewPlace }) 
                 {data.properties.name}
               </h3>
             </a>
+            <IsOpen weekDays={data.properties.opening_hours} />
             <p>{`📍${data.properties.addr_street} ${data.properties.addr_housenumber}`}</p>
           </div>
         </div>
