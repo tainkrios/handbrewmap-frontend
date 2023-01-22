@@ -688,8 +688,8 @@
       "contact_website": "https://www.instagram.com/fiveelephant/",
       "opening_hours": {
         "Sunday": [
-          [0, 0],
-          [0, 0]
+          [9, 0],
+          [18, 0]
         ],
         "Monday": [
           [9, 0],
