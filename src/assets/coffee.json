@@ -2308,32 +2308,32 @@
       "contact_website": "https://www.instagram.com/godshot_coffee_klub/",
       "opening_hours": {
         "Sunday": [
-          [0, 0],
-          [0, 0]
+          [9, 90],
+          [17, 0]
         ],
         "Monday": [
-          [10, 0],
-          [20, 0]
+          [8, 0],
+          [17, 0]
         ],
         "Tuesday": [
-          [10, 0],
-          [20, 0]
+          [8, 0],
+          [17, 0]
         ],
         "Wednesday": [
-          [10, 0],
-          [20, 0]
+          [8, 0],
+          [17, 0]
         ],
         "Thursday": [
-          [10, 0],
-          [20, 0]
+          [8, 0],
+          [17, 0]
         ],
         "Friday": [
-          [10, 0],
-          [20, 0]
+          [8, 0],
+          [17, 0]
         ],
         "Saturday": [
-          [10, 0],
-          [20, 0]
+          [9, 30],
+          [17, 0]
         ]
       },
       "favorites": false

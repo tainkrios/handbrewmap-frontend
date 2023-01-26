@@ -31,8 +31,8 @@
   color: #000;
 }
 
-.selectedPlaces h2 {
-  margin: 0;
+.selectedPlaces h3 {
+  margin: 1rem 0 0 0;
 }
 
 .description-container {
