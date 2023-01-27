@@ -6,7 +6,12 @@ import { CloseButton } from './UI/CloseButton'
 import { Instagram } from '../assets/Instagram'
 import { IsOpen } from './IsOpen'
 
-export const SelectedPlace = ({ data, favorites, setFavorites, onSetNewPlace }) => {
+export const SelectedPlace = ({
+  data,
+  favorites,
+  setFavorites,
+  onSetNewPlace,
+}) => {
   useEffect(() => {
     localStorage.setItem('favorites', JSON.stringify(favorites))
   }, [favorites])
@@ -28,6 +33,12 @@ export const SelectedPlace = ({ data, favorites, setFavorites, onSetNewPlace }) 
       setFavorites(unFavorites)
     }
   }
+
+  const fontSizeLength = data.properties.name.length
+  const fontSizeStyle = {
+    fontSize: fontSizeLength >= 14 ? '15px' : '18px',
+  }
+  console.log(fontSizeLength)
 
   const isFavorite = favorites?.includes(data.properties.placeId)
 
@@ -54,7 +65,7 @@ export const SelectedPlace = ({ data, favorites, setFavorites, onSetNewPlace }) 
               target='_blank'
               rel='noopener noreferrer'
             >
-              <h3>
+              <h3 style={fontSizeStyle}>
                 <Instagram />
                 {data.properties.name}
               </h3>
