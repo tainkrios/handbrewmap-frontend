@@ -60,7 +60,7 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
       ref={mapRef}
       {...viewport}
       maxZoom={20}
-      mapboxAccessToken='pk.eyJ1IjoidGFpbmtyaW9zIiwiYSI6ImNsNnVzZXhjMDFnMHUzZHBibTNlajd1c24ifQ.W017kDT4jrcrBMfAUWZdQg'
+      mapboxAccessToken='pk.eyJ1IjoidGFpbmtyaW9zIiwiYSI6ImNsY3M4azE5bjAzbHozdW1jYWZyNndpbGQifQ.i-NINpL2r313OGAPuC9gVg'
       onMove={(evt) => {
         setViewport(evt.viewState)
         setBounds(mapRef.current.getMap().getBounds().toArray().flat())
