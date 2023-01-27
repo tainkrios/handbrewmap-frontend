@@ -35,6 +35,7 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
       addr_street: place.addr_street,
       name: place.name,
       contact_website: place.contact_website,
+      opening_hours: place.opening_hours,
     },
     geometry: {
       type: 'Point',
@@ -59,7 +60,7 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
       ref={mapRef}
       {...viewport}
       maxZoom={20}
-      mapboxAccessToken='pk.eyJ1IjoidGFpbmtyaW9zIiwiYSI6ImNsY3M4azE5bjAzbHozdW1jYWZyNndpbGQifQ.i-NINpL2r313OGAPuC9gVg'
+      mapboxAccessToken='pk.eyJ1IjoidGFpbmtyaW9zIiwiYSI6ImNsNnVzZXhjMDFnMHUzZHBibTNlajd1c24ifQ.W017kDT4jrcrBMfAUWZdQg'
       onMove={(evt) => {
         setViewport(evt.viewState)
         setBounds(mapRef.current.getMap().getBounds().toArray().flat())
