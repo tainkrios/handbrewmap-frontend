@@ -1,4 +1,5 @@
-import { useState,useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo } from 'react'
+import './IsOpen.css'
 
 export const IsOpen = ({ weekDays }) => {
   const days = [
@@ -15,7 +16,7 @@ export const IsOpen = ({ weekDays }) => {
   const currentDay = days[now.getDay()]
 
   const newDate = new Date()
- 
+
   const [isOpen, setIsOpen] = useState(currentDay)
 
   const openingTime = newDate.setHours(
@@ -35,5 +36,7 @@ export const IsOpen = ({ weekDays }) => {
     }
   }, [closingTime, now, openingTime])
 
-  return <p>{isOpen}</p>
+  const isOpenClass = isOpen === 'Open Now' ? 'open' : 'closed'
+
+  return <p className={isOpenClass}>{isOpen}</p>
 }

@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  height: 8rem;
+  min-height: 8rem;
   z-index: 100;
   background-color: #ECEFF4;
   border-radius: 1rem;
