@@ -12,7 +12,7 @@
       "addr_street": "Schönhauser Allee",
       "addr_suburb": "Prenzlauer Berg",
       "name": "The Barn",
-      "website": "https://www.instagram.com/thebarnberlin/",
+      "contact_website": "https://www.instagram.com/thebarnberlin/",
       "opening_hours": {
         "Sunday": [
           [10, 0],
@@ -57,7 +57,7 @@
       "addr_street": "Dunckerstraße",
       "addr_suburb": "Prenzlauer Berg",
       "name": "Kajumi",
-      "website": "https://www.instagram.com/kajumiberlin/",
+      "contact_website": "https://www.instagram.com/kajumiberlin/",
       "opening_hours": {
         "Sunday": [
           [10, 30],
@@ -101,7 +101,7 @@
       "addr_postcode": "10405",
       "addr_street": "Prenzlauer Allee",
       "description": "Café mit Kaffeverkauf",
-      "website": "https://www.instagram.com/cebecoffeeroasters/",
+      "contact_website": "https://www.instagram.com/cebecoffeeroasters/",
       "name": "Cebe Coffee Roasters",
       "opening_hours": {
         "Sunday": [
@@ -145,7 +145,7 @@
       "addr_housenumber": "82",
       "addr_postcode": "10245",
       "addr_street": "Boxhagener Straße",
-      "website": "https://www.instagram.com/cebecoffeeroasters/",
+      "contact_website": "https://www.instagram.com/cebecoffeeroasters/",
       "name": "Cebe Coffee Roasters",
       "opening_hours": {
         "Sunday": [
@@ -189,7 +189,7 @@
       "addr_housenumber": "35",
       "addr_postcode": "10247",
       "addr_street": "Voigtstraße",
-      "website": "https://www.instagram.com/cebecoffeeroasters/",
+      "contact_website": "https://www.instagram.com/cebecoffeeroasters/",
       "name": "Cebe Coffee Roasters",
       "opening_hours": {
         "Sunday": [
@@ -683,7 +683,7 @@
       "addr_housenumber": "98",
       "addr_postcode": "10435",
       "addr_street": "Kollwitzstraße",
-      "addr_suburb": "Mitte",
+      "addr_suburb": "Prenzlauer Berg",
       "name": "Five Elephant",
       "contact_website": "https://www.instagram.com/fiveelephant/",
       "opening_hours": {
@@ -692,24 +692,24 @@
           [18, 0]
         ],
         "Monday": [
-          [9, 0],
-          [16, 0]
+          [8, 0],
+          [18, 0]
         ],
         "Tuesday": [
-          [9, 0],
-          [16, 0]
+          [8, 0],
+          [18, 0]
         ],
         "Wednesday": [
-          [9, 0],
-          [16, 0]
+          [8, 0],
+          [18, 0]
         ],
         "Thursday": [
-          [9, 0],
-          [16, 0]
+          [8, 0],
+          [18, 0]
         ],
         "Friday": [
-          [9, 0],
-          [16, 0]
+          [8, 0],
+          [18, 0]
         ],
         "Saturday": [
           [0, 0],
