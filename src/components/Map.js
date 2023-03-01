@@ -5,7 +5,6 @@ import useSupercluster from 'use-supercluster'
 import places from './../assets/coffee.json'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './Map.css'
-// import { ShowFavoritesButton } from './UI/ShowFavoritesButton'
 
 export const Map = ({ saveNewPlaceChange, favorites }) => {
   const [viewport, setViewport] = useState({
@@ -54,8 +53,6 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
     zoom: viewport.zoom,
     options: { radius: 75, maxZoom: 20 },
   })
-  // const mapboxAccessToken = process.env.REACT_APP_MAPBOX_TOKEN
-  // console.log(mapboxAccessToken)
 
   return (
     <ReactMapGL
