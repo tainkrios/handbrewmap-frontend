@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import ReactMapGL, { GeolocateControl, Marker } from 'react-map-gl'
 import { CoffeeMarker } from './CoffeeMarker'
 import useSupercluster from 'use-supercluster'
@@ -13,6 +13,23 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
     zoom: 13,
     passive: true,
   })
+
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setViewport({
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude,
+            zoom: 13,
+          })
+        },
+        (error) => console.log(error)
+      )
+    } else {
+      setViewport({ ...viewport })
+    }
+  }, [])
 
   const mapStyles = {
     width: '100vw',
