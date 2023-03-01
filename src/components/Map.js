@@ -54,13 +54,15 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
     zoom: viewport.zoom,
     options: { radius: 75, maxZoom: 20 },
   })
+  // const mapboxAccessToken = process.env.REACT_APP_MAPBOX_TOKEN
+  // console.log(mapboxAccessToken)
 
   return (
     <ReactMapGL
       ref={mapRef}
       {...viewport}
       maxZoom={20}
-      mapboxAccessToken='pk.eyJ1IjoidGFpbmtyaW9zIiwiYSI6ImNsY3M4azE5bjAzbHozdW1jYWZyNndpbGQifQ.i-NINpL2r313OGAPuC9gVg'
+      mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
       onMove={(evt) => {
         setViewport(evt.viewState)
         setBounds(mapRef.current.getMap().getBounds().toArray().flat())
