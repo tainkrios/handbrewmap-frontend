@@ -22,12 +22,11 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
             latitude: position.coords.latitude,
             longitude: position.coords.longitude,
             zoom: 13,
+            passive: true,
           })
         },
         (error) => console.log(error)
       )
-    } else {
-      setViewport({ ...viewport })
     }
   }, [])
 
