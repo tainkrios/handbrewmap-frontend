@@ -38,7 +38,6 @@ export const SelectedPlace = ({
   const fontSizeStyle = {
     fontSize: fontSizeLength >= 14 ? '15px' : '18px',
   }
-  console.log(fontSizeLength)
 
   const isFavorite = favorites?.includes(data.properties.placeId)
 

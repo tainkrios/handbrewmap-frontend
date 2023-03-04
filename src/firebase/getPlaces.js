@@ -1,9 +1,7 @@
 import { collection, getDocs } from 'firebase/firestore'
 import { db } from './config'
-// import { useState } from 'react'
 
 export const getPlaces = async () => {
-  // const [documents, setDocuments] = useState([])
   let documents
   try {
     const data = await getDocs(collection(db, 'places'))
@@ -12,9 +10,7 @@ export const getPlaces = async () => {
       id: doc.id,
     }))
     documents = filteredData
-    // console.log(documents);
 
-    // setDocuments(filteredData)
   } catch (error) {
     console.error(error)
   }

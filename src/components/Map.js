@@ -15,8 +15,7 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
     passive: true,
   })
 
-  // const [placesData, setPlacesData] = useState([])
-  const { documents } = getPlaces()
+  const [placesData, setPlacesData] = useState([])
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -32,9 +31,14 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
         (error) => console.log(error)
       )
     }
-    // setPlacesData(documents)
+    const fetchPlaces = async () => {
+      const { documents } = await getPlaces()
+      setPlacesData(documents)
+    }
+    fetchPlaces()
   }, [])
-  console.log(documents)
+
+  // console.log(placesData);
 
   const mapStyles = {
     width: '100vw',
@@ -45,7 +49,7 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
 
   const mapRef = useRef()
 
-  const points = places.coffeePlaces.map((place) => ({
+  const points = placesData.map((place) => ({
     type: 'Feature',
     properties: {
       cluster: false,
