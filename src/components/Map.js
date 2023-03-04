@@ -3,6 +3,7 @@ import ReactMapGL, { GeolocateControl, Marker } from 'react-map-gl'
 import { CoffeeMarker } from './CoffeeMarker'
 import useSupercluster from 'use-supercluster'
 import places from './../assets/coffee.json'
+import { getPlaces } from '../firebase/getPlaces'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './Map.css'
 
@@ -13,6 +14,9 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
     zoom: 13,
     passive: true,
   })
+
+  // const [placesData, setPlacesData] = useState([])
+  const { documents } = getPlaces()
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -28,7 +32,9 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
         (error) => console.log(error)
       )
     }
+    // setPlacesData(documents)
   }, [])
+  console.log(documents)
 
   const mapStyles = {
     width: '100vw',
