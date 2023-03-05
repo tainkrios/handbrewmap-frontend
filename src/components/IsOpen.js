@@ -11,6 +11,7 @@ export const IsOpen = ({ weekDays }) => {
     'Friday',
     'Saturday',
   ]
+  // console.log(weekDays.open[0])
 
   const now = useMemo(() => new Date(), [])
   const currentDay = days[now.getDay()]
@@ -20,12 +21,12 @@ export const IsOpen = ({ weekDays }) => {
   const [isOpen, setIsOpen] = useState(currentDay)
 
   const openingTime = newDate.setHours(
-    weekDays[currentDay][0][0],
-    weekDays[currentDay][0][1]
+    weekDays[currentDay].open[0],
+    weekDays[currentDay].open[1]
   )
   const closingTime = newDate.setHours(
-    weekDays[currentDay][1][0],
-    weekDays[currentDay][1][1]
+    weekDays[currentDay].close[0],
+    weekDays[currentDay].close[1]
   )
 
   useEffect(() => {
