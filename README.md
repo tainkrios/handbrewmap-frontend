@@ -1,11 +1,13 @@
 # Description
 
-I moved in Berlin in July 2022. And I realised that there no any specialty coffe map here(in Russia we have it).\
-Well, this is it.\
-Used Mapbox as map provider and [react-map-gl](https://visgl.github.io/react-map-gl/) as library, I create this little MVP.\
-Here you can bookmark places as Favorites, create a Route to place and see is open status
+When I first moved to Berlin, I didn't find any coffee shop maps.
+And I made it myself.
 
-In plans transfer all data to Firebase, and more fansy UI.
+Berlin Coffee Map is a web application built using React, [Mapbox](https://www.mapbox.com/), and Firebase. The application is designed to help coffee enthusiasts find the best coffee shops in Berlin.
+
+The main feature of the application is an interactive map of Berlin that displays the location of all the coffee shops in the city. Users can zoom in and out of the map to explore different neighborhoods and find coffee shops in specific areas.
+
+When a user clicks on a coffee shop on the map, a pop-up window will appear with information about the shop, including its name, address, website, photo and isOpen status. Users can also bookmark places as Favorites and build a route to selected place.
 
 ## Getting Started with Create React App
 
@@ -20,4 +22,4 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.
