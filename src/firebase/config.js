@@ -5,11 +5,11 @@ import { getStorage } from 'firebase/storage'
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_KEY,
-  authDomain: 'berlin-coffee-map.firebaseapp.com',
-  projectId: 'berlin-coffee-map',
-  storageBucket: 'berlin-coffee-map.appspot.com',
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
   messagingSenderId: '1035057134186',
-  appId: '1:1035057134186:web:b59be7524287b654556813',
+  appId: process.env.REACT_APP_APPID,
 }
 
 // Initialize Firebase
