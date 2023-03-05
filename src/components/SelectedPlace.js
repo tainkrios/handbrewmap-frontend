@@ -1,10 +1,11 @@
 import './SelectedPlace.css'
 import { FavoriteIcon } from './../assets/FavoriteIcon'
 import { Direction } from './UI/Direction'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { CloseButton } from './UI/CloseButton'
 import { Instagram } from '../assets/Instagram'
 import { IsOpen } from './IsOpen'
+import { getStorage } from '../firebase/getStorage'
 
 export const SelectedPlace = ({
   data,
@@ -22,6 +23,23 @@ export const SelectedPlace = ({
       setFavorites(favorites)
     }
   }, [setFavorites])
+
+  const [file, setFile] = useState({})
+
+  useEffect(() => {
+    const fetchStorage = async () => {
+      try {
+        const { filesArr } = await getStorage()
+        const document = filesArr.find(
+          (file) => file.name === `${data.properties.img_src} .jpg`
+        )
+        setFile(document.url)
+      } catch (error) {
+        console.error(error)
+      }
+    }
+    fetchStorage()
+  }, [data.properties.img_src])
 
   const addFavorites = () => {
     if (!favorites?.includes(data.properties.placeId)) {
@@ -54,7 +72,8 @@ export const SelectedPlace = ({
         <div className='description-container'>
           <div className='img-container'>
             <img
-              src={require(`./../assets/img/${data.properties.img_src}.jpg`)}
+              // src={require(`./../assets/img/${data.properties.img_src}.jpg`)}
+              src={file}
               alt='PlaceView'
             />
           </div>
