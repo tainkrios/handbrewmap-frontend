@@ -6,7 +6,7 @@ import { getPlaces } from '../firebase/getPlaces'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './Map.css'
 
-export const Map = ({ saveNewPlaceChange, favorites }) => {
+export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
   const [viewport, setViewport] = useState({
     latitude: 52.517,
     longitude: 13.3879,
@@ -89,7 +89,11 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
         setViewport(evt.viewState)
         setBounds(mapRef.current.getMap().getBounds().toArray().flat())
       }}
-      mapStyle='mapbox://styles/mapbox/light-v10'
+      mapStyle={
+        dark
+          ? 'mapbox://styles/mapbox/dark-v11'
+          : 'mapbox://styles/mapbox/light-v11'
+      }
       style={mapStyles}
     >
       {clusters.map((cluster) => {
@@ -100,7 +104,7 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
         if (isCluster) {
           return (
             <Marker
-              key={`cluster-${cluster.id}`}
+              key={cluster.id}
               latitude={latitude}
               longitude={longitude}
             >
@@ -135,11 +139,11 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
             changePlace={saveNewPlaceChange}
             map={mapRef.current}
             favorites={favorites}
+            dark={dark}
           />
         )
       })}
       <GeolocateControl />
-      {/* <ShowFavoritesButton /> */}
     </ReactMapGL>
   )
 }

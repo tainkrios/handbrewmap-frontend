@@ -12,6 +12,7 @@ export const SelectedPlace = ({
   favorites,
   setFavorites,
   onSetNewPlace,
+  dark,
 }) => {
   useEffect(() => {
     localStorage.setItem('favorites', JSON.stringify(favorites))
@@ -59,16 +60,18 @@ export const SelectedPlace = ({
 
   const isFavorite = favorites?.includes(data.properties.placeId)
 
+  // { dark ? 'closeButton dark' : 'closeButton' }
+
   return (
     <div className='wrapper'>
-      <div className='closeButton'>
+      <div className={dark ? 'closeButton dark' : 'closeButton'}>
         <CloseButton
           onClick={() => {
             onSetNewPlace(null)
           }}
         />
       </div>
-      <div className='selectedPlaces'>
+      <div className={dark ? 'selectedPlaces dark' : 'selectedPlaces'}>
         <div className='description-container'>
           <div className='img-container'>
             <img
@@ -89,7 +92,7 @@ export const SelectedPlace = ({
               </h3>
             </a>
             <IsOpen weekDays={data.properties.opening_hours} />
-            <p>{`📍${data.properties.addr_street} ${data.properties.addr_housenumber}`}</p>
+            <p className='adress'>{`📍${data.properties.addr_street} ${data.properties.addr_housenumber}`}</p>
           </div>
         </div>
         <div>

@@ -6,6 +6,7 @@ import { useState } from 'react'
 import './App.css'
 
 export const App = () => {
+  const [dark, setDark] = useState(true)
   const [newPlace, setNewPlace] = useState(null)
   const [favorites, setFavorites] = useState(
     JSON.parse(localStorage.getItem('favorites')) || []
@@ -13,10 +14,14 @@ export const App = () => {
 
   return (
     <>
-      <Nav />
+      <Nav
+        dark={dark}
+        setDark={setDark}
+      />
       <Map
         favorites={favorites}
         saveNewPlaceChange={setNewPlace}
+        dark={dark}
       />
       {newPlace && (
         <SelectedPlace
@@ -24,6 +29,7 @@ export const App = () => {
           onSetNewPlace={setNewPlace}
           setFavorites={setFavorites}
           favorites={favorites}
+          dark={dark}
         />
       )}
     </>

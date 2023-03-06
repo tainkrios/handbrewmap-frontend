@@ -20,6 +20,7 @@ button.markerColor.fav {
   cursor: pointer;
 }
 
-.darkTheme {
-  color: white;
+.marker.dark {
+  color: var(--secondary-text-color);
+  background-color: transparent;
 }

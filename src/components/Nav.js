@@ -1,9 +1,9 @@
 import './Nav.css'
 
-export const Nav = () => {
+export const Nav = ({ dark, setDark }) => {
   return (
     <>
-      <h1>Berlin Coffee Map</h1>
+      <h1 className={dark ? 'dark' : ''}>Berlin Coffee Map</h1>
     </>
   )
 }

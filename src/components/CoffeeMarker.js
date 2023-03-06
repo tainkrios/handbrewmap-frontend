@@ -8,6 +8,7 @@ export const CoffeeMarker = ({
   changePlace,
   map,
   favorites,
+  dark,
 }) => {
   return (
     <Marker
@@ -26,7 +27,7 @@ export const CoffeeMarker = ({
         }
       }}
     >
-      <div className={'marker'}>
+      <div className={dark ? 'marker dark' : 'marker'}>
         <button
           className={
             favorites?.includes(placeData.properties.placeId)
