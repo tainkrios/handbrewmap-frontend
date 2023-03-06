@@ -10,7 +10,6 @@ export const getPlaces = async () => {
       id: doc.id,
     }))
     documents = filteredData
-
   } catch (error) {
     console.error(error)
   }

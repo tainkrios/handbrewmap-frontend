@@ -52,7 +52,7 @@ export const Map = ({ saveNewPlaceChange, favorites }) => {
     type: 'Feature',
     properties: {
       cluster: false,
-      placeId: place.uid,
+      placeId: place.id,
       category: 'coffee-place',
       img_src: place.img_src,
       addr_housenumber: place.addr_housenumber,
