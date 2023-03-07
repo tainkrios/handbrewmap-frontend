@@ -1,10 +1,12 @@
-import './Nav.css'
 import { DarkMode } from './UI/DarkMode'
 import { LightMode } from './UI/LightMode'
+import './Nav.css'
 
 export const Nav = ({ dark, setDark }) => {
   const toggleTheme = () => {
-    setDark(!dark)
+    const isDark = dark === false ? true : false
+    setDark(isDark)
+    localStorage.setItem('dark', JSON.stringify(isDark))
   }
   return (
     <>

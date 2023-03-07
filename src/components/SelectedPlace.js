@@ -25,6 +25,17 @@ export const SelectedPlace = ({
     }
   }, [setFavorites])
 
+  const addFavorites = () => {
+    if (!favorites?.includes(data.properties.placeId)) {
+      setFavorites([...favorites, data.properties.placeId])
+    } else {
+      const unFavorites = favorites.filter(
+        (value) => value !== data.properties.placeId
+      )
+      setFavorites(unFavorites)
+    }
+  }
+
   const [file, setFile] = useState({})
 
   useEffect(() => {
@@ -42,25 +53,12 @@ export const SelectedPlace = ({
     fetchStorage()
   }, [data.properties.img_src])
 
-  const addFavorites = () => {
-    if (!favorites?.includes(data.properties.placeId)) {
-      setFavorites([...favorites, data.properties.placeId])
-    } else {
-      const unFavorites = favorites.filter(
-        (value) => value !== data.properties.placeId
-      )
-      setFavorites(unFavorites)
-    }
-  }
-
   const fontSizeLength = data.properties.name.length
   const fontSizeStyle = {
     fontSize: fontSizeLength >= 14 ? '15px' : '18px',
   }
 
   const isFavorite = favorites?.includes(data.properties.placeId)
-
-  // { dark ? 'closeButton dark' : 'closeButton' }
 
   return (
     <div className='wrapper'>
@@ -75,7 +73,6 @@ export const SelectedPlace = ({
         <div className='description-container'>
           <div className='img-container'>
             <img
-              // src={require(`./../assets/img/${data.properties.img_src}.jpg`)}
               src={file}
               alt='PlaceView'
             />
@@ -102,7 +99,8 @@ export const SelectedPlace = ({
           >
             <FavoriteIcon />
           </div>
-          <Direction className='direction'
+          <Direction
+            className='direction'
             lat={data.latitude}
             lng={data.longitude}
           />

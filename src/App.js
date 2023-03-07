@@ -6,12 +6,14 @@ import { useState } from 'react'
 import './App.css'
 
 export const App = () => {
-  const [dark, setDark] = useState(false)
+  const [dark, setDark] = useState(() =>
+    JSON.parse(localStorage.getItem('dark'))
+  )
   const [newPlace, setNewPlace] = useState(null)
   const [favorites, setFavorites] = useState(
     JSON.parse(localStorage.getItem('favorites')) || []
   )
-
+  
   return (
     <>
       <Nav
