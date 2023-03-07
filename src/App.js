@@ -6,7 +6,7 @@ import { useState } from 'react'
 import './App.css'
 
 export const App = () => {
-  const [dark, setDark] = useState(true)
+  const [dark, setDark] = useState(false)
   const [newPlace, setNewPlace] = useState(null)
   const [favorites, setFavorites] = useState(
     JSON.parse(localStorage.getItem('favorites')) || []

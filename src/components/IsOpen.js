@@ -39,5 +39,5 @@ export const IsOpen = ({ weekDays }) => {
 
   const isOpenClass = isOpen === 'Open Now' ? 'open' : 'closed'
 
-  return <p className={isOpenClass}>{isOpen}</p>
+  return <h4 className={isOpenClass}>{isOpen}</h4>
 }

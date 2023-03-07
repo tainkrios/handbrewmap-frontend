@@ -98,11 +98,11 @@ export const SelectedPlace = ({
         <div>
           <div
             onClick={addFavorites}
-            className={isFavorite ? 'favorite_fill' : 'favorite'}
+            className={isFavorite ? 'favorite fill' : 'favorite'}
           >
             <FavoriteIcon />
           </div>
-          <Direction
+          <Direction className='direction'
             lat={data.latitude}
             lng={data.longitude}
           />
