@@ -16,10 +16,10 @@ export const Direction = ({ lat, lng }) => {
 
   return (
     <button
-      className='showFavButton'
+      className='direction'
       onClick={mapsSelector}
     >
-      <DirectionIcon className='showFavButton_svg' />
+      <DirectionIcon />
     </button>
   )
 }

@@ -5,18 +5,6 @@
   margin-left: 1rem;
   display: flex;
   flex-direction: column;
-
-}
-
-.selectedPlaces {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  height: 8rem;
-  z-index: 100;
-  background-color: #ECEFF4;
-  border-radius: 1rem;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .closeButton {
@@ -25,10 +13,21 @@
   margin-right: 1rem;
 }
 
+.selectedPlaces {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 8rem;
+  z-index: 100;
+  background-color: var(--primary-background-color);
+  border-radius: 1rem;
+  box-shadow: 0px .25rem .5rem rgba(0, 0, 0, 0.25);
+}
+
 .selectedPlaces a {
   text-decoration: none;
   cursor: pointer;
-  color: #000;
+  color: var(--primary-text-color);
 }
 
 .selectedPlaces h3 {
@@ -54,32 +53,38 @@
 }
 
 .description p {
-  margin: 0 0 .25rem 0
+  margin: 0 0 .25rem 0;
 }
 
 .description h3 {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: .5rem;
 }
 
 .description a svg {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .favorite {
   margin-left: auto;
   margin-right: 1rem;
-  margin-top: -3px;
+  margin-top: -.1875rem;
   cursor: pointer;
-
+  fill: var(--primary-accent-color);
 }
 
-.favorite_fill {
-  margin-left: auto;
-  fill: #3eba7e;
-  margin-right: 1rem;
-  margin-top: -3px;
-  cursor: pointer;
+.favorite.fill {
+  fill: var(--secondary-accent-color);
+}
+
+.dark {
+  background-color: var(--secondary-background-color);
+  fill: var(--secondary-text-color);
+}
+
+.selectedPlaces.dark .adress,
+.selectedPlaces.dark h3 {
+  color: var(--secondary-text-color);
 }

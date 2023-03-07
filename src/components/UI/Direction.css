@@ -1,8 +1,9 @@
-.showFavButton {
-  width: 29px;
-  height: 29px;
-  padding: 0 1px;
+.direction {
+  /* width: 29px;
+  height: 29px; */
+  padding: 0 .0625rem;
   display: flex;
   align-items: center;
-  border-radius: 4px;
+  border-radius: .25rem;
+  fill: var(--primary-accent-color);
 }

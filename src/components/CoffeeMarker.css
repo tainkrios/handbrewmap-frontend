@@ -1,13 +1,13 @@
 button.markerColor {
-  width: 20px;
-  height: 20px;
-  background-color: #3eba7e;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: var(--primary-accent-color);
   cursor: pointer;
   border-radius: 50%;
 }
 
 button.markerColor.fav {
-  background-color: #e090b0;
+  background-color: var(--secondary-accent-color);
 }
 
 .marker {
@@ -20,6 +20,7 @@ button.markerColor.fav {
   cursor: pointer;
 }
 
-.darkTheme {
-  color: white;
+.marker.dark {
+  color: var(--secondary-text-color);
+  background-color: transparent;
 }
