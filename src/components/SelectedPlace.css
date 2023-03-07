@@ -84,6 +84,10 @@
   fill: var(--secondary-text-color);
 }
 
+.closeButton.dark {
+  background-color: inherit;
+}
+
 .selectedPlaces.dark .adress,
 .selectedPlaces.dark h3 {
   color: var(--secondary-text-color);
