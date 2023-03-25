@@ -9,13 +9,11 @@ export const Nav = ({ dark, setDark }) => {
     localStorage.setItem('dark', JSON.stringify(isDark))
   }
   return (
-    <>
-      <div className={dark ? 'navigation dark' : 'navigation'}>
-        <h1>Berlin Coffee Map</h1>
-        <button onClick={toggleTheme}>
-          {dark ? <DarkMode /> : <LightMode />}
-        </button>
-      </div>
-    </>
+    <div className={dark ? 'navigation dark' : 'navigation'}>
+      <h1>Berlin Coffee Map</h1>
+      <button onClick={toggleTheme}>
+        {dark ? <DarkMode /> : <LightMode />}
+      </button>
+    </div>
   )
 }

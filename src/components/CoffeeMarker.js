@@ -34,7 +34,7 @@ export const CoffeeMarker = ({
               ? 'markerColor fav'
               : 'markerColor'
           }
-        ></button>
+        />
         <span>{placeData.properties.name}</span>
       </div>
     </Marker>

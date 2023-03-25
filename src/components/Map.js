@@ -1,10 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react'
-import ReactMapGL, { GeolocateControl, Marker } from 'react-map-gl'
-import { CoffeeMarker } from './CoffeeMarker'
-import useSupercluster from 'use-supercluster'
-import { getPlaces } from '../firebase/getPlaces'
+import ReactMapGL, { GeolocateControl } from 'react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './Map.css'
+import { Clusters } from './Clusters'
 
 export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
   const [viewport, setViewport] = useState({
@@ -14,7 +12,6 @@ export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
     passive: true,
   })
 
-  const [placesData, setPlacesData] = useState([])
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -27,17 +24,10 @@ export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
             passive: true,
           })
         },
-        (error) => console.log(error)
+        (error) => console.error(error)
       )
     }
-    const fetchPlaces = async () => {
-      const { documents } = await getPlaces()
-      setPlacesData(documents)
-    }
-    fetchPlaces()
   }, [])
-
-  // console.log(placesData);
 
   const mapStyles = {
     width: '100vw',
@@ -48,36 +38,11 @@ export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
 
   const mapRef = useRef()
 
-  const points = placesData.map((place) => ({
-    type: 'Feature',
-    properties: {
-      cluster: false,
-      placeId: place.id,
-      category: 'coffee-place',
-      img_src: place.img_src,
-      addr_housenumber: place.addr_housenumber,
-      addr_street: place.addr_street,
-      name: place.name,
-      contact_website: place.contact_website,
-      opening_hours: place.opening_hours,
-    },
-    geometry: {
-      type: 'Point',
-      coordinates: [parseFloat(place.lon), parseFloat(place.lat)],
-    },
-  }))
-
+  
   const [bounds, setBounds] = useState([
     13.344915992258336, 52.498172201467696, 13.430884007741298,
     52.53581973404496,
   ])
-
-  const { clusters, supercluster } = useSupercluster({
-    points,
-    bounds,
-    zoom: viewport.zoom,
-    options: { radius: 75, maxZoom: 20 },
-  })
 
   return (
     <ReactMapGL
@@ -96,53 +61,14 @@ export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
       }
       style={mapStyles}
     >
-      {clusters.map((cluster) => {
-        const [longitude, latitude] = cluster.geometry.coordinates
-        const { cluster: isCluster, point_count: pointCount } =
-          cluster.properties
-
-        if (isCluster) {
-          return (
-            <Marker
-              key={cluster.id}
-              latitude={latitude}
-              longitude={longitude}
-            >
-              <div
-                className='cluster-marker'
-                style={{
-                  width: `${10 + (pointCount / points.length) * 20}px`,
-                  height: `${10 + (pointCount / points.length) * 20}px`,
-                }}
-                onClick={() => {
-                  mapRef.current.flyTo({
-                    center: [longitude, latitude],
-                    zoom: Math.min(
-                      supercluster.getClusterExpansionZoom(cluster.id),
-                      20
-                    ),
-                    duration: 1000,
-                  })
-                }}
-              >
-                {pointCount}
-              </div>
-            </Marker>
-          )
-        }
-        return (
-          <CoffeeMarker
-            key={cluster.properties.placeId}
-            longitude={longitude}
-            latitude={latitude}
-            placeData={cluster}
-            changePlace={saveNewPlaceChange}
-            map={mapRef.current}
-            favorites={favorites}
-            dark={dark}
-          />
-        )
-      })}
+      <Clusters
+        bounds={bounds}
+        viewport={viewport}
+        mapRef={mapRef}
+        saveNewPlaceChange={saveNewPlaceChange}
+        dark={dark}
+        favorites={favorites}
+      />
       <GeolocateControl />
     </ReactMapGL>
   )
