@@ -15,9 +15,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Pre-requisites
 1. Install Node.js https://nodejs.org/en/download
-1. Install Firebase CLI https://firebase.google.com/docs/cli
-1. Run `npm install` once in project root directory
-1. Set environment variables for all properties used in `src/firebase/config.js`
+2. Install Firebase CLI https://firebase.google.com/docs/cli
+3. Run `npm install` once in project root directory
+4. Set environment variables for all properties used in `src/firebase/config.js`
+5. Set environment variables for propertie used in `src/components/Map.js`
 
 ## Available Scripts
 In the project directory, you can run:
