@@ -13,8 +13,13 @@ When a user clicks on a coffee shop on the map, a pop-up window will appear with
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Pre-requisites
+1. Install Node.js https://nodejs.org/en/download
+1. Install Firebase CLI https://firebase.google.com/docs/cli
+1. Run `npm install` once in project root directory
+1. Set environment variables for all properties used in `src/firebase/config.js`
 
+## Available Scripts
 In the project directory, you can run:
 
 ### `npm start`
