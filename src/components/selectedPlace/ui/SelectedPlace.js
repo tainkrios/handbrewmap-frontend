@@ -1,11 +1,11 @@
-import './SelectedPlace.css'
-import { FavoriteIcon } from './../assets/FavoriteIcon'
-import { Direction } from './UI/Direction'
 import { useEffect, useState } from 'react'
-import { CloseButton } from './UI/CloseButton'
+import { Direction } from '../assets/Direction'
+import { CloseButton } from '../assets/CloseButton'
 import { Instagram } from '../assets/Instagram'
-import { IsOpen } from './IsOpen'
-import { getStorage } from '../firebase/getStorage'
+import { FavoriteIcon } from '../assets/FavoriteIcon'
+import { IsOpen } from 'components/isOpen'
+import { getStorage } from '../../../firebase/getStorage'
+import './SelectedPlace.css'
 
 export const SelectedPlace = ({
   data,

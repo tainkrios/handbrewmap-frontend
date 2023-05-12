@@ -1,19 +1,21 @@
-import 'mapbox-gl/dist/mapbox-gl.css'
-import { Nav } from './components/Nav'
-import { Map } from './components/Map'
-import { SelectedPlace } from './components/SelectedPlace'
 import { useState } from 'react'
+
+import { Map } from 'components/map'
+import { Nav } from 'components/nav'
+import { SelectedPlace } from 'components/selectedPlace'
+
+import 'mapbox-gl/dist/mapbox-gl.css'
 import './App.css'
 
 export const App = () => {
   const [dark, setDark] = useState(() =>
-    JSON.parse(localStorage.getItem('dark'))
+    JSON.parse(localStorage.getItem('dark')),
   )
   const [newPlace, setNewPlace] = useState(null)
   const [favorites, setFavorites] = useState(
-    JSON.parse(localStorage.getItem('favorites')) || []
+    JSON.parse(localStorage.getItem('favorites')) || [],
   )
-  
+
   return (
     <>
       <Nav
