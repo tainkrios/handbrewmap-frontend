@@ -17,7 +17,13 @@ const INITIAL_VIEWPORT = {
   passive: true,
 }
 
-export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
+export const Map = ({
+  saveNewPlaceChange,
+  favorites,
+  dark,
+  // placesData,
+  // setPlacesData,
+}) => {
   const [viewport, setViewport] = useState(INITIAL_VIEWPORT)
   const [placesData, setPlacesData] = useState([])
   const mapRef = useRef()
@@ -112,7 +118,7 @@ export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
                     center: [longitude, latitude],
                     zoom: Math.min(
                       supercluster.getClusterExpansionZoom(cluster.id),
-                      20
+                      20,
                     ),
                     duration: 1000,
                   })
