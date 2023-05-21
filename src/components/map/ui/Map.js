@@ -17,13 +17,7 @@ const INITIAL_VIEWPORT = {
   passive: true,
 }
 
-export const Map = ({
-  saveNewPlaceChange,
-  favorites,
-  dark,
-  // placesData,
-  // setPlacesData,
-}) => {
+export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
   const [viewport, setViewport] = useState(INITIAL_VIEWPORT)
   const [placesData, setPlacesData] = useState([])
   const mapRef = useRef()

@@ -4,10 +4,11 @@ import { getOpenStatus } from 'shared/getPlaceStatus'
 
 export const IsOpen = ({ weekDays, place_id }) => {
   const [isOpen, setIsOpen] = useState()
+
   useEffect(() => {
     const fetchOpenStatus = async () => {
-      const { open_now } = await getOpenStatus(place_id)
-      setIsOpen(open_now)
+      const status = await getOpenStatus(place_id)
+      setIsOpen(status)
     }
     fetchOpenStatus()
   }, [place_id])

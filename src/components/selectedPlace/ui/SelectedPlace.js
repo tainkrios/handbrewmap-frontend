@@ -13,7 +13,6 @@ export const SelectedPlace = ({
   setFavorites,
   onSetNewPlace,
   dark,
-  placesData,
 }) => {
   useEffect(() => {
     localStorage.setItem('favorites', JSON.stringify(favorites))

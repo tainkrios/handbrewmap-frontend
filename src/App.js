@@ -12,7 +12,6 @@ export const App = () => {
     JSON.parse(localStorage.getItem('dark')),
   )
   const [newPlace, setNewPlace] = useState(null)
-  // const [placesData, setPlacesData] = useState([])
   const [favorites, setFavorites] = useState(
     JSON.parse(localStorage.getItem('favorites')) || [],
   )
@@ -27,8 +26,6 @@ export const App = () => {
         favorites={favorites}
         saveNewPlaceChange={setNewPlace}
         dark={dark}
-        // setPlacesData={setPlacesData}
-        // placesData={placesData}
       />
       {newPlace && (
         <SelectedPlace
@@ -36,7 +33,6 @@ export const App = () => {
           onSetNewPlace={setNewPlace}
           setFavorites={setFavorites}
           favorites={favorites}
-          // placesData={placesData}
           dark={dark}
         />
       )}

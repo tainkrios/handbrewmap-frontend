@@ -10,7 +10,7 @@ export const getOpenStatus = async (place_id) => {
       return
     }
 
-    return { open_now: res.data.result.current_opening_hours.open_now }
+    return res.data.result.current_opening_hours.open_now
   } catch (error) {
     console.error(error)
   }
