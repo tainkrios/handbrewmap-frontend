@@ -16,6 +16,12 @@ const INITIAL_VIEWPORT = {
   zoom: 13,
   passive: true,
 }
+const MAP_STYLES = {
+  width: '100vw',
+  height: '100vh',
+  position: 'absolute',
+  top: 0,
+}
 
 export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
   const [viewport, setViewport] = useState(INITIAL_VIEWPORT)
@@ -34,18 +40,12 @@ export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
     fetchPlaces()
   }, [])
 
-  const mapStyles = {
-    width: '100vw',
-    height: '100vh',
-    position: 'absolute',
-    top: 0,
-  }
-
   const points = placesData.map((place) => ({
     type: 'Feature',
     properties: {
       cluster: false,
       placeId: place.id,
+      google_place_id: place.place_id,
       category: 'coffee-place',
       img_src: place.img_src,
       addr_housenumber: place.addr_housenumber,
@@ -87,7 +87,7 @@ export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
           ? 'mapbox://styles/mapbox/dark-v11'
           : 'mapbox://styles/mapbox/light-v11'
       }
-      style={mapStyles}
+      style={MAP_STYLES}
     >
       {clusters.map((cluster) => {
         const [longitude, latitude] = cluster.geometry.coordinates

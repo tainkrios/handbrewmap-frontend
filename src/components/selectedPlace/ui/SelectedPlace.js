@@ -88,7 +88,7 @@ export const SelectedPlace = ({
               </h3>
             </a>
             <IsOpen
-              place_id={data.place_id}
+              placeId={data.properties.google_place_id}
               weekDays={data.properties.opening_hours}
             />
             <p className='adress'>{`📍${data.properties.addr_street} ${data.properties.addr_housenumber}`}</p>
