@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const getPlaceOpenStatus = async (placeId) => {
-  let url = `http://88.210.9.231:1963/${placeId}`
+  let url = `https://handbrew-server.onrender.com/${placeId}`
   const config = {
     headers: {
       'Content-Type': 'application/json',
