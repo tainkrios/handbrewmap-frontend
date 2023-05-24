@@ -1,5 +1,5 @@
+import { DirectionIcon } from './DirectionIcon'
 import './Direction.css'
-import { DirectionIcon } from '../../assets/DirectionIcon'
 
 export const Direction = ({ lat, lng }) => {
   const mapsSelector = () => {

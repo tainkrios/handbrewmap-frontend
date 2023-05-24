@@ -2,17 +2,15 @@ import { collection, getDocs } from 'firebase/firestore'
 import { db } from './config'
 
 export const getPlaces = async () => {
-  let documents
   try {
-    const data = await getDocs(collection(db, 'places'))
-    const filteredData = data.docs.map((doc) => ({
-      ...doc.data(),
+    const querySnapshot = await getDocs(collection(db, 'places'))
+    const documents = querySnapshot.docs.map((doc) => ({
       id: doc.id,
+      ...doc.data(),
     }))
-    documents = filteredData
+    return { documents }
   } catch (error) {
     console.error(error)
+    return { documents: [] }
   }
-
-  return { documents }
 }

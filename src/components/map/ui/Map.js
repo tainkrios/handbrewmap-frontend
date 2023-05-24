@@ -1,58 +1,51 @@
-import React, { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect } from 'react'
+
 import ReactMapGL, { GeolocateControl, Marker } from 'react-map-gl'
-import { CoffeeMarker } from './CoffeeMarker'
 import useSupercluster from 'use-supercluster'
-import { getPlaces } from '../firebase/getPlaces'
+
+import { CoffeeMarker } from 'components/coffeeMarker'
+import { getPlaces } from '../../../firebase/getPlaces'
+
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './Map.css'
 
-export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
-  const [viewport, setViewport] = useState({
-    latitude: 52.517,
-    longitude: 13.3879,
-    zoom: 13,
-    passive: true,
-  })
+const MAPBOX_ACCESS_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN
+const INITIAL_VIEWPORT = {
+  latitude: 52.517,
+  longitude: 13.3879,
+  zoom: 13,
+  passive: true,
+}
+const MAP_STYLES = {
+  width: '100vw',
+  height: '100vh',
+  position: 'absolute',
+  top: 0,
+}
 
+export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
+  const [viewport, setViewport] = useState(INITIAL_VIEWPORT)
   const [placesData, setPlacesData] = useState([])
+  const mapRef = useRef()
 
   useEffect(() => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          setViewport({
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude,
-            zoom: 13,
-            passive: true,
-          })
-        },
-        (error) => console.log(error)
-      )
-    }
     const fetchPlaces = async () => {
-      const { documents } = await getPlaces()
-      setPlacesData(documents)
+      try {
+        const { documents } = await getPlaces()
+        setPlacesData(documents)
+      } catch (error) {
+        console.error(error)
+      }
     }
     fetchPlaces()
   }, [])
-
-  // console.log(placesData);
-
-  const mapStyles = {
-    width: '100vw',
-    height: '100vh',
-    position: 'absolute',
-    top: 0,
-  }
-
-  const mapRef = useRef()
 
   const points = placesData.map((place) => ({
     type: 'Feature',
     properties: {
       cluster: false,
       placeId: place.id,
+      google_place_id: place.place_id,
       category: 'coffee-place',
       img_src: place.img_src,
       addr_housenumber: place.addr_housenumber,
@@ -84,7 +77,7 @@ export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
       ref={mapRef}
       {...viewport}
       maxZoom={20}
-      mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+      mapboxAccessToken={MAPBOX_ACCESS_TOKEN}
       onMove={(evt) => {
         setViewport(evt.viewState)
         setBounds(mapRef.current.getMap().getBounds().toArray().flat())
@@ -94,7 +87,7 @@ export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
           ? 'mapbox://styles/mapbox/dark-v11'
           : 'mapbox://styles/mapbox/light-v11'
       }
-      style={mapStyles}
+      style={MAP_STYLES}
     >
       {clusters.map((cluster) => {
         const [longitude, latitude] = cluster.geometry.coordinates
@@ -119,7 +112,7 @@ export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
                     center: [longitude, latitude],
                     zoom: Math.min(
                       supercluster.getClusterExpansionZoom(cluster.id),
-                      20
+                      20,
                     ),
                     duration: 1000,
                   })

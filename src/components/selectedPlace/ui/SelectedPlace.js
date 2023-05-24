@@ -1,11 +1,11 @@
-import './SelectedPlace.css'
-import { FavoriteIcon } from './../assets/FavoriteIcon'
-import { Direction } from './UI/Direction'
 import { useEffect, useState } from 'react'
-import { CloseButton } from './UI/CloseButton'
+import { Direction } from '../assets/Direction'
+import { CloseButton } from '../assets/CloseButton'
 import { Instagram } from '../assets/Instagram'
-import { IsOpen } from './IsOpen'
-import { getStorage } from '../firebase/getStorage'
+import { FavoriteIcon } from '../assets/FavoriteIcon'
+import { IsOpen } from 'components/isOpen'
+import './SelectedPlace.css'
+import { getItemFromStorage } from '../../../firebase/getStorageItem'
 
 export const SelectedPlace = ({
   data,
@@ -30,7 +30,7 @@ export const SelectedPlace = ({
       setFavorites([...favorites, data.properties.placeId])
     } else {
       const unFavorites = favorites.filter(
-        (value) => value !== data.properties.placeId
+        (value) => value !== data.properties.placeId,
       )
       setFavorites(unFavorites)
     }
@@ -41,11 +41,10 @@ export const SelectedPlace = ({
   useEffect(() => {
     const fetchStorage = async () => {
       try {
-        const { filesArr } = await getStorage()
-        const document = filesArr.find(
-          (file) => file.name === `${data.properties.img_src} .jpg`
+        const { url } = await getItemFromStorage(
+          `${data.properties.img_src} .jpg`,
         )
-        setFile(document.url)
+        setFile(url)
       } catch (error) {
         console.error(error)
       }
@@ -88,7 +87,10 @@ export const SelectedPlace = ({
                 {data.properties.name}
               </h3>
             </a>
-            <IsOpen weekDays={data.properties.opening_hours} />
+            <IsOpen
+              placeId={data.properties.google_place_id}
+              weekDays={data.properties.opening_hours}
+            />
             <p className='adress'>{`📍${data.properties.addr_street} ${data.properties.addr_housenumber}`}</p>
           </div>
         </div>

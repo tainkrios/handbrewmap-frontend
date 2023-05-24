@@ -1,5 +1,5 @@
-import { DarkMode } from './UI/DarkMode'
-import { LightMode } from './UI/LightMode'
+import { DarkMode } from '../assets/DarkMode'
+import { LightMode } from '../assets/LightMode'
 import './Nav.css'
 
 export const Nav = ({ dark, setDark }) => {
