@@ -6,9 +6,9 @@ export const IsOpen = ({ placeId }) => {
   const [isOpen, setIsOpen] = useState()
 
   useEffect(() => {
-    getPlaceOpenStatus(placeId).then((openStatus) => {
-      if (openStatus !== null) {
-        setIsOpen(openStatus)
+    getPlaceOpenStatus(placeId).then((open_now) => {
+      if (open_now !== null) {
+        setIsOpen(open_now)
       } else {
         console.log('Failed to fetch place open status')
       }

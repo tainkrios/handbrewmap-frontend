@@ -11,7 +11,7 @@ export const getPlaceOpenStatus = async (placeId) => {
   try {
     const response = await axios.get(url, config)
     const data = await response.data
-    const open_now = data.open_now
+    const open_now = data.result.opening_hours.open_now
     return open_now
   } catch (error) {
     console.error(error)
