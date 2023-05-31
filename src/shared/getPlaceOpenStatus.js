@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const getPlaceOpenStatus = async (placeId) => {
-  let url = `https://handbrew-server.onrender.com/${placeId}`
+  let url = `https://sleepy-ray-tuxedo.cyclic.app/${placeId}`
   const config = {
     headers: {
       'Content-Type': 'application/json',
