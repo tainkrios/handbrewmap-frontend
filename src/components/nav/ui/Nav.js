@@ -17,7 +17,7 @@ export const Nav = ({ dark, setDark }) => {
           <button onClick={toggleTheme}>
             {dark ? <DarkMode /> : <LightMode />}
           </button>
-          <Burger />
+          <Burger dark={dark} />
         </div>
       </div>
     </>

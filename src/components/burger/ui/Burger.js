@@ -1,23 +1,21 @@
 import { useState } from 'react'
 import './Burger.css'
 
-export const Burger = () => {
+export const Burger = ({ dark }) => {
   const [showSidebar, setShowSidebar] = useState(false)
 
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar)
   }
   return (
-    <>
-      <button
-        onClick={toggleSidebar}
-        className='burger'
-      >
+    <div className={dark ? 'burger dark' : 'burger'}>
+      <button onClick={toggleSidebar}>
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <div className={`sidebar ${showSidebar ? 'show' : ''}`}>
+      <div className={dark ? `sidebar ${showSidebar ? 'show' : ''} dark` : `sidebar ${showSidebar ? 'show' : ''}`}>
+        {' '}
         <div className='sidebar-content'>
           <p>
             If you have any questions or suggestions, write ➡️{' '}
@@ -47,6 +45,6 @@ export const Burger = () => {
         className={`overlay ${showSidebar ? 'show' : ''}`}
         onClick={toggleSidebar}
       ></div>
-    </>
+    </div>
   )
 }
