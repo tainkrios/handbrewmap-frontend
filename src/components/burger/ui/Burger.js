@@ -14,7 +14,13 @@ export const Burger = ({ dark }) => {
         <span></span>
         <span></span>
       </button>
-      <div className={dark ? `sidebar ${showSidebar ? 'show' : ''} dark` : `sidebar ${showSidebar ? 'show' : ''}`}>
+      <div
+        className={
+          dark
+            ? `sidebar ${showSidebar ? 'show' : ''} dark`
+            : `sidebar ${showSidebar ? 'show' : ''}`
+        }
+      >
         {' '}
         <div className='sidebar-content'>
           <p>
@@ -25,13 +31,11 @@ export const Burger = ({ dark }) => {
             Your donation will help fund my adventures in Berlin as I explore
             new places and discover hidden gems. With your support, I'll be able
             to enjoy a cup of coffee ☕️ as I take in the sights and sounds of
-            the city. Thank you for helping me make the most of my travels!
-            <span>
-              <img
-                src='https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/uozz7Eg-cMn.png'
-                alt='brandenburger-tor-icon'
-              />
-            </span>
+            the city. Thank you for helping me make the most of my travels! 
+            <img
+              src='https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/uozz7Eg-cMn.png'
+              alt='brandenburger-tor-icon'
+            />
           </p>
           <p>
             <a href='https://www.paypal.com/paypalme/tainkrios'>PayPal</a>
