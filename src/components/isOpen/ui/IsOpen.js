@@ -3,7 +3,7 @@ import './IsOpen.css'
 import { getPlaceOpenStatus } from 'shared/getPlaceOpenStatus'
 
 export const IsOpen = ({ placeId }) => {
-  const [isOpen, setIsOpen] = useState()
+  const [isOpen, setIsOpen] = useState(true)
 
   useEffect(() => {
     getPlaceOpenStatus(placeId).then((open_now) => {
