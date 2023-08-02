@@ -1,6 +1,6 @@
 {
-  "short_name": "Coffee Map",
-  "name": "Berlin Coffee Map",
+  "short_name": "HandBrewMap",
+  "name": "HandBrewMap",
   "start_url": ".",
   "display": "fullscreen",
   "theme_color": "#000000",
