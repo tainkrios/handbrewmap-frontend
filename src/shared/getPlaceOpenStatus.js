@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const getPlaceOpenStatus = async (placeId) => {
-  let url = `https://us-central1-handbrew-server-function.cloudfunctions.net/api/${placeId}`
+  let url = `https://us-central1-berlin-coffee-map.cloudfunctions.net/api/${placeId}`
   const config = {
     headers: {
       'Content-Type': 'application/json',
