@@ -3,12 +3,10 @@ import './Direction.css'
 
 export const Direction = ({ lat, lng }) => {
   const mapsSelector = () => {
-    if (
-      navigator.platform.indexOf('iPhone') !== -1 ||
-      navigator.platform.indexOf('iPad') !== -1 ||
-      navigator.platform.indexOf('iPod') !== -1
-    ) {
-      window.open(`maps://maps.google.com/maps?daddr=${lat},${lng}&amp;ll=`)
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+
+    if (isMobile) {
+      window.open(`geo:${lat},${lng}`)
     } else {
       window.open(`https://maps.google.com/maps?daddr=${lat},${lng}&amp;ll=`)
     }

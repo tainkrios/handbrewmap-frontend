@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect, useMemo, useCallback } from 'react'
 
 import ReactMapGL, { GeolocateControl, Marker } from 'react-map-gl'
 import useSupercluster from 'use-supercluster'
@@ -28,17 +28,23 @@ export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
   const [placesData, setPlacesData] = useState([])
   const mapRef = useRef()
 
-  useEffect(() => {
-    const fetchPlaces = async () => {
-      try {
-        const { documents } = await getPlaces()
-        setPlacesData(documents)
-      } catch (error) {
-        console.error(error)
-      }
+  const controller = useMemo(() => new AbortController(), [])
+
+  const fetchPlaces = useCallback(async () => {
+    try {
+      const { documents } = await getPlaces({ signal: controller.signal })
+      setPlacesData(documents)
+    } catch (error) {
+      console.error(error)
     }
+  }, [controller])
+
+  useEffect(() => {
     fetchPlaces()
-  }, [])
+    return () => {
+      controller.abort()
+    }
+  }, [controller, fetchPlaces])
 
   const points = placesData.map((place) => ({
     type: 'Feature',
