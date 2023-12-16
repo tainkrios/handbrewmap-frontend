@@ -6,7 +6,7 @@ export const Direction = ({ lat, lng }) => {
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
 
     if (isMobile) {
-      window.open(`geo:${lat},${lng}`)
+      window.open(`geo:${lat},${lng}?q=${lat},${lng}&z=15`)
     } else {
       window.open(`https://maps.google.com/maps?daddr=${lat},${lng}&amp;ll=`)
     }
