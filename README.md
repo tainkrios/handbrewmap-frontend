@@ -1,8 +1,5 @@
 # Description
 
-When I first moved to Berlin, I didn't find any coffee shop maps.
-And I made it myself.
-
 Berlin Coffee Map is a web application built using React, [Mapbox](https://www.mapbox.com/), Firebase and Google Places API. The application is designed to help coffee enthusiasts find the best coffee shops in Berlin.
 
 The main feature of the application is an interactive map of Berlin that displays the location of all the coffee shops in the city. Users can zoom in and out of the map to explore different neighborhoods and find coffee shops in specific areas.
