@@ -1,4 +1,13 @@
 {
-  "compilerOptions": { "baseUrl": "src" },
-  "include": ["src"]
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "Components/*": ["components/*"],
+      "Contexts/*": ["contexts/*"],
+      "Firebase/*": ["firebase/*"],
+      "Hooks/*": ["hooks/*"],
+      "Shared/*": ["shared/*"]
+    }
+  },
+  "include": ["src/**/*"]
 }

@@ -1,21 +1,35 @@
-import { useRef, useState, useEffect, useMemo, useCallback } from 'react'
+import {
+  useRef,
+  useState,
+  useEffect,
+  useMemo,
+  useCallback,
+  useContext,
+} from 'react'
+import { PropTypes } from 'prop-types'
+
+import { ThemeContext } from 'Contexts/ThemeContext'
+import { FavoritesContext } from 'Contexts/FavoritesContext'
 
 import ReactMapGL, { GeolocateControl, Marker } from 'react-map-gl'
 import useSupercluster from 'use-supercluster'
 
-import { CoffeeMarker } from 'components/coffeeMarker'
+import { CoffeeMarker } from 'Components/coffeeMarker'
+
 import { getPlaces } from '../../../firebase/getPlaces'
 
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './Map.css'
 
-const MAPBOX_ACCESS_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN
+const MAPBOX_ACCESS_TOKEN = import.meta.env.VITE_APP_MAPBOX_API_KEY
+
 const INITIAL_VIEWPORT = {
   latitude: 52.517,
   longitude: 13.3879,
   zoom: 13,
   passive: true,
 }
+
 const MAP_STYLES = {
   width: '100vw',
   height: '100vh',
@@ -23,7 +37,9 @@ const MAP_STYLES = {
   top: 0,
 }
 
-export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
+export const Map = ({ saveNewPlaceChange }) => {
+  const { dark } = useContext(ThemeContext)
+  const { favorites } = useContext(FavoritesContext)
   const [viewport, setViewport] = useState(INITIAL_VIEWPORT)
   const [placesData, setPlacesData] = useState([])
   const mapRef = useRef()
@@ -77,6 +93,39 @@ export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
     zoom: viewport.zoom,
     options: { radius: 75, maxZoom: 20 },
   })
+
+  const handleKeyDown = useCallback((event) => {
+    if (event.key === 'ArrowUp') {
+      setViewport((prev) => ({ ...prev, latitude: prev.latitude + 0.001 }))
+    } else if (event.key === 'ArrowDown') {
+      setViewport((prev) => ({ ...prev, latitude: prev.latitude - 0.001 }))
+    } else if (event.key === 'ArrowLeft') {
+      setViewport((prev) => ({ ...prev, longitude: prev.longitude - 0.001 }))
+    } else if (event.key === 'ArrowRight') {
+      setViewport((prev) => ({ ...prev, longitude: prev.longitude + 0.001 }))
+    }
+  }, [])
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown)
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [handleKeyDown])
+
+  useEffect(() => {
+    if (mapRef.current) {
+      mapRef.current.getMap().easeTo({
+        duration: 500,
+        easing: (t) => t * (2 - t),
+        transition: {
+          style: dark
+            ? 'mapbox://styles/mapbox/dark-v11'
+            : 'mapbox://styles/mapbox/light-v11',
+        },
+      })
+    }
+  }, [dark])
 
   return (
     <ReactMapGL
@@ -145,4 +194,8 @@ export const Map = ({ saveNewPlaceChange, favorites, dark }) => {
       <GeolocateControl />
     </ReactMapGL>
   )
+}
+
+Map.propTypes = {
+  saveNewPlaceChange: PropTypes.func.isRequired,
 }

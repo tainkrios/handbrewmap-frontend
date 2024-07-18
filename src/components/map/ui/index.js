@@ -1,1 +1,1 @@
-export * from './Map'
+export { Map } from './Map'
