@@ -1,1 +1,1 @@
-export * from './ui'
+export { SelectedPlace } from './ui'

@@ -1,1 +1,1 @@
-export * from './SelectedPlace'
+export { SelectedPlace } from './SelectedPlace'

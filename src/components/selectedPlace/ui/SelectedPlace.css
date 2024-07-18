@@ -82,13 +82,15 @@
 .dark {
   background-color: var(--secondary-background-color);
   fill: var(--secondary-text-color);
+  transition: background-color 0.5s ease, fill 0.5s ease;
 }
 
 .closeButton.dark {
   background-color: inherit;
 }
 
-.selectedPlaces.dark .adress,
+.selectedPlaces.dark .address,
 .selectedPlaces.dark h3 {
   color: var(--secondary-text-color);
+    transition: color 0.5s ease, background-color 0.5s ease, fill 0.5s ease;
 }

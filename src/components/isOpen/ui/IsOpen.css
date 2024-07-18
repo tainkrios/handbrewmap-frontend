@@ -2,6 +2,53 @@ h4 {
   margin: 0;
 }
 
+.isopen-skeleton {
+  width: 80px;
+  height: 24px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skeleton-text {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading-light 1.5s infinite;
+}
+
+.isopen-skeleton.dark {
+  background-color: #333;
+}
+
+.isopen-skeleton.dark .skeleton-text {
+  background: linear-gradient(90deg, #333 25%, #444 50%, #333 75%);
+  background-size: 200% 100%;
+  animation: loading-dark 1.5s infinite;
+}
+
+@keyframes loading-light {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes loading-dark {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
 .open {
   font-weight: 600;
   color: #3eba7e;

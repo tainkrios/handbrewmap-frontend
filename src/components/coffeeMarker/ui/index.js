@@ -1,1 +1,1 @@
-export * from './CoffeeMarker'
+export { CoffeeMarker } from './CoffeeMarker'
