@@ -25,6 +25,14 @@ const IsOpen = lazy(() =>
   import('Components/isOpen').then((module) => ({ default: module.IsOpen })),
 )
 
+const IsOpenSkeleton = ({ dark }) => {
+  return (
+    <div className={`isopen-skeleton ${dark ? 'dark' : ''}`}>
+      <div className='skeleton-text'></div>
+    </div>
+  )
+}
+
 export const SelectedPlace = ({ data, onSetNewPlace }) => {
   const { dark } = useContext(ThemeContext)
   const { favorites, addToFavorites, removeFromFavorites } =
@@ -34,8 +42,7 @@ export const SelectedPlace = ({ data, onSetNewPlace }) => {
 
   const isFavorite = favorites.includes(data.properties.placeId)
 
-  useEffect(() => {
-  }, [favorites])
+  useEffect(() => {}, [favorites])
 
   const handleFavoriteClick = useCallback(() => {
     if (isFavorite) {
@@ -99,7 +106,7 @@ export const SelectedPlace = ({ data, onSetNewPlace }) => {
                 {data.properties.name}
               </h3>
             </a>
-            <Suspense fallback={<p>Loading...</p>}>
+            <Suspense fallback={<IsOpenSkeleton dark={dark} />}>
               <IsOpen
                 placeId={data.properties.google_place_id}
                 weekDays={data.properties.opening_hours}
@@ -142,4 +149,8 @@ SelectedPlace.propTypes = {
     longitude: PropTypes.number.isRequired,
   }).isRequired,
   onSetNewPlace: PropTypes.func.isRequired,
+}
+
+IsOpenSkeleton.propTypes = {
+  dark: PropTypes.bool.isRequired,
 }
