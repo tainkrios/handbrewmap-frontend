@@ -20,7 +20,7 @@ export const Nav = () => {
 
   return (
     <div className={dark ? 'navigation dark' : 'navigation'}>
-      <h1>Berlin Coffee Map</h1>
+      <h1>Hand Brew Map</h1>
       <div className='button-nav-group'>
         <button onClick={toggleTheme}>
           {dark ? <DarkMode /> : <LightMode />}
