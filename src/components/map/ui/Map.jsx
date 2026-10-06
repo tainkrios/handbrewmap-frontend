@@ -2,7 +2,6 @@ import {
   useRef,
   useState,
   useEffect,
-  useMemo,
   useCallback,
   useContext,
 } from 'react'
@@ -42,25 +41,72 @@ export const Map = ({ saveNewPlaceChange }) => {
   const { favorites } = useContext(FavoritesContext)
   const [viewport, setViewport] = useState(INITIAL_VIEWPORT)
   const [placesData, setPlacesData] = useState([])
+  const [lastDoc, setLastDoc] = useState(null)
+  const [isLoading, setIsLoading] = useState(false)
+  const [hasMore, setHasMore] = useState(true)
   const mapRef = useRef()
+  const loadMoreRef = useRef()
+  const controllerRef = useRef(new AbortController())
 
-  const controller = useMemo(() => new AbortController(), [])
+  const BATCH_SIZE = 50
 
-  const fetchPlaces = useCallback(async () => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const fetchPlaces = useCallback(async (cursorDoc = null, isInitial = false) => {
+    if (isLoading || !hasMore) return
+
+    setIsLoading(true)
     try {
-      const { documents } = await getPlaces({ signal: controller.signal })
-      setPlacesData(documents)
+      const { documents, lastDoc: newLastDoc } = await getPlaces(
+        BATCH_SIZE,
+        cursorDoc,
+        controllerRef.current.signal,
+      )
+
+      if (documents.length < BATCH_SIZE) {
+        setHasMore(false)
+      }
+
+      setLastDoc(newLastDoc)
+      setPlacesData((prev) =>
+        isInitial ? documents : [...prev, ...documents],
+      )
     } catch (error) {
-      console.error(error)
+      if (error.name !== 'AbortError') {
+        console.error(error)
+      }
+    } finally {
+      setIsLoading(false)
     }
-  }, [controller])
+  }, [hasMore])
 
   useEffect(() => {
-    fetchPlaces()
+    fetchPlaces(null, true)
+    const controller = controllerRef.current
     return () => {
       controller.abort()
     }
-  }, [controller, fetchPlaces])
+  }, [fetchPlaces])
+
+  useEffect(() => {
+    const handleIntersection = (entries) => {
+      if (entries[0].isIntersecting && hasMore && !isLoading) {
+        fetchPlaces(lastDoc, false)
+      }
+    }
+
+    const observer = new IntersectionObserver(handleIntersection)
+
+    const element = loadMoreRef.current
+    if (element) {
+      observer.observe(element)
+    }
+
+    return () => {
+      if (element) {
+        observer.unobserve(element)
+      }
+    }
+  }, [lastDoc, hasMore, isLoading, fetchPlaces])
 
   const points = placesData.map((place) => ({
     type: 'Feature',
@@ -128,71 +174,79 @@ export const Map = ({ saveNewPlaceChange }) => {
   }, [dark])
 
   return (
-    <ReactMapGL
-      ref={mapRef}
-      {...viewport}
-      maxZoom={20}
-      mapboxAccessToken={MAPBOX_ACCESS_TOKEN}
-      onMove={(evt) => {
-        setViewport(evt.viewState)
-        setBounds(mapRef.current.getMap().getBounds().toArray().flat())
-      }}
-      mapStyle={
-        dark
-          ? 'mapbox://styles/mapbox/dark-v11'
-          : 'mapbox://styles/mapbox/light-v11'
-      }
-      style={MAP_STYLES}
-    >
-      {clusters.map((cluster) => {
-        const [longitude, latitude] = cluster.geometry.coordinates
-        const { cluster: isCluster, point_count: pointCount } =
-          cluster.properties
-
-        if (isCluster) {
-          return (
-            <Marker
-              key={cluster.id}
-              latitude={latitude}
-              longitude={longitude}
-            >
-              <div
-                className='cluster-marker'
-                style={{
-                  width: `${10 + (pointCount / points.length) * 20}px`,
-                  height: `${10 + (pointCount / points.length) * 20}px`,
-                }}
-                onClick={() => {
-                  mapRef.current.flyTo({
-                    center: [longitude, latitude],
-                    zoom: Math.min(
-                      supercluster.getClusterExpansionZoom(cluster.id),
-                      20,
-                    ),
-                    duration: 1000,
-                  })
-                }}
-              >
-                {pointCount}
-              </div>
-            </Marker>
-          )
+    <>
+      <ReactMapGL
+        ref={mapRef}
+        {...viewport}
+        maxZoom={20}
+        mapboxAccessToken={MAPBOX_ACCESS_TOKEN}
+        onMove={(evt) => {
+          setViewport(evt.viewState)
+          setBounds(mapRef.current.getMap().getBounds().toArray().flat())
+        }}
+        mapStyle={
+          dark
+            ? 'mapbox://styles/mapbox/dark-v11'
+            : 'mapbox://styles/mapbox/light-v11'
         }
-        return (
-          <CoffeeMarker
-            key={cluster.properties.placeId}
-            longitude={longitude}
-            latitude={latitude}
-            placeData={cluster}
-            changePlace={saveNewPlaceChange}
-            map={mapRef.current}
-            favorites={favorites}
-            dark={dark}
-          />
-        )
-      })}
-      <GeolocateControl />
-    </ReactMapGL>
+        style={MAP_STYLES}
+      >
+        {clusters.map((cluster) => {
+          const [longitude, latitude] = cluster.geometry.coordinates
+          const { cluster: isCluster, point_count: pointCount } =
+            cluster.properties
+
+          if (isCluster) {
+            return (
+              <Marker
+                key={cluster.id}
+                latitude={latitude}
+                longitude={longitude}
+              >
+                <div
+                  className='cluster-marker'
+                  style={{
+                    width: `${10 + (pointCount / points.length) * 20}px`,
+                    height: `${10 + (pointCount / points.length) * 20}px`,
+                  }}
+                  onClick={() => {
+                    mapRef.current.flyTo({
+                      center: [longitude, latitude],
+                      zoom: Math.min(
+                        supercluster.getClusterExpansionZoom(cluster.id),
+                        20,
+                      ),
+                      duration: 1000,
+                    })
+                  }}
+                >
+                  {pointCount}
+                </div>
+              </Marker>
+            )
+          }
+          return (
+            <CoffeeMarker
+              key={cluster.properties.placeId}
+              longitude={longitude}
+              latitude={latitude}
+              placeData={cluster}
+              changePlace={saveNewPlaceChange}
+              map={mapRef.current}
+              favorites={favorites}
+              dark={dark}
+            />
+          )
+        })}
+        <GeolocateControl />
+        {isLoading && (
+          <div className={`loading-indicator ${dark ? 'dark' : ''}`}>
+            <div className='spinner'></div>
+          </div>
+        )}
+      </ReactMapGL>
+      <div ref={loadMoreRef} className='load-more-sentinel'></div>
+    </>
   )
 }
 
